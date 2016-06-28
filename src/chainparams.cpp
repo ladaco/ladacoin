@@ -187,13 +187,19 @@ public:
     CTestNetParams() {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0xfc;
-        pchMessageStart[1] = 0xc1;
-        pchMessageStart[2] = 0xb7;
-        pchMessageStart[3] = 0xdc;
+        /*
+		*pchMessageStart[0] = 0xfc;
+        *pchMessageStart[1] = 0xc1;
+        *pchMessageStart[2] = 0xb7;
+        *pchMessageStart[3] = 0xdc;
+		**/
+		pchMessageStart[0] = 0xfb;
+        pchMessageStart[1] = 0xc0;
+        pchMessageStart[2] = 0xb6;
+        pchMessageStart[3] = 0xdb;
 		vAlertPubKey = ParseHex("04c012eb4585bffc0c400b4dc498d18cfddd814eb5185b807883f63b74172e2e743473923b667108daf5d3d1e2e7f1cdc49fdba36a60d87a202e42aa04780c5a8e");
         //vAlertPubKey = ParseHex("045413a69945feab5cd832b1a499202d17baabd4792df7da55251f022103054691bb6b9fa59599f47578c6889203196d15e2d522d5c6ac7a17563e1a504e8a1a29");
-        nDefaultPort = 18833;
+        nDefaultPort = 9333;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;

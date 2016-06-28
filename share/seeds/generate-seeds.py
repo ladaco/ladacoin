@@ -127,7 +127,7 @@ def main():
         process_nodes(g, f, 'pnSeed6_main', 8833)
     g.write('\n')
     with open(os.path.join(indir,'nodes_test.txt'),'r') as f:
-        process_nodes(g, f, 'pnSeed6_test', 18833)
+        process_nodes(g, f, 'pnSeed6_test', 9333)
     g.write('#endif // BITCOIN_CHAINPARAMSSEEDS_H\n')
             
 if __name__ == '__main__':
