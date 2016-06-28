@@ -11,12 +11,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Lamacoin</source>
-        <translation>Lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>Ladacoin</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Jezrga</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Jezrga</translation>
     </message>
     </context>
 <context>
@@ -34,15 +34,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Jezrga</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Jezrga</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Jezrga</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Jezrga</translation>
     </message>
     </context>
 <context>
@@ -109,8 +109,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Jezrga</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Jezrga</translation>
     </message>
     </context>
 <context>

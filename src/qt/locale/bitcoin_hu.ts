@@ -66,12 +66,12 @@
         <translation>Fogadó címek</translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ezekről a címekről küldhetsz lamacoint. Mindig ellenőrizd a fogadó címet és a fizetendő összeget, mielőtt elküldöd.</translation>
+        <source>These are your Ladacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ezekről a címekről küldhetsz ladacoint. Mindig ellenőrizd a fogadó címet és a fizetendő összeget, mielőtt elküldöd.</translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ezekkel a címekkel fogadhatsz lamacoint. Ajánlott minden tranzakcióhoz egy új fogadó címet használni.</translation>
+        <source>These are your Ladacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ezekkel a címekkel fogadhatsz ladacoint. Ajánlott minden tranzakcióhoz egy új fogadó címet használni.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -188,8 +188,8 @@
         <translation>Add meg a tárca új jelszavát.&lt;br/&gt;Olyan jelszót válassz, ami &lt;b&gt;legalább tíz véletlenszerű karakterből&lt;/b&gt; vagy &lt;b&gt;legalább 8 véletlenszerű szóból&lt;/b&gt; áll.</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
-        <translation>A Lamacoin Core most bezár, hogy befejezze a titkosítást. Ne feledd: a tárca titkosítása nem nyújt teljes védelmet azzal szemben, hogy adathalász programok megfertőzzék a számítógéped és ellopják a lamacoinjaid.</translation>
+        <source>Ladacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ladacoins from being stolen by malware infecting your computer.</source>
+        <translation>A Ladacoin Core most bezár, hogy befejezze a titkosítást. Ne feledd: a tárca titkosítása nem nyújt teljes védelmet azzal szemben, hogy adathalász programok megfertőzzék a számítógéped és ellopják a ladacoinjaid.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -295,8 +295,8 @@
         <translation>&amp;URI azonosító megnyitása...</translation>
     </message>
     <message>
-        <source>Lamacoin Core client</source>
-        <translation>Lamacoin Core kliens</translation>
+        <source>Ladacoin Core client</source>
+        <translation>Ladacoin Core kliens</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -307,12 +307,12 @@
         <translation>Lemezen lévő blokkok újraindexelése...</translation>
     </message>
     <message>
-        <source>Send coins to a Lamacoin address</source>
-        <translation>Lamacoin küldése megadott címre</translation>
+        <source>Send coins to a Ladacoin address</source>
+        <translation>Ladacoin küldése megadott címre</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lamacoin</source>
-        <translation>Lamacoin konfigurációs opciók</translation>
+        <source>Modify configuration options for Ladacoin</source>
+        <translation>Ladacoin konfigurációs opciók</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -335,8 +335,8 @@
         <translation>Üzenet &amp;valódiságának ellenőrzése</translation>
     </message>
     <message>
-        <source>Lamacoin</source>
-        <translation>Lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>Ladacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -351,8 +351,8 @@
         <translation>&amp;Fogadás</translation>
     </message>
     <message>
-        <source>Show information about Lamacoin Core</source>
-        <translation>Lamacoin Core információ megjelenítése</translation>
+        <source>Show information about Ladacoin Core</source>
+        <translation>Ladacoin Core információ megjelenítése</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -367,12 +367,12 @@
         <translation>A tárcádhoz tartozó privát kulcsok titkosítása</translation>
     </message>
     <message>
-        <source>Sign messages with your Lamacoin addresses to prove you own them</source>
-        <translation>Üzenetek aláírása a Lamacoin-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
+        <source>Sign messages with your Ladacoin addresses to prove you own them</source>
+        <translation>Üzenetek aláírása a Ladacoin-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Lamacoin addresses</source>
-        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Lamacoin-címekkel vannak-e aláírva</translation>
+        <source>Verify messages to ensure they were signed with specified Ladacoin addresses</source>
+        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Ladacoin-címekkel vannak-e aláírva</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -391,16 +391,16 @@
         <translation>Fül eszköztár</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Core</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and lamacoin: URIs)</source>
-        <translation>Fizetési kérelem (QR-kódot és "lamacoin:" URI azonosítót hoz létre)</translation>
+        <source>Request payments (generates QR codes and ladacoin: URIs)</source>
+        <translation>Fizetési kérelem (QR-kódot és "ladacoin:" URI azonosítót hoz létre)</translation>
     </message>
     <message>
-        <source>&amp;About Lamacoin Core</source>
-        <translation>&amp;A Lamacoin Core-ról</translation>
+        <source>&amp;About Ladacoin Core</source>
+        <translation>&amp;A Ladacoin Core-ról</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -411,20 +411,20 @@
         <translation>A használt fogadó címek és címkék megtekintése</translation>
     </message>
     <message>
-        <source>Open a lamacoin: URI or payment request</source>
-        <translation>"lamacoin:" URI azonosító vagy fizetési kérelem megnyitása</translation>
+        <source>Open a ladacoin: URI or payment request</source>
+        <translation>"ladacoin:" URI azonosító vagy fizetési kérelem megnyitása</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Paran&amp;cssor kapcsolók</translation>
     </message>
     <message>
-        <source>Show the Lamacoin Core help message to get a list with possible Lamacoin command-line options</source>
-        <translation>A Lamacoin Core súgóüzenet megjelenítése a Lamacoin lehetséges parancssori kapcsolóival.</translation>
+        <source>Show the Ladacoin Core help message to get a list with possible Ladacoin command-line options</source>
+        <translation>A Ladacoin Core súgóüzenet megjelenítése a Ladacoin lehetséges parancssori kapcsolóival.</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Lamacoin network</source>
-        <translation><numerusform>%n aktív kapcsolat a Lamacoin-hálózattal</numerusform><numerusform>%n aktív kapcsolat a Lamacoin-hálózattal</numerusform></translation>
+        <source>%n active connection(s) to Ladacoin network</source>
+        <translation><numerusform>%n aktív kapcsolat a Ladacoin-hálózattal</numerusform><numerusform>%n aktív kapcsolat a Ladacoin-hálózattal</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -784,8 +784,8 @@ Cím: %4
         <translation>A megadott "%1" cím már szerepel a címjegyzékben.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Lamacoin address.</source>
-        <translation>A megadott "%1" cím nem egy érvényes Lamacoin-cím.</translation>
+        <source>The entered address "%1" is not a valid Ladacoin address.</source>
+        <translation>A megadott "%1" cím nem egy érvényes Ladacoin-cím.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -818,8 +818,8 @@ Cím: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Core</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -830,8 +830,8 @@ Cím: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Lamacoin Core</source>
-        <translation>A Lamacoin Core-ról</translation>
+        <source>About Ladacoin Core</source>
+        <translation>A Ladacoin Core-ról</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -878,12 +878,12 @@ Cím: %4
         <translation>Üdvözlünk</translation>
     </message>
     <message>
-        <source>Welcome to Lamacoin Core.</source>
-        <translation>Üdvözlünk a Lamacoin Core-ban.</translation>
+        <source>Welcome to Ladacoin Core.</source>
+        <translation>Üdvözlünk a Ladacoin Core-ban.</translation>
     </message>
     <message>
-        <source>Lamacoin Core will download and store a copy of the Lamacoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>A Lamacoin Core le fogja tölteni és tárolni fogja a Lamacoin blokklánc egy másolatát. Legalább %1GB adat lesz tárolva ebben a mappában, és ez folyamatosan nőni fog. A tárca szintén itt lesz tárolva.</translation>
+        <source>Ladacoin Core will download and store a copy of the Ladacoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>A Ladacoin Core le fogja tölteni és tárolni fogja a Ladacoin blokklánc egy másolatát. Legalább %1GB adat lesz tárolva ebben a mappában, és ez folyamatosan nőni fog. A tárca szintén itt lesz tárolva.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -894,8 +894,8 @@ Cím: %4
         <translation>Saját adatkönyvtár használata:</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Core</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -940,11 +940,11 @@ Cím: %4
         <translation>&amp;Fő</translation>
     </message>
     <message>
-        <source>Automatically start Lamacoin after logging in to the system.</source>
-        <translation>Induljon el a Lamacoin a számítógép bekapcsolásakor</translation>
+        <source>Automatically start Ladacoin after logging in to the system.</source>
+        <translation>Induljon el a Ladacoin a számítógép bekapcsolásakor</translation>
     </message>
     <message>
-        <source>&amp;Start Lamacoin on system login</source>
+        <source>&amp;Start Ladacoin on system login</source>
         <translation>&amp;Induljon el a számítógép bekapcsolásakor</translation>
     </message>
     <message>
@@ -988,16 +988,16 @@ Cím: %4
         <translation>szakértő</translation>
     </message>
     <message>
-        <source>Automatically open the Lamacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>A Lamacoin-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
+        <source>Automatically open the Ladacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>A Ladacoin-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>&amp;UPnP port-feltérképezés</translation>
     </message>
     <message>
-        <source>Connect to the Lamacoin network through a SOCKS5 proxy.</source>
-        <translation>Csatlakozás a Lamacoin hálózatához SOCKS5 proxyn keresztül</translation>
+        <source>Connect to the Ladacoin network through a SOCKS5 proxy.</source>
+        <translation>Csatlakozás a Ladacoin hálózatához SOCKS5 proxyn keresztül</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1040,8 +1040,8 @@ Cím: %4
         <translation>Felhasználófelület nye&amp;lve:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Lamacoin.</source>
-        <translation>Itt beállíthatod a felhasználófelület nyelvét. Ez a beállítás a Lamacoin ujraindítása után lép érvénybe.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ladacoin.</source>
+        <translation>Itt beállíthatod a felhasználófelület nyelvét. Ez a beállítás a Ladacoin ujraindítása után lép érvénybe.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1087,8 +1087,8 @@ Cím: %4
         <translation>Űrlap</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lamacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Lamacoin hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ladacoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Ladacoin hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1150,8 +1150,8 @@ Cím: %4
         <translation>URI kezelés</translation>
     </message>
     <message>
-        <source>Cannot start lamacoin: click-to-pay handler</source>
-        <translation>A lamacoint nem lehet elindítani: click-to-pay handler</translation>
+        <source>Cannot start ladacoin: click-to-pay handler</source>
+        <translation>A ladacoint nem lehet elindítani: click-to-pay handler</translation>
     </message>
     </context>
 <context>
@@ -1176,8 +1176,8 @@ Cím: %4
         <translation>Összeg</translation>
     </message>
     <message>
-        <source>Enter a Lamacoin address (e.g. %1)</source>
-        <translation>Ad meg egy Lamacoin címet (pl: %1)</translation>
+        <source>Enter a Ladacoin address (e.g. %1)</source>
+        <translation>Ad meg egy Ladacoin címet (pl: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1390,8 +1390,8 @@ Cím: %4
         <translation>Konzol törlése</translation>
     </message>
     <message>
-        <source>Welcome to the Lamacoin RPC console.</source>
-        <translation>Üdv a Lamacoin RPC konzoljában!</translation>
+        <source>Welcome to the Ladacoin RPC console.</source>
+        <translation>Üdv a Ladacoin RPC konzoljában!</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1731,7 +1731,7 @@ Cím: %4
     </message>
     <message>
         <source>The amount exceeds your balance.</source>
-        <translation>Nincs ennyi lamacoin az egyenlegeden.</translation>
+        <translation>Nincs ennyi ladacoin az egyenlegeden.</translation>
     </message>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
@@ -1742,8 +1742,8 @@ Cím: %4
         <translation>Többször szerepel ugyanaz a cím. Egy küldési műveletben egy címre csak egyszer lehet küldeni.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Lamacoin address</source>
-        <translation>Figyelmeztetés: Érvénytelen Lamacoin cím</translation>
+        <source>Warning: Invalid Ladacoin address</source>
+        <translation>Figyelmeztetés: Érvénytelen Ladacoin cím</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1809,8 +1809,8 @@ Cím: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Lamacoin Core is shutting down...</source>
-        <translation>A Lamacoin Core leáll...</translation>
+        <source>Ladacoin Core is shutting down...</source>
+        <translation>A Ladacoin Core leáll...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1860,7 +1860,7 @@ Cím: %4
         <translation>A jelenleg kiválasztott aláírás másolása a rendszer-vágólapra</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lamacoin address</source>
+        <source>Sign the message to prove you own this Ladacoin address</source>
         <translation>Üzenet </translation>
     </message>
     <message>
@@ -1919,8 +1919,8 @@ Cím: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Core</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Core</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
@@ -2564,7 +2564,7 @@ Cím: %4
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Nincs elég lamacoinod.</translation>
+        <translation>Nincs elég ladacoinod.</translation>
     </message>
     <message>
         <source>Loading block index...</source>

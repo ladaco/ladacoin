@@ -66,12 +66,12 @@
         <translation>Қабул қилинадиган манзиллар</translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Улар тўловларни жўнатиш учун сизнинг Lamacoin манзилларингиз. Доимо тангаларни жўнатишдан олдин сумма ва қабул қилувчи манзилни текшириб кўринг. </translation>
+        <source>These are your Ladacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Улар тўловларни жўнатиш учун сизнинг Ladacoin манзилларингиз. Доимо тангаларни жўнатишдан олдин сумма ва қабул қилувчи манзилни текшириб кўринг. </translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Улар тўловларни қабул қилиш учун сизнинг Lamacoin манзилларингиз. Ҳар бир ўтказма учун янги қабул қилувчи манзилдан фойдаланиш тавсия қилинади.</translation>
+        <source>These are your Ladacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Улар тўловларни қабул қилиш учун сизнинг Ladacoin манзилларингиз. Ҳар бир ўтказма учун янги қабул қилувчи манзилдан фойдаланиш тавсия қилинади.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -188,8 +188,8 @@
         <translation>Ҳамёнга янги махфий сўз киритинг.&lt;br/&gt;Илтимос, &lt;b&gt;ўнта ёки тасодифий белгили&lt;/b&gt; махфий сўздан фойдаланинг ёки &lt;b&gt;саккизта ёки кўпроқ сўзлар&lt;/b&gt;дан фойдаланинг.</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
-        <translation>Lamacoin кодлаш жараёнини тугатиш учун ёпилади. Ёдда сақланг: ҳамёнингизни кодлаш компьютерингизни зарарлаган зарарли дастурлар томонидан lamacoin тангаларингизни ўғирланишидан тўлиқ ҳимоя қила олмайди.</translation>
+        <source>Ladacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ladacoins from being stolen by malware infecting your computer.</source>
+        <translation>Ladacoin кодлаш жараёнини тугатиш учун ёпилади. Ёдда сақланг: ҳамёнингизни кодлаш компьютерингизни зарарлаган зарарли дастурлар томонидан ladacoin тангаларингизни ўғирланишидан тўлиқ ҳимоя қила олмайди.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -295,8 +295,8 @@
         <translation>Интернет манзилни очиш</translation>
     </message>
     <message>
-        <source>Lamacoin Core client</source>
-        <translation>Lamacoin асос мижози</translation>
+        <source>Ladacoin Core client</source>
+        <translation>Ladacoin асос мижози</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -307,12 +307,12 @@
         <translation>Дискдаги блоклар қайта индексланмоқда...</translation>
     </message>
     <message>
-        <source>Send coins to a Lamacoin address</source>
-        <translation>Тангаларни Lamacoin манзилига жўнатиш</translation>
+        <source>Send coins to a Ladacoin address</source>
+        <translation>Тангаларни Ladacoin манзилига жўнатиш</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lamacoin</source>
-        <translation>Lamacoin учун мослаш танловларини ўзгартириш</translation>
+        <source>Modify configuration options for Ladacoin</source>
+        <translation>Ladacoin учун мослаш танловларини ўзгартириш</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -335,8 +335,8 @@
         <translation>Хабарни &amp;тасдиқлаш...</translation>
     </message>
     <message>
-        <source>Lamacoin</source>
-        <translation>Lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>Ladacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -351,8 +351,8 @@
         <translation>&amp;Қабул қилиш</translation>
     </message>
     <message>
-        <source>Show information about Lamacoin Core</source>
-        <translation>Lamacoin Core ҳақидаги маълумотларни кўрсатиш</translation>
+        <source>Show information about Ladacoin Core</source>
+        <translation>Ladacoin Core ҳақидаги маълумотларни кўрсатиш</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -367,12 +367,12 @@
         <translation>Ҳамёнингизга тегишли махфий калитларни кодлаш</translation>
     </message>
     <message>
-        <source>Sign messages with your Lamacoin addresses to prove you own them</source>
-        <translation>Lamacoin манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
+        <source>Sign messages with your Ladacoin addresses to prove you own them</source>
+        <translation>Ladacoin манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Lamacoin addresses</source>
-        <translation>Хабарларни махсус Lamacoin манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
+        <source>Verify messages to ensure they were signed with specified Ladacoin addresses</source>
+        <translation>Хабарларни махсус Ladacoin манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -391,16 +391,16 @@
         <translation>Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Core</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and lamacoin: URIs)</source>
-        <translation>Тўловлар (QR кодлари ва lamacoin ёрдамида яратишлар: URI’лар) сўраш</translation>
+        <source>Request payments (generates QR codes and ladacoin: URIs)</source>
+        <translation>Тўловлар (QR кодлари ва ladacoin ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
-        <source>&amp;About Lamacoin Core</source>
-        <translation>Lamacoin Core &amp;ҳақида</translation>
+        <source>&amp;About Ladacoin Core</source>
+        <translation>Ladacoin Core &amp;ҳақида</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -411,20 +411,20 @@
         <translation>Фойдаланилган қабул қилинган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
     </message>
     <message>
-        <source>Open a lamacoin: URI or payment request</source>
-        <translation>Lamacoin’ни очиш: URI ёки тўлов сўрови</translation>
+        <source>Open a ladacoin: URI or payment request</source>
+        <translation>Ladacoin’ни очиш: URI ёки тўлов сўрови</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Буйруқлар сатри мосламалари</translation>
     </message>
     <message>
-        <source>Show the Lamacoin Core help message to get a list with possible Lamacoin command-line options</source>
-        <translation>Мавжуд Lamacoin буйруқлар матни мосламалари билан  Lamacoin Core ёрдам хабарларини олиш рўйхатини кўрсатиш</translation>
+        <source>Show the Ladacoin Core help message to get a list with possible Ladacoin command-line options</source>
+        <translation>Мавжуд Ladacoin буйруқлар матни мосламалари билан  Ladacoin Core ёрдам хабарларини олиш рўйхатини кўрсатиш</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Lamacoin network</source>
-        <translation><numerusform>%n та Lamacoin тармоғига фаол уланиш мавжуд</numerusform></translation>
+        <source>%n active connection(s) to Ladacoin network</source>
+        <translation><numerusform>%n та Ladacoin тармоғига фаол уланиш мавжуд</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -772,8 +772,8 @@ Address: %4
         <translation>Киритилган "%1" манзили аллақачон манзил китобида.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Lamacoin address.</source>
-        <translation>Киритилган "%1" манзили тўғри Lamacoin манзили эмас.</translation>
+        <source>The entered address "%1" is not a valid Ladacoin address.</source>
+        <translation>Киритилган "%1" манзили тўғри Ladacoin манзили эмас.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -810,8 +810,8 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Core</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -822,8 +822,8 @@ Address: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Lamacoin Core</source>
-        <translation>Lamacoin Core ҳақида</translation>
+        <source>About Ladacoin Core</source>
+        <translation>Ladacoin Core ҳақида</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -857,16 +857,16 @@ Address: %4
         <translation>Хуш келибсиз</translation>
     </message>
     <message>
-        <source>Welcome to Lamacoin Core.</source>
-        <translation>"Lamacoin Core"га хуш келибсиз.</translation>
+        <source>Welcome to Ladacoin Core.</source>
+        <translation>"Ladacoin Core"га хуш келибсиз.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Lamacoin Core will store its data.</source>
-        <translation>Биринчи марта дастур ишга тушгани каби сиз Lamacoin Core маълумотларини жойлаштирадиган жойни танлашингиз мумкин.</translation>
+        <source>As this is the first time the program is launched, you can choose where Ladacoin Core will store its data.</source>
+        <translation>Биринчи марта дастур ишга тушгани каби сиз Ladacoin Core маълумотларини жойлаштирадиган жойни танлашингиз мумкин.</translation>
     </message>
     <message>
-        <source>Lamacoin Core will download and store a copy of the Lamacoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Lamacoin Core юклаб олинади ва Lamacoin блок занжири нусхаси жойлаштирилади. Камида %1GB  маълумот ушбу директорияга жойлаштирилади ва вақт давомида ўсиб боради. Ҳамён ҳам ушбу директорияда жойлашади.</translation>
+        <source>Ladacoin Core will download and store a copy of the Ladacoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Ladacoin Core юклаб олинади ва Ladacoin блок занжири нусхаси жойлаштирилади. Камида %1GB  маълумот ушбу директорияга жойлаштирилади ва вақт давомида ўсиб боради. Ҳамён ҳам ушбу директорияда жойлашади.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -877,8 +877,8 @@ Address: %4
         <translation>Бошқа маълумотлар директориясида фойдаланинг:</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Core</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -923,12 +923,12 @@ Address: %4
         <translation>&amp;Асосий</translation>
     </message>
     <message>
-        <source>Automatically start Lamacoin after logging in to the system.</source>
-        <translation>Тизимга киргандан сўнг Lamacoin дастури автоматик ишга туширилсин.</translation>
+        <source>Automatically start Ladacoin after logging in to the system.</source>
+        <translation>Тизимга киргандан сўнг Ladacoin дастури автоматик ишга туширилсин.</translation>
     </message>
     <message>
-        <source>&amp;Start Lamacoin on system login</source>
-        <translation>Тизимга кирганда Lamacoin &amp;ишга туширилсин</translation>
+        <source>&amp;Start Ladacoin on system login</source>
+        <translation>Тизимга кирганда Ladacoin &amp;ишга туширилсин</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -999,8 +999,8 @@ Address: %4
         <translation>Фойдаланувчи интерфейси &amp;тили:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Lamacoin.</source>
-        <translation>Фойдаланувчи тили интерфесини шу ерда ўрнатиш мумкин. TУшбу созлама Lamacoin қайта ишга туширилганда кучга киради.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ladacoin.</source>
+        <translation>Фойдаланувчи тили интерфесини шу ерда ўрнатиш мумкин. TУшбу созлама Ladacoin қайта ишга туширилганда кучга киради.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1050,8 +1050,8 @@ Address: %4
         <translation>Шакл</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lamacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Lamacoin тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ladacoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Ladacoin тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1163,8 +1163,8 @@ Address: %4
         <translation>Миқдори</translation>
     </message>
     <message>
-        <source>Enter a Lamacoin address (e.g. %1)</source>
-        <translation>Lamacoin манзилини киритинг (масалан.  %1)</translation>
+        <source>Enter a Ladacoin address (e.g. %1)</source>
+        <translation>Ladacoin манзилини киритинг (масалан.  %1)</translation>
     </message>
     <message>
         <source>%1 m</source>
@@ -1361,16 +1361,16 @@ Address: %4
         <translation>Тузатиш журнали файли</translation>
     </message>
     <message>
-        <source>Open the Lamacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Жорий махлумотлар директориясидан Lamacoin тузатиш журнали файлини очинг. Бу катта журнал файллари учун бир неча сонияни олиши мумкин.</translation>
+        <source>Open the Ladacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Жорий махлумотлар директориясидан Ladacoin тузатиш журнали файлини очинг. Бу катта журнал файллари учун бир неча сонияни олиши мумкин.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Терминални тозалаш</translation>
     </message>
     <message>
-        <source>Welcome to the Lamacoin RPC console.</source>
-        <translation>Lamacoin RPC терминлга хуш келибсиз.</translation>
+        <source>Welcome to the Ladacoin RPC console.</source>
+        <translation>Ladacoin RPC терминлга хуш келибсиз.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1729,8 +1729,8 @@ Address: %4
         <translation>Тўлов миқдори 0. дан катта бўлиши керак. </translation>
     </message>
     <message>
-        <source>Warning: Invalid Lamacoin address</source>
-        <translation>Диққат: Нотўғр Lamacoin манзили</translation>
+        <source>Warning: Invalid Ladacoin address</source>
+        <translation>Диққат: Нотўғр Ladacoin манзили</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1837,8 +1837,8 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Core</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Core</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>

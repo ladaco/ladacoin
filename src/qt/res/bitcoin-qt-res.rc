@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Lamacoin"
-            VALUE "FileDescription",    "Lamacoin Core (OSS GUI client for Lamacoin)"
+            VALUE "CompanyName",        "Ladacoin"
+            VALUE "FileDescription",    "Ladacoin Core (OSS GUI client for Ladacoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "lamacoin-qt"
+            VALUE "InternalName",       "ladacoin-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "lamacoin-qt.exe"
-            VALUE "ProductName",        "Lamacoin Core"
+            VALUE "OriginalFilename",   "ladacoin-qt.exe"
+            VALUE "ProductName",        "Ladacoin Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

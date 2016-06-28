@@ -143,8 +143,8 @@
         <translation>&amp;Opsies</translation>
     </message>
     <message>
-        <source>Lamacoin</source>
-        <translation>Lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>Ladacoin</translation>
     </message>
     <message>
         <source>Wallet</source>

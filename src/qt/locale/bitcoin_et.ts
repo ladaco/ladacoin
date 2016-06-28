@@ -46,8 +46,8 @@
         <translation>V&amp;ali</translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Lamacoini aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
+        <source>These are your Ladacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu Ladacoini aadressid maksete saatmiseks. Müntide saatmisel kontrolli alati summat ning saaja aadressi.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -152,8 +152,8 @@
         <translation>Rahakott krüpteeritud</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
-        <translation>Lamacoin sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista lamacoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
+        <source>Ladacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ladacoins from being stolen by malware infecting your computer.</source>
+        <translation>Ladacoin sulgub krüpteeringu lõpetamiseks. Pea meeles, et rahakoti krüpteerimine ei välista ladacoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -255,12 +255,12 @@
         <translation>Kettal olevate blokkide re-indekseerimine...</translation>
     </message>
     <message>
-        <source>Send coins to a Lamacoin address</source>
-        <translation>Saada münte Lamacoini aadressile</translation>
+        <source>Send coins to a Ladacoin address</source>
+        <translation>Saada münte Ladacoini aadressile</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lamacoin</source>
-        <translation>Muuda Lamacoini seadeid</translation>
+        <source>Modify configuration options for Ladacoin</source>
+        <translation>Muuda Ladacoini seadeid</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -283,8 +283,8 @@
         <translation>&amp;Kontrolli sõnumit...</translation>
     </message>
     <message>
-        <source>Lamacoin</source>
-        <translation>Lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>Ladacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -311,12 +311,12 @@
         <translation>Krüpteeri oma rahakoti privaatvõtmed</translation>
     </message>
     <message>
-        <source>Sign messages with your Lamacoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Lamacoini aadressiga</translation>
+        <source>Sign messages with your Ladacoin addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Ladacoini aadressiga</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Lamacoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Lamacoini aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified Ladacoin addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Ladacoini aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -335,12 +335,12 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoini tuumik</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoini tuumik</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Lamacoin network</source>
-        <translation><numerusform>%n aktiivne ühendus Lamacoini võrku</numerusform><numerusform>%n aktiivset ühendust Lamacoini võrku</numerusform></translation>
+        <source>%n active connection(s) to Ladacoin network</source>
+        <translation><numerusform>%n aktiivne ühendus Ladacoini võrku</numerusform><numerusform>%n aktiivset ühendust Ladacoini võrku</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -551,8 +551,8 @@ Aadress: %4⏎</translation>
         <translation>Selline aadress on juba olemas: "%1"</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Lamacoin address.</source>
-        <translation>Sisestatud aadress "%1" ei ole Lamacoinis kehtiv.</translation>
+        <source>The entered address "%1" is not a valid Ladacoin address.</source>
+        <translation>Sisestatud aadress "%1" ei ole Ladacoinis kehtiv.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -573,16 +573,16 @@ Aadress: %4⏎</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoini tuumik</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoini tuumik</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versioon</translation>
     </message>
     <message>
-        <source>About Lamacoin Core</source>
-        <translation>Kirjeldus Lamacoini Tuumast</translation>
+        <source>About Ladacoin Core</source>
+        <translation>Kirjeldus Ladacoini Tuumast</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -620,8 +620,8 @@ Aadress: %4⏎</translation>
         <translation>Teretulemast</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoini tuumik</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoini tuumik</translation>
     </message>
     <message>
         <source>Error</source>
@@ -646,12 +646,12 @@ Aadress: %4⏎</translation>
         <translation>Valikud</translation>
     </message>
     <message>
-        <source>Automatically start Lamacoin after logging in to the system.</source>
-        <translation>Käivita Lamacoin süsteemi logimisel.</translation>
+        <source>Automatically start Ladacoin after logging in to the system.</source>
+        <translation>Käivita Ladacoin süsteemi logimisel.</translation>
     </message>
     <message>
-        <source>&amp;Start Lamacoin on system login</source>
-        <translation>&amp;Start Lamacoin sisselogimisel</translation>
+        <source>&amp;Start Ladacoin on system login</source>
+        <translation>&amp;Start Ladacoin sisselogimisel</translation>
     </message>
     <message>
         <source>MB</source>
@@ -678,8 +678,8 @@ Aadress: %4⏎</translation>
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically open the Lamacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Lamacoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the Ladacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ladacoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -726,8 +726,8 @@ Aadress: %4⏎</translation>
         <translation>Kasutajaliidese &amp;keel:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Lamacoin.</source>
-        <translation>Kasutajaliidese keele valimise koht. Valik rakendub Lamacoini käivitamisel.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ladacoin.</source>
+        <translation>Kasutajaliidese keele valimise koht. Valik rakendub Ladacoini käivitamisel.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -765,8 +765,8 @@ Aadress: %4⏎</translation>
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lamacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Lamacoin võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ladacoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Ladacoin võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -792,8 +792,8 @@ Aadress: %4⏎</translation>
         <translation>URI käsitsemine</translation>
     </message>
     <message>
-        <source>Cannot start lamacoin: click-to-pay handler</source>
-        <translation>Lamacoin ei käivitu: vajuta-maksa toiming</translation>
+        <source>Cannot start ladacoin: click-to-pay handler</source>
+        <translation>Ladacoin ei käivitu: vajuta-maksa toiming</translation>
     </message>
     </context>
 <context>
@@ -908,16 +908,16 @@ Aadress: %4⏎</translation>
         <translation>Debugimise logifail</translation>
     </message>
     <message>
-        <source>Open the Lamacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ava Lamacoini logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
+        <source>Open the Ladacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ava Ladacoini logifail praegusest andmekaustast. Toiminguks võib kuluda kuni mõni sekund.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Puhasta konsool</translation>
     </message>
     <message>
-        <source>Welcome to the Lamacoin RPC console.</source>
-        <translation>Teretulemast Lamacoini RPC konsooli.</translation>
+        <source>Welcome to the Ladacoin RPC console.</source>
+        <translation>Teretulemast Ladacoini RPC konsooli.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1213,8 +1213,8 @@ Aadress: %4⏎</translation>
         <translation>Kopeeri praegune signatuur vahemällu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lamacoin address</source>
-        <translation>Allkirjasta sõnum Lamacoini aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this Ladacoin address</source>
+        <translation>Allkirjasta sõnum Ladacoini aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1237,8 +1237,8 @@ Aadress: %4⏎</translation>
         <translation>Kinnitamiseks sisesta allkirjastamise aadress, sõnum (kindlasti kopeeri täpselt ka reavahetused, tühikud, tabulaatorid jms) ning allolev signatuur.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Lamacoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Lamacoini aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified Ladacoin address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Ladacoini aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1304,8 +1304,8 @@ Aadress: %4⏎</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoini tuumik</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoini tuumik</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>

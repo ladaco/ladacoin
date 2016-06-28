@@ -140,8 +140,8 @@
         <translation>Billetera codificada</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
-        <translation>Lamacoin se cerrará para finalizar el proceso de encriptación. Recuerde que encriptar su billetera no protegera completatamente sus lamacoins de ser robados por malware que infecte su computador</translation>
+        <source>Ladacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ladacoins from being stolen by malware infecting your computer.</source>
+        <translation>Ladacoin se cerrará para finalizar el proceso de encriptación. Recuerde que encriptar su billetera no protegera completatamente sus ladacoins de ser robados por malware que infecte su computador</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -235,20 +235,20 @@
         <translation>Abrir y url...</translation>
     </message>
     <message>
-        <source>Lamacoin Core client</source>
-        <translation>cliente lamacoin core</translation>
+        <source>Ladacoin Core client</source>
+        <translation>cliente ladacoin core</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Cargando el index de bloques...</translation>
     </message>
     <message>
-        <source>Send coins to a Lamacoin address</source>
-        <translation>Enviar monedas a una dirección lamacoin</translation>
+        <source>Send coins to a Ladacoin address</source>
+        <translation>Enviar monedas a una dirección ladacoin</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lamacoin</source>
-        <translation>Modifica las opciones de configuración de lamacoin</translation>
+        <source>Modify configuration options for Ladacoin</source>
+        <translation>Modifica las opciones de configuración de ladacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -267,8 +267,8 @@
         <translation>Abre consola de depuración y diagnóstico</translation>
     </message>
     <message>
-        <source>Lamacoin</source>
-        <translation>Lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>Ladacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -287,7 +287,7 @@
         <translation>&amp;Mostrar/Ocultar</translation>
     </message>
     <message>
-        <source>Sign messages with your Lamacoin addresses to prove you own them</source>
+        <source>Sign messages with your Ladacoin addresses to prove you own them</source>
         <translation>Firmar un mensaje para provar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -307,12 +307,12 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>lamacoin core</translation>
+        <source>Ladacoin Core</source>
+        <translation>ladacoin core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Lamacoin network</source>
-        <translation><numerusform>%n conexión activa hacia la red Lamacoin</numerusform><numerusform>%n conexiones activas hacia la red Lamacoin</numerusform></translation>
+        <source>%n active connection(s) to Ladacoin network</source>
+        <translation><numerusform>%n conexión activa hacia la red Ladacoin</numerusform><numerusform>%n conexiones activas hacia la red Ladacoin</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -467,8 +467,8 @@ Dirección: %4</translation>
         <translation>La dirección introducida "%1" ya esta guardada en la libreta de direcciones.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Lamacoin address.</source>
-        <translation>La dirección introducida "%1" no es una dirección Lamacoin valida.</translation>
+        <source>The entered address "%1" is not a valid Ladacoin address.</source>
+        <translation>La dirección introducida "%1" no es una dirección Ladacoin valida.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -489,8 +489,8 @@ Dirección: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>lamacoin core</translation>
+        <source>Ladacoin Core</source>
+        <translation>ladacoin core</translation>
     </message>
     <message>
         <source>version</source>
@@ -517,8 +517,8 @@ Dirección: %4</translation>
         <translation>bienvenido</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>lamacoin core</translation>
+        <source>Ladacoin Core</source>
+        <translation>ladacoin core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -543,12 +543,12 @@ Dirección: %4</translation>
         <translation>&amp;Principal</translation>
     </message>
     <message>
-        <source>Automatically start Lamacoin after logging in to the system.</source>
-        <translation>Inicia Lamacoin automáticamente despues de encender el computador</translation>
+        <source>Automatically start Ladacoin after logging in to the system.</source>
+        <translation>Inicia Ladacoin automáticamente despues de encender el computador</translation>
     </message>
     <message>
-        <source>&amp;Start Lamacoin on system login</source>
-        <translation>&amp;Inicia Lamacoin al iniciar el sistema</translation>
+        <source>&amp;Start Ladacoin on system login</source>
+        <translation>&amp;Inicia Ladacoin al iniciar el sistema</translation>
     </message>
     <message>
         <source>Reset all client options to default.</source>
@@ -563,8 +563,8 @@ Dirección: %4</translation>
         <translation>experto</translation>
     </message>
     <message>
-        <source>Automatically open the Lamacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abre automáticamente el puerto del cliente Lamacoin en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
+        <source>Automatically open the Ladacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abre automáticamente el puerto del cliente Ladacoin en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -952,7 +952,7 @@ Dirección: %4</translation>
         <translation>Firma</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lamacoin address</source>
+        <source>Sign the message to prove you own this Ladacoin address</source>
         <translation>Firmar un mensjage para probar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -977,7 +977,7 @@ Dirección: %4</translation>
     </message>
     <message>
         <source>Please check the address and try again.</source>
-        <translation>Por favor, revise la dirección Lamacoin e inténtelo denuevo</translation>
+        <translation>Por favor, revise la dirección Ladacoin e inténtelo denuevo</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -999,8 +999,8 @@ Dirección: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>lamacoin core</translation>
+        <source>Ladacoin Core</source>
+        <translation>ladacoin core</translation>
     </message>
     <message>
         <source>[testnet]</source>

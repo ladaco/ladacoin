@@ -66,12 +66,12 @@
         <translation>Ontvang adressen</translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Lamacoinadressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvang adres voordat u uw lamacoins verzendt.</translation>
+        <source>These are your Ladacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw Ladacoinadressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvang adres voordat u uw ladacoins verzendt.</translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw Lamacoin-adressen waarmee u kunt betalen. We raden u aan om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your Ladacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw Ladacoin-adressen waarmee u kunt betalen. We raden u aan om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -188,8 +188,8 @@
         <translation>Voer een nieuw wachtwoord in voor uw portomonee.&lt;br/&gt;Gebruik een wachtwoord van &lt;b&gt;tien of meer willekeurige karakters&lt;/b&gt;, of &lt;b&gt;acht of meer woorden&lt;/b&gt;.</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
-        <translation>Lamacoin zal nu afsluiten om het versleutelingsproces te voltooien. Onthoudt dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw lamacoins stelen.</translation>
+        <source>Ladacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ladacoins from being stolen by malware infecting your computer.</source>
+        <translation>Ladacoin zal nu afsluiten om het versleutelingsproces te voltooien. Onthoudt dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw ladacoins stelen.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -295,8 +295,8 @@
         <translation>Open &amp;URI...</translation>
     </message>
     <message>
-        <source>Lamacoin Core client</source>
-        <translation>Lamacoin Kern applicatie</translation>
+        <source>Ladacoin Core client</source>
+        <translation>Ladacoin Kern applicatie</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -307,12 +307,12 @@
         <translation>Bezig met herindexeren van blokken op harde schijf...</translation>
     </message>
     <message>
-        <source>Send coins to a Lamacoin address</source>
-        <translation>Verstuur munten naar een Lamacoinadres</translation>
+        <source>Send coins to a Ladacoin address</source>
+        <translation>Verstuur munten naar een Ladacoinadres</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lamacoin</source>
-        <translation>Wijzig instellingen van Lamacoin</translation>
+        <source>Modify configuration options for Ladacoin</source>
+        <translation>Wijzig instellingen van Ladacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -335,8 +335,8 @@
         <translation>&amp;Verifiëer bericht...</translation>
     </message>
     <message>
-        <source>Lamacoin</source>
-        <translation>Lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>Ladacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -351,8 +351,8 @@
         <translation>&amp;Ontvangen</translation>
     </message>
     <message>
-        <source>Show information about Lamacoin Core</source>
-        <translation>Toon informatie over lamacoin kern</translation>
+        <source>Show information about Ladacoin Core</source>
+        <translation>Toon informatie over ladacoin kern</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -367,12 +367,12 @@
         <translation>Versleutel de geheime sleutels die bij uw portemonnee horen</translation>
     </message>
     <message>
-        <source>Sign messages with your Lamacoin addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw Lamacoinadressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your Ladacoin addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw Ladacoinadressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Lamacoin addresses</source>
-        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Lamacoinadressen</translation>
+        <source>Verify messages to ensure they were signed with specified Ladacoin addresses</source>
+        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Ladacoinadressen</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -391,16 +391,16 @@
         <translation>Tab-werkbalk</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Kern</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Kern</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and lamacoin: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR codes en lamacoin: URIs)</translation>
+        <source>Request payments (generates QR codes and ladacoin: URIs)</source>
+        <translation>Vraag betaling aan (genereert QR codes en ladacoin: URIs)</translation>
     </message>
     <message>
-        <source>&amp;About Lamacoin Core</source>
-        <translation>&amp;Over Lamacoin Core</translation>
+        <source>&amp;About Ladacoin Core</source>
+        <translation>&amp;Over Ladacoin Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -411,20 +411,20 @@
         <translation>Toon de lijst met gebruikte ontvangst adressen en labels</translation>
     </message>
     <message>
-        <source>Open a lamacoin: URI or payment request</source>
-        <translation>Open een lamacoin: URI of betalingsverzoek</translation>
+        <source>Open a ladacoin: URI or payment request</source>
+        <translation>Open een ladacoin: URI of betalingsverzoek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Commandoregel-opties</translation>
     </message>
     <message>
-        <source>Show the Lamacoin Core help message to get a list with possible Lamacoin command-line options</source>
-        <translation>Toon het Lamacoin Core hulpbericht om een lijst te krijgen met mogelijke Lamacoin commandoregelopties</translation>
+        <source>Show the Ladacoin Core help message to get a list with possible Ladacoin command-line options</source>
+        <translation>Toon het Ladacoin Core hulpbericht om een lijst te krijgen met mogelijke Ladacoin commandoregelopties</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Lamacoin network</source>
-        <translation><numerusform>%n actieve connectie naar Lamacoin netwerk</numerusform><numerusform>%n actieve connecties naar Lamacoin netwerk</numerusform></translation>
+        <source>%n active connection(s) to Ladacoin network</source>
+        <translation><numerusform>%n actieve connectie naar Ladacoin netwerk</numerusform><numerusform>%n actieve connecties naar Ladacoin netwerk</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -788,8 +788,8 @@ Adres: %4
         <translation>Het opgegeven adres "%1" bestaat al in uw adresboek.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Lamacoin address.</source>
-        <translation>Het opgegeven adres "%1" is een ongeldig Lamacoinadres</translation>
+        <source>The entered address "%1" is not a valid Ladacoin address.</source>
+        <translation>Het opgegeven adres "%1" is een ongeldig Ladacoinadres</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -826,8 +826,8 @@ Adres: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Kern</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Kern</translation>
     </message>
     <message>
         <source>version</source>
@@ -838,8 +838,8 @@ Adres: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Lamacoin Core</source>
-        <translation>Over Lamacoin Core</translation>
+        <source>About Ladacoin Core</source>
+        <translation>Over Ladacoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -885,16 +885,16 @@ Adres: %4
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to Lamacoin Core.</source>
-        <translation>Welkom bij Lamacoin Core</translation>
+        <source>Welcome to Ladacoin Core.</source>
+        <translation>Welkom bij Ladacoin Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Lamacoin Core will store its data.</source>
-        <translation>Omdat dit de eerste keer is dat het programma gestart is, kunt u nu kiezen waar Lamacoin Core de data moet opslaan.</translation>
+        <source>As this is the first time the program is launched, you can choose where Ladacoin Core will store its data.</source>
+        <translation>Omdat dit de eerste keer is dat het programma gestart is, kunt u nu kiezen waar Ladacoin Core de data moet opslaan.</translation>
     </message>
     <message>
-        <source>Lamacoin Core will download and store a copy of the Lamacoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Lamacoin Core zal een kopie van de Lamacoin blokketen downloaden en opslaan. Tenminste %1 GB aan data wordt opgeslagen in deze map en het zal groeien in de tijd. De portemonnee wordt ook in deze map opgeslagen.</translation>
+        <source>Ladacoin Core will download and store a copy of the Ladacoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Ladacoin Core zal een kopie van de Ladacoin blokketen downloaden en opslaan. Tenminste %1 GB aan data wordt opgeslagen in deze map en het zal groeien in de tijd. De portemonnee wordt ook in deze map opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -905,8 +905,8 @@ Adres: %4
         <translation>Gebruik een persoonlijke gegevensmap:</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Kern</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Kern</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -959,12 +959,12 @@ Adres: %4
         <translation>&amp;Algemeen</translation>
     </message>
     <message>
-        <source>Automatically start Lamacoin after logging in to the system.</source>
-        <translation>Start Lamacoin automatisch na inloggen in het systeem</translation>
+        <source>Automatically start Ladacoin after logging in to the system.</source>
+        <translation>Start Ladacoin automatisch na inloggen in het systeem</translation>
     </message>
     <message>
-        <source>&amp;Start Lamacoin on system login</source>
-        <translation>Start &amp;Lamacoin bij het inloggen in het systeem</translation>
+        <source>&amp;Start Ladacoin on system login</source>
+        <translation>Start &amp;Ladacoin bij het inloggen in het systeem</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1039,16 +1039,16 @@ Adres: %4
         <translation>&amp;Spendeer onbevestigd wisselgeld</translation>
     </message>
     <message>
-        <source>Automatically open the Lamacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de Lamacoin-poort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
+        <source>Automatically open the Ladacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de Ladacoin-poort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Portmapping via &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Lamacoin network through a SOCKS5 proxy.</source>
-        <translation>Verbind met het Lamacoin netwerk via een SOCKS5 proxy.</translation>
+        <source>Connect to the Ladacoin network through a SOCKS5 proxy.</source>
+        <translation>Verbind met het Ladacoin netwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1095,8 +1095,8 @@ Adres: %4
         <translation>Taal &amp;Gebruikersinterface:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Lamacoin.</source>
-        <translation>De taal van de gebruikersinterface kan hier ingesteld worden. Deze instelling zal pas van kracht worden nadat Lamacoin herstart wordt.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ladacoin.</source>
+        <translation>De taal van de gebruikersinterface kan hier ingesteld worden. Deze instelling zal pas van kracht worden nadat Ladacoin herstart wordt.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1154,8 +1154,8 @@ Adres: %4
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lamacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automaticsh met het Lamacoinnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ladacoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automaticsh met het Ladacoinnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1261,16 +1261,16 @@ Adres: %4
         <translation>Fout bij betalingsverzoek</translation>
     </message>
     <message>
-        <source>Cannot start lamacoin: click-to-pay handler</source>
-        <translation>Kan lamacoin niet starten: click-to-pay handler</translation>
+        <source>Cannot start ladacoin: click-to-pay handler</source>
+        <translation>Kan ladacoin niet starten: click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>URL om betalingsverzoek te verkrijgen is ongeldig: %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Lamacoin address or malformed URI parameters.</source>
-        <translation>URI kan niet verwerkt worden! Dit kan het gevolg zijn van een ongeldig Lamacoin adres of misvormde URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Ladacoin address or malformed URI parameters.</source>
+        <translation>URI kan niet verwerkt worden! Dit kan het gevolg zijn van een ongeldig Ladacoin adres of misvormde URI parameters.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1339,8 +1339,8 @@ Adres: %4
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>Enter a Lamacoin address (e.g. %1)</source>
-        <translation>Voer een Lamacoin-adres in (bijv. %1)</translation>
+        <source>Enter a Ladacoin address (e.g. %1)</source>
+        <translation>Voer een Ladacoin-adres in (bijv. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1565,16 +1565,16 @@ Adres: %4
         <translation>Debug-logbestand</translation>
     </message>
     <message>
-        <source>Open the Lamacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het Lamacoindebug-logbestand van de huidige datamap. Dit kan een aantal seconden duren voor grote logbestanden.</translation>
+        <source>Open the Ladacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het Ladacoindebug-logbestand van de huidige datamap. Dit kan een aantal seconden duren voor grote logbestanden.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Maak console leeg</translation>
     </message>
     <message>
-        <source>Welcome to the Lamacoin RPC console.</source>
-        <translation>Welkom bij de Lamacoin RPC-console.</translation>
+        <source>Welcome to the Ladacoin RPC console.</source>
+        <translation>Welkom bij de Ladacoin RPC-console.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1648,8 +1648,8 @@ Adres: %4
         <translation>H&amp;ergebruik en bestaand ontvangstadres (niet aanbevolen)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Lamacoin network.</source>
-        <translation>Een optioneel bericht om bij te voegen aan het betalingsverzoek, dewelke zal getoond worden wanneer het verzoek is geopend. Opermerking: Het bericht zal niet worden verzonden met de betaling over het Lamacoin netwerk.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Ladacoin network.</source>
+        <translation>Een optioneel bericht om bij te voegen aan het betalingsverzoek, dewelke zal getoond worden wanneer het verzoek is geopend. Opermerking: Het bericht zal niet worden verzonden met de betaling over het Ladacoin netwerk.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1885,8 +1885,8 @@ Adres: %4
         <translation>totaal ten minste</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for lamacoin transactions than the network can process.</source>
-        <translation>De minimale toeslag betalen is prima mits het transactievolume kleiner is dan de ruimte in de blokken. Let wel op dat dit tot gevolg kan hebben dat een transactie nooit wordt bevestigd als er meer vraag is naar lamacointransacties dan het netwerk kan verwerken.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for ladacoin transactions than the network can process.</source>
+        <translation>De minimale toeslag betalen is prima mits het transactievolume kleiner is dan de ruimte in de blokken. Let wel op dat dit tot gevolg kan hebben dat een transactie nooit wordt bevestigd als er meer vraag is naar ladacointransacties dan het netwerk kan verwerken.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2037,8 +2037,8 @@ Adres: %4
         <translation>Beginnen van bevesting geschat binnen %1 blok(ken).</translation>
     </message>
     <message>
-        <source>Warning: Invalid Lamacoin address</source>
-        <translation>Waarschuwing: Ongeldig Lamacoin adres</translation>
+        <source>Warning: Invalid Ladacoin address</source>
+        <translation>Waarschuwing: Ongeldig Ladacoin adres</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2088,8 +2088,8 @@ Adres: %4
         <translation>Dit is een normale betaling.</translation>
     </message>
     <message>
-        <source>The Lamacoin address to send the payment to</source>
-        <translation>Het Lamacoin adres om betaling aan te voldoen</translation>
+        <source>The Ladacoin address to send the payment to</source>
+        <translation>Het Ladacoin adres om betaling aan te voldoen</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2120,8 +2120,8 @@ Adres: %4
         <translation>Vul een label voor dit adres in om het aan de lijst met gebruikte adressen toe te voegen</translation>
     </message>
     <message>
-        <source>A message that was attached to the lamacoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Lamacoin network.</source>
-        <translation>Een bericht dat werd toegevoegd aan de lamacoin: URI dewelke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Lamacoin netwerk.</translation>
+        <source>A message that was attached to the ladacoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ladacoin network.</source>
+        <translation>Een bericht dat werd toegevoegd aan de ladacoin: URI dewelke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Ladacoin netwerk.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2139,8 +2139,8 @@ Adres: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Lamacoin Core is shutting down...</source>
-        <translation>Lamacoin Core is aan het afsluiten...</translation>
+        <source>Ladacoin Core is shutting down...</source>
+        <translation>Ladacoin Core is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2162,8 +2162,8 @@ Adres: %4
         <translation>U kunt berichten ondertekenen met een van uw adressen om te bewijzen dat u dit adres bezit. Pas op dat u geen onduidelijke dingen ondertekent, want phishingaanvallen zouden u kunnen misleiden om zo uw identiteit te stelen. Onderteken alleen berichten waarmee u het volledig eens bent.</translation>
     </message>
     <message>
-        <source>The Lamacoin address to sign the message with</source>
-        <translation>Het Lamacoin adres om bericht mee te ondertekenen</translation>
+        <source>The Ladacoin address to sign the message with</source>
+        <translation>Het Ladacoin adres om bericht mee te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2194,8 +2194,8 @@ Adres: %4
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lamacoin address</source>
-        <translation>Onderteken een bericht om te bewijzen dat u een bepaald Lamacoinadres bezit</translation>
+        <source>Sign the message to prove you own this Ladacoin address</source>
+        <translation>Onderteken een bericht om te bewijzen dat u een bepaald Ladacoinadres bezit</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2218,12 +2218,12 @@ Adres: %4
         <translation>Voer het ondertekenende adres, bericht en handtekening hieronder in (let erop dat u nieuwe regels, spaties en tabs juist overneemt) om de handtekening te verifiëren. Let erop dat u niet meer uit het bericht interpreteert dan er daadwerkelijk staat,  om te voorkomen dat u wordt misleid in een man-in-the-middle-aanval.</translation>
     </message>
     <message>
-        <source>The Lamacoin address the message was signed with</source>
-        <translation>Het Lamacoin adres waarmee het bericht ondertekend is</translation>
+        <source>The Ladacoin address the message was signed with</source>
+        <translation>Het Ladacoin adres waarmee het bericht ondertekend is</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Lamacoin address</source>
-        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde Lamacoinadres het bericht heeft ondertekend.</translation>
+        <source>Verify the message to ensure it was signed with the specified Ladacoin address</source>
+        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde Ladacoinadres het bericht heeft ondertekend.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2289,8 +2289,8 @@ Adres: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Kern</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Kern</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
@@ -2843,8 +2843,8 @@ Adres: %4
         <translation>Dit is een pre-release testversie - gebruik op eigen risico! Gebruik deze niet voor het delven van munten of handelsdoeleinden</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Lamacoin Core is probably already running.</source>
-        <translation>Niet in staat om %s te verbinden op deze computer. Lamacoin Core draait waarschijnlijk al.</translation>
+        <source>Unable to bind to %s on this computer. Ladacoin Core is probably already running.</source>
+        <translation>Niet in staat om %s te verbinden op deze computer. Ladacoin Core draait waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3027,8 +3027,8 @@ Adres: %4
         <translation>Bind aan gegeven adres om te luisteren voor JSON-RPC verbindingen. Gebruik [host]:poort notatie voor IPv6. Deze optie kan meerdere keren gespecificeerd worden (standaard: bind aan alle interfaces.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Lamacoin Core is probably already running.</source>
-        <translation>Kan geen lock verkrijgen op gegevensmap %s. Lamacoin Core draait waarschijnlijk al.</translation>
+        <source>Cannot obtain a lock on data directory %s. Ladacoin Core is probably already running.</source>
+        <translation>Kan geen lock verkrijgen op gegevensmap %s. Ladacoin Core draait waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
@@ -3096,27 +3096,27 @@ Adres: %4
         <translation>Dit product bevat software dat ontwikkeld is door het OpenSSL Project voor gebruik in de OpenSSL Toolkit &lt;https://www.openssl.org/&gt; en cryptografische software geschreven door Eric Young en UPnP software geschreven door Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use lamacoind, or the -server option to Lamacoin, you must set an rpcpassword in the configuration file:
+        <source>To use ladacoind, or the -server option to Ladacoin, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=lamacoinrpc
+rpcuser=ladacoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Lamacoin Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Ladacoin Alert" admin@foo.com
 </source>
-        <translation>Om lamacoind of de -server optie naar lamacoin-gt te gebruiken, dient u een rpcwachtwoord in te stellen in het configuratiebestand:
+        <translation>Om ladacoind of de -server optie naar ladacoin-gt te gebruiken, dient u een rpcwachtwoord in te stellen in het configuratiebestand:
  %s
 Wij raden u aan om het volgende wachtwoord willekeurig te gebruiken: 
-rpcuser=lamacoinrpc 
+rpcuser=ladacoinrpc 
 rpcpassword=%s 
 (u hoeft dit wachtwoord niet te onthouden)
 De gebruikersnaam en het wachtwoorden moeten NIET hetzelfde zijn. 
 Indien het bestand niet bestaat, maak het bestand aan met bestandsrechten: alleen lezen voor eigenaar.
 Het is ook aan te raden om een alarmnotificatie in te stellen, zodat u op de hoogte bent van de problemen;
-Voorbeeld: alertnotify=echo %%s | mail -s "Lamacoin Alert" admin@foo.com
+Voorbeeld: alertnotify=echo %%s | mail -s "Ladacoin Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3124,8 +3124,8 @@ Voorbeeld: alertnotify=echo %%s | mail -s "Lamacoin Alert" admin@foo.com
         <translation>Let op: -maxtxfee is erg hoog ingesteld! Transactiekosten van dergelijke groottes kunnen in een enkele transactie worden betaald.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Lamacoin Core will not work properly.</source>
-        <translation>Waarschuwing: Controleer dat de datum en tijd van uw computer correct zijn ingesteld! Bij een onjuist ingestelde klok zal Lamacoin Core niet goed werken.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Ladacoin Core will not work properly.</source>
+        <translation>Waarschuwing: Controleer dat de datum en tijd van uw computer correct zijn ingesteld! Bij een onjuist ingestelde klok zal Ladacoin Core niet goed werken.</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
@@ -3152,8 +3152,8 @@ Voorbeeld: alertnotify=echo %%s | mail -s "Lamacoin Alert" admin@foo.com
         <translation>Niet mogelijk om -rpcbind waarde %s te verwerken als netwerk adres</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Lamacoin Core</source>
-        <translation>Fout bij laden wallet.dat: Portemonnee vereist een nieuwere versie van Lamacoin Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Ladacoin Core</source>
+        <translation>Fout bij laden wallet.dat: Portemonnee vereist een nieuwere versie van Ladacoin Core</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3172,8 +3172,8 @@ Voorbeeld: alertnotify=echo %%s | mail -s "Lamacoin Alert" admin@foo.com
         <translation>Informatie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Lamacoin Core is shutting down.</source>
-        <translation>Initialisatie sanity check mislukt. Lamacoin Core is aan het afsluiten.</translation>
+        <source>Initialization sanity check failed. Ladacoin Core is shutting down.</source>
+        <translation>Initialisatie sanity check mislukt. Ladacoin Core is aan het afsluiten.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -3208,8 +3208,8 @@ Voorbeeld: alertnotify=echo %%s | mail -s "Lamacoin Alert" admin@foo.com
         <translation>Node relay opties:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Lamacoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL opties: (zie de Lamacoin Wiki voor SSL installatie-instructies)</translation>
+        <source>RPC SSL options: (see the Ladacoin Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL opties: (zie de Ladacoin Wiki voor SSL installatie-instructies)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -3280,8 +3280,8 @@ Voorbeeld: alertnotify=echo %%s | mail -s "Lamacoin Alert" admin@foo.com
         <translation>Gebruikersnaam voor JSON-RPC-verbindingen</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Lamacoin Core to complete</source>
-        <translation>Portemonnee moest herschreven worden: Herstart Lamacoin Core om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart Ladacoin Core to complete</source>
+        <translation>Portemonnee moest herschreven worden: Herstart Ladacoin Core om te voltooien</translation>
     </message>
     <message>
         <source>Warning</source>

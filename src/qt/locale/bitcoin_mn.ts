@@ -62,12 +62,12 @@
         <translation>Хүлээн авах хаяг</translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Эдгээр Lamacoin хаягууд нь илгээх хаягууд. Хүлээн авах хаяг болон тоо хэмжээг илгээхээсээ өмнө сайн нягталж үзэж байна уу</translation>
+        <source>These are your Ladacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Эдгээр Ladacoin хаягууд нь илгээх хаягууд. Хүлээн авах хаяг болон тоо хэмжээг илгээхээсээ өмнө сайн нягталж үзэж байна уу</translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Эдгээр Lamacoin хаягууд нь хүлээн авах хаягууд. Гүйлгээ болгонд шинээр хаяг үүсгэхийг бид санал болгож байна.</translation>
+        <source>These are your Ladacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Эдгээр Ladacoin хаягууд нь хүлээн авах хаягууд. Гүйлгээ болгонд шинээр хаяг үүсгэхийг бид санал болгож байна.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -152,8 +152,8 @@
         <translation>Түрүйвч цоожлогдлоо</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
-        <translation>Цоожлолтын процесыг дуусгахын тулд Lamacoin одоо хаагдана. Ѳѳрийн түрүйвчийг цоожлох нь таны lamacoinsуудыг компьютерийн вирус хулгайлахаас бүрэн сэргийлж чадахгүй гэдгийг санаарай.</translation>
+        <source>Ladacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ladacoins from being stolen by malware infecting your computer.</source>
+        <translation>Цоожлолтын процесыг дуусгахын тулд Ladacoin одоо хаагдана. Ѳѳрийн түрүйвчийг цоожлох нь таны ladacoinsуудыг компьютерийн вирус хулгайлахаас бүрэн сэргийлж чадахгүй гэдгийг санаарай.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -247,8 +247,8 @@
         <translation>Оношилгоо ба засварын консолыг онгойлго</translation>
     </message>
     <message>
-        <source>Lamacoin</source>
-        <translation>Lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>Ladacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -271,8 +271,8 @@
         <translation>&amp;Тусламж</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Lamacoin network</source>
-        <translation><numerusform>Lamacoinы сүлжээрүү %n идэвхитэй холболт байна </numerusform><numerusform>Lamacoinы сүлжээрүү %n идэвхитэй холболтууд байна </numerusform></translation>
+        <source>%n active connection(s) to Ladacoin network</source>
+        <translation><numerusform>Ladacoinы сүлжээрүү %n идэвхитэй холболт байна </numerusform><numerusform>Ladacoinы сүлжээрүү %n идэвхитэй холболтууд байна </numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -708,8 +708,8 @@ Address: %4
         <translation>Гүйлгээний тѳлбѳр %1-ийг тооцхоор нийт дүн нь таны балансаас хэтрээд байна.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Lamacoin address</source>
-        <translation>Анхаар:Буруу Lamacoinы хаяг байна</translation>
+        <source>Warning: Invalid Ladacoin address</source>
+        <translation>Анхаар:Буруу Ladacoinы хаяг байна</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -754,8 +754,8 @@ Address: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Lamacoin Core is shutting down...</source>
-        <translation>Lamacoinы цѳм хаагдаж байна...</translation>
+        <source>Ladacoin Core is shutting down...</source>
+        <translation>Ladacoinы цѳм хаагдаж байна...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>

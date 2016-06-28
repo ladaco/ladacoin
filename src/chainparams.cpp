@@ -168,7 +168,7 @@ public:
         fSkipProofOfWorkCheck = false;
         fTestnetToBeDeprecatedFieldRPC = false;
 
-        // Lamacoin: Mainnet v2 enforced as of block 710k
+        // Ladacoin: Mainnet v2 enforced as of block 710k
         nEnforceV2AfterHeight = 710000;
     }
 
@@ -234,7 +234,7 @@ public:
         fMineBlocksOnDemand = false;
         fTestnetToBeDeprecatedFieldRPC = true;
 
-        // Lamacoin: Testnet v2 enforced as of block 400k
+        // Ladacoin: Testnet v2 enforced as of block 400k
         nEnforceV2AfterHeight = 400000;
     }
     const Checkpoints::CCheckpointData& Checkpoints() const 
@@ -283,7 +283,7 @@ public:
         fMineBlocksOnDemand = true;
         fTestnetToBeDeprecatedFieldRPC = false;
 
-        // Lamacoin: v2 enforced using Bitcoin's supermajority rule
+        // Ladacoin: v2 enforced using Bitcoin's supermajority rule
         nEnforceV2AfterHeight = -1;
     }
     const Checkpoints::CCheckpointData& Checkpoints() const 
@@ -311,7 +311,7 @@ public:
         fAllowMinDifficultyBlocks = false;
         fMineBlocksOnDemand = true;
 
-        // Lamacoin: v2 enforced using Bitcoin's supermajority rule
+        // Ladacoin: v2 enforced using Bitcoin's supermajority rule
         nEnforceV2AfterHeight = -1;
     }
 

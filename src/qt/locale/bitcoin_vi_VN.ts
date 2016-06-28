@@ -167,12 +167,12 @@
         <translation>Mở &amp;URI...</translation>
     </message>
     <message>
-        <source>Lamacoin Core client</source>
-        <translation>Lamacoin Core client</translation>
+        <source>Ladacoin Core client</source>
+        <translation>Ladacoin Core client</translation>
     </message>
     <message>
-        <source>Lamacoin</source>
-        <translation>Lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>Ladacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -207,12 +207,12 @@
         <translation>Trợ &amp;giúp</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Core</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Core</translation>
     </message>
     <message>
-        <source>&amp;About Lamacoin Core</source>
-        <translation>&amp;Về Lamacoin Core</translation>
+        <source>&amp;About Ladacoin Core</source>
+        <translation>&amp;Về Ladacoin Core</translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -374,16 +374,16 @@ Loại: %3
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Core</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Core</translation>
     </message>
     <message>
         <source>version</source>
         <translation>version</translation>
     </message>
     <message>
-        <source>About Lamacoin Core</source>
-        <translation>Về Lamacoin Core</translation>
+        <source>About Ladacoin Core</source>
+        <translation>Về Ladacoin Core</translation>
     </message>
     </context>
 <context>
@@ -393,8 +393,8 @@ Loại: %3
         <translation>Chào mừng</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Core</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -593,8 +593,8 @@ Loại: %3
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin Core</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin Core</translation>
     </message>
     </context>
 <context>

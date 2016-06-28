@@ -66,12 +66,12 @@
         <translation>Ricevaj adresoj</translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Jen viaj Lamacoin-adresoj por sendi pagojn. Zorge kontrolu la sumon kaj la alsendan adreson antaŭ ol sendi.</translation>
+        <source>These are your Ladacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Jen viaj Ladacoin-adresoj por sendi pagojn. Zorge kontrolu la sumon kaj la alsendan adreson antaŭ ol sendi.</translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Jen viaj Lamacoin adresoj por ricevi pagojn. Estas konsilinde uzi apartan ricevan adreson por ĉiu transakcio.</translation>
+        <source>These are your Ladacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Jen viaj Ladacoin adresoj por ricevi pagojn. Estas konsilinde uzi apartan ricevan adreson por ĉiu transakcio.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -184,8 +184,8 @@
         <translation>La monujo estas ĉifrita</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
-        <translation>Lamacoin nun fermiĝos por fini la ĉifradon. Memoru, ke eĉ ĉifrado ne protektas kontraŭ ĉiu atako, ekz. se viruso infektus vian komputilon.</translation>
+        <source>Ladacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ladacoins from being stolen by malware infecting your computer.</source>
+        <translation>Ladacoin nun fermiĝos por fini la ĉifradon. Memoru, ke eĉ ĉifrado ne protektas kontraŭ ĉiu atako, ekz. se viruso infektus vian komputilon.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -291,8 +291,8 @@
         <translation>Malfermi &amp;URI-on...</translation>
     </message>
     <message>
-        <source>Lamacoin Core client</source>
-        <translation>kliento de Lamacoin-kerno</translation>
+        <source>Ladacoin Core client</source>
+        <translation>kliento de Ladacoin-kerno</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -303,12 +303,12 @@
         <translation>Reindeksado de blokoj sur disko...</translation>
     </message>
     <message>
-        <source>Send coins to a Lamacoin address</source>
-        <translation>Sendi monon al Lamacoin-adreso</translation>
+        <source>Send coins to a Ladacoin address</source>
+        <translation>Sendi monon al Ladacoin-adreso</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lamacoin</source>
-        <translation>Modifi agordaĵojn por Lamacoin</translation>
+        <source>Modify configuration options for Ladacoin</source>
+        <translation>Modifi agordaĵojn por Ladacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -331,8 +331,8 @@
         <translation>&amp;Kontroli mesaĝon...</translation>
     </message>
     <message>
-        <source>Lamacoin</source>
-        <translation>Lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>Ladacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -347,8 +347,8 @@
         <translation>&amp;Ricevi</translation>
     </message>
     <message>
-        <source>Show information about Lamacoin Core</source>
-        <translation>Vidigi informon pri Lamacoin Kerno</translation>
+        <source>Show information about Ladacoin Core</source>
+        <translation>Vidigi informon pri Ladacoin Kerno</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -363,12 +363,12 @@
         <translation>Ĉifri la privatajn ŝlosilojn de via monujo</translation>
     </message>
     <message>
-        <source>Sign messages with your Lamacoin addresses to prove you own them</source>
-        <translation>Subskribi mesaĝojn per via Lamacoin-adresoj por pravigi, ke vi estas la posedanto</translation>
+        <source>Sign messages with your Ladacoin addresses to prove you own them</source>
+        <translation>Subskribi mesaĝojn per via Ladacoin-adresoj por pravigi, ke vi estas la posedanto</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Lamacoin addresses</source>
-        <translation>Kontroli mesaĝojn por kontroli ĉu ili estas subskribitaj per specifaj Lamacoin-adresoj</translation>
+        <source>Verify messages to ensure they were signed with specified Ladacoin addresses</source>
+        <translation>Kontroli mesaĝojn por kontroli ĉu ili estas subskribitaj per specifaj Ladacoin-adresoj</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -387,16 +387,16 @@
         <translation>Langeto-breto</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Kerno de Lamacoin</translation>
+        <source>Ladacoin Core</source>
+        <translation>Kerno de Ladacoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and lamacoin: URIs)</source>
-        <translation>Peti pagon (kreas QR-kodojn kaj URI-ojn kun prefikso lamacoin:)</translation>
+        <source>Request payments (generates QR codes and ladacoin: URIs)</source>
+        <translation>Peti pagon (kreas QR-kodojn kaj URI-ojn kun prefikso ladacoin:)</translation>
     </message>
     <message>
-        <source>&amp;About Lamacoin Core</source>
-        <translation>&amp;Pri la Lamacoin Kerno</translation>
+        <source>&amp;About Ladacoin Core</source>
+        <translation>&amp;Pri la Ladacoin Kerno</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -407,16 +407,16 @@
         <translation>Vidigi la liston de uzitaj ricevaj adresoj kaj etikedoj</translation>
     </message>
     <message>
-        <source>Open a lamacoin: URI or payment request</source>
-        <translation>Malfermi lamacoin:-URI-on aŭ pagpeton</translation>
+        <source>Open a ladacoin: URI or payment request</source>
+        <translation>Malfermi ladacoin:-URI-on aŭ pagpeton</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komandliniaj agordaĵoj</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Lamacoin network</source>
-        <translation><numerusform>%n aktiva konekto al la Lamacoin reto</numerusform><numerusform>%n aktivaj konektoj al la Lamacoin reto</numerusform></translation>
+        <source>%n active connection(s) to Ladacoin network</source>
+        <translation><numerusform>%n aktiva konekto al la Ladacoin reto</numerusform><numerusform>%n aktivaj konektoj al la Ladacoin reto</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -764,8 +764,8 @@ Adreso: %4
         <translation>La adreso enigita "%1" jam ekzistas en la adresaro.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Lamacoin address.</source>
-        <translation>La adreso enigita "%1" ne estas valida Lamacoin-adreso.</translation>
+        <source>The entered address "%1" is not a valid Ladacoin address.</source>
+        <translation>La adreso enigita "%1" ne estas valida Ladacoin-adreso.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -802,16 +802,16 @@ Adreso: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Kerno de Lamacoin</translation>
+        <source>Ladacoin Core</source>
+        <translation>Kerno de Ladacoin</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versio</translation>
     </message>
     <message>
-        <source>About Lamacoin Core</source>
-        <translation>Pri la Lamacoin Kerno</translation>
+        <source>About Ladacoin Core</source>
+        <translation>Pri la Ladacoin Kerno</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -853,16 +853,16 @@ Adreso: %4
         <translation>Bonvenon</translation>
     </message>
     <message>
-        <source>Welcome to Lamacoin Core.</source>
-        <translation>Bonvenon al la Lamacoin kerno, Lamacoin Core.</translation>
+        <source>Welcome to Ladacoin Core.</source>
+        <translation>Bonvenon al la Ladacoin kerno, Ladacoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Lamacoin Core will store its data.</source>
-        <translation>Dum tiu ĉi unua uzo de la programo, vi povas elekti lokon, kie Lamacoin Core stokos siajn datumojn.</translation>
+        <source>As this is the first time the program is launched, you can choose where Ladacoin Core will store its data.</source>
+        <translation>Dum tiu ĉi unua uzo de la programo, vi povas elekti lokon, kie Ladacoin Core stokos siajn datumojn.</translation>
     </message>
     <message>
-        <source>Lamacoin Core will download and store a copy of the Lamacoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Lamacoin Core elŝutos kaj konservos kopion de la Lamacoin blokĉeno. Almenaŭ %1GB da datumoj konserviĝos en tiu loko, kaj tio poiome kreskos. Ankaŭ via monujo konserviĝos en tiu dosierujo.</translation>
+        <source>Ladacoin Core will download and store a copy of the Ladacoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Ladacoin Core elŝutos kaj konservos kopion de la Ladacoin blokĉeno. Almenaŭ %1GB da datumoj konserviĝos en tiu loko, kaj tio poiome kreskos. Ankaŭ via monujo konserviĝos en tiu dosierujo.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -873,8 +873,8 @@ Adreso: %4
         <translation>Uzi alian dosierujon por datumoj:</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Kerno de Lamacoin</translation>
+        <source>Ladacoin Core</source>
+        <translation>Kerno de Ladacoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -915,12 +915,12 @@ Adreso: %4
         <translation>Ĉ&amp;efa</translation>
     </message>
     <message>
-        <source>Automatically start Lamacoin after logging in to the system.</source>
-        <translation>Aŭtomate lanĉi Lamacoin post ensaluto al la sistemo.</translation>
+        <source>Automatically start Ladacoin after logging in to the system.</source>
+        <translation>Aŭtomate lanĉi Ladacoin post ensaluto al la sistemo.</translation>
     </message>
     <message>
-        <source>&amp;Start Lamacoin on system login</source>
-        <translation>&amp;Lanĉi Lamacoin tuj post ensaluto al la sistemo</translation>
+        <source>&amp;Start Ladacoin on system login</source>
+        <translation>&amp;Lanĉi Ladacoin tuj post ensaluto al la sistemo</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -947,8 +947,8 @@ Adreso: %4
         <translation>Fakulo</translation>
     </message>
     <message>
-        <source>Automatically open the Lamacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aŭtomate malfermi la kursilan pordon por Lamacoin. Tio funkcias nur se via kursilo havas la UPnP-funkcion, kaj se tiu ĉi estas ŝaltita.</translation>
+        <source>Automatically open the Ladacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aŭtomate malfermi la kursilan pordon por Ladacoin. Tio funkcias nur se via kursilo havas la UPnP-funkcion, kaj se tiu ĉi estas ŝaltita.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -995,8 +995,8 @@ Adreso: %4
         <translation>&amp;Lingvo de la fasado:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Lamacoin.</source>
-        <translation>Vi povas elekti la lingvon uzata en la aplikaĵo ĉi tie. Tiu ekefikos nur post relanĉo de Lamacoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ladacoin.</source>
+        <translation>Vi povas elekti la lingvon uzata en la aplikaĵo ĉi tie. Tiu ekefikos nur post relanĉo de Ladacoin.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1004,7 +1004,7 @@ Adreso: %4
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Elekti la defaŭltan manieron por montri Lamacoin sumojn en la interfaco, kaj kiam vi sendos lamacoins.</translation>
+        <translation>Elekti la defaŭltan manieron por montri Ladacoin sumojn en la interfaco, kaj kiam vi sendos ladacoins.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1042,8 +1042,8 @@ Adreso: %4
         <translation>Formularo</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lamacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Eblas, ke la informoj videblaj ĉi tie estas eksdataj. Via monujo aŭtomate sinkoniĝas kun la Lamacoin reto kiam ili konektiĝas, sed tiu procezo ankoraŭ ne finfariĝis.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ladacoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Eblas, ke la informoj videblaj ĉi tie estas eksdataj. Via monujo aŭtomate sinkoniĝas kun la Ladacoin reto kiam ili konektiĝas, sed tiu procezo ankoraŭ ne finfariĝis.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1093,7 +1093,7 @@ Adreso: %4
         <translation>Eraro dum pagopeto</translation>
     </message>
     <message>
-        <source>Cannot start lamacoin: click-to-pay handler</source>
+        <source>Cannot start ladacoin: click-to-pay handler</source>
         <translation>Ne eblas lanĉi la ilon 'klaki-por-pagi'</translation>
     </message>
     <message>
@@ -1257,16 +1257,16 @@ Adreso: %4
         <translation>Sencimiga protokoldosiero</translation>
     </message>
     <message>
-        <source>Open the Lamacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Malfermi la sencimiga protokoldosiero de Lamacoin el la aktuala dosierujo por datumoj. Tio eble daŭros plurajn sekundojn por granda protokoldosiero.</translation>
+        <source>Open the Ladacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Malfermi la sencimiga protokoldosiero de Ladacoin el la aktuala dosierujo por datumoj. Tio eble daŭros plurajn sekundojn por granda protokoldosiero.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Malplenigi konzolon</translation>
     </message>
     <message>
-        <source>Welcome to the Lamacoin RPC console.</source>
-        <translation>Bonvenon al la RPC-konzolo de Lamacoin.</translation>
+        <source>Welcome to the Ladacoin RPC console.</source>
+        <translation>Bonvenon al la RPC-konzolo de Ladacoin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1510,7 +1510,7 @@ Adreso: %4
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Konfirmi sendon de lamacoin</translation>
+        <translation>Konfirmi sendon de ladacoin</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -1573,8 +1573,8 @@ Adreso: %4
         <translation>Kreo de transakcio fiaskis!</translation>
     </message>
     <message>
-        <source>Warning: Invalid Lamacoin address</source>
-        <translation>Averto: Nevalida Lamacoin-adreso</translation>
+        <source>Warning: Invalid Ladacoin address</source>
+        <translation>Averto: Nevalida Ladacoin-adreso</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1702,8 +1702,8 @@ Adreso: %4
         <translation>Kopii la aktualan subskribon al la tondejo</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lamacoin address</source>
-        <translation>Subskribi la mesaĝon por pravigi, ke vi estas la posedanto de tiu Lamacoin-adreso</translation>
+        <source>Sign the message to prove you own this Ladacoin address</source>
+        <translation>Subskribi la mesaĝon por pravigi, ke vi estas la posedanto de tiu Ladacoin-adreso</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1726,8 +1726,8 @@ Adreso: %4
         <translation>Enmeti la subskriban adreson, la mesaĝon (kune kun ĉiu linisalto, spaceto, taboj, ktp. precize) kaj la subskribon ĉi sube por kontroli la mesaĝon. Atentu, ke vi ne komprenu per la subskribo pli ol la enhavo de la mesaĝo mem, por eviti homo-en-la-mezo-atakon.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Lamacoin address</source>
-        <translation>Kontroli la mesaĝon por pravigi, ke ĝi ja estas subskribita per la specifa Lamacoin-adreso</translation>
+        <source>Verify the message to ensure it was signed with the specified Ladacoin address</source>
+        <translation>Kontroli la mesaĝon por pravigi, ke ĝi ja estas subskribita per la specifa Ladacoin-adreso</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1793,8 +1793,8 @@ Adreso: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Kerno de Lamacoin</translation>
+        <source>Ladacoin Core</source>
+        <translation>Kerno de Ladacoin</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
@@ -2178,7 +2178,7 @@ Adreso: %4
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Sendi Lamacoin</translation>
+        <translation>Sendi Ladacoin</translation>
     </message>
 </context>
 <context>

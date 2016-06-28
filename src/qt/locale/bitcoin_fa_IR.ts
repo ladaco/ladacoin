@@ -160,8 +160,8 @@
         <translation>تایید رمزگذاری</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
-        <translation>Lamacoin برای اتمام فرایند رمزگذاری بسته خواهد شد. به خاطر داشته باشید که رمزگذاری WALLET شما،  کامپیوتر شما را از آلودگی به بدافزارها مصون نمی دارد.</translation>
+        <source>Ladacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ladacoins from being stolen by malware infecting your computer.</source>
+        <translation>Ladacoin برای اتمام فرایند رمزگذاری بسته خواهد شد. به خاطر داشته باشید که رمزگذاری WALLET شما،  کامپیوتر شما را از آلودگی به بدافزارها مصون نمی دارد.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -251,8 +251,8 @@
         <translation>تغییر رمز/پَس فرِیز</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lamacoin</source>
-        <translation>اصلاح انتخابها برای پیکربندی Lamacoin</translation>
+        <source>Modify configuration options for Ladacoin</source>
+        <translation>اصلاح انتخابها برای پیکربندی Ladacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -263,8 +263,8 @@
         <translation>رمز مربوط به رمزگذاریِ wallet را تغییر دهید</translation>
     </message>
     <message>
-        <source>Lamacoin</source>
-        <translation>lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>ladacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -406,8 +406,8 @@ Address: %4
         <translation>ویرایش حساب ارسال کننده</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Lamacoin address.</source>
-        <translation>آدرس وارد شده "%1" یک آدرس صحیح برای lamacoin نسشت</translation>
+        <source>The entered address "%1" is not a valid Ladacoin address.</source>
+        <translation>آدرس وارد شده "%1" یک آدرس صحیح برای ladacoin نسشت</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -468,8 +468,8 @@ Address: %4
         <translation>فرم</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lamacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>اطلاعات نمایش داده شده ممکن است روزآمد نباشد. wallet شما به صورت خودکار بعد از برقراری اتصال با شبکه lamacoin به روز می شود اما این فرایند هنوز تکمیل نشده است.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ladacoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>اطلاعات نمایش داده شده ممکن است روزآمد نباشد. wallet شما به صورت خودکار بعد از برقراری اتصال با شبکه ladacoin به روز می شود اما این فرایند هنوز تکمیل نشده است.</translation>
     </message>
     <message>
         <source>out of sync</source>
@@ -519,7 +519,7 @@ Address: %4
         <translation>تعداد زنجیره های حاضر</translation>
     </message>
     <message>
-        <source>Welcome to the Lamacoin RPC console.</source>
+        <source>Welcome to the Ladacoin RPC console.</source>
         <translation>به کنسول آر.پی.سی. LITECOIN خوش آمدید</translation>
     </message>
     </context>
@@ -616,7 +616,7 @@ Address: %4
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>تایید ارسال Lamacoins</translation>
+        <translation>تایید ارسال Ladacoins</translation>
     </message>
     <message>
         <source>Copy amount</source>
@@ -681,8 +681,8 @@ Address: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Lamacoin Core is shutting down...</source>
-        <translation>هسته Lamacoin در حال خاموش شدن است...</translation>
+        <source>Ladacoin Core is shutting down...</source>
+        <translation>هسته Ladacoin در حال خاموش شدن است...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>

@@ -164,8 +164,8 @@
         <translation>Piniginė užšifruota</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
-        <translation>Lamacoin dabar užsidarys šifravimo proceso pabaigai. Atminkite, kad piniginės šifravimas negali pilnai apsaugoti lamacoinų vagysčių kai tinkle esančios kenkėjiškos programos patenka į jūsų kompiuterį.</translation>
+        <source>Ladacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ladacoins from being stolen by malware infecting your computer.</source>
+        <translation>Ladacoin dabar užsidarys šifravimo proceso pabaigai. Atminkite, kad piniginės šifravimas negali pilnai apsaugoti ladacoinų vagysčių kai tinkle esančios kenkėjiškos programos patenka į jūsų kompiuterį.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -271,8 +271,8 @@
         <translation>Atidaryti &amp;URI...</translation>
     </message>
     <message>
-        <source>Lamacoin Core client</source>
-        <translation>Lamacoin Core klientas</translation>
+        <source>Ladacoin Core client</source>
+        <translation>Ladacoin Core klientas</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -283,12 +283,12 @@
         <translation>Blokai iš naujo indeksuojami...</translation>
     </message>
     <message>
-        <source>Send coins to a Lamacoin address</source>
-        <translation>Siųsti monetas Lamacoin adresui</translation>
+        <source>Send coins to a Ladacoin address</source>
+        <translation>Siųsti monetas Ladacoin adresui</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lamacoin</source>
-        <translation>Keisti lamacoin konfigūracijos galimybes</translation>
+        <source>Modify configuration options for Ladacoin</source>
+        <translation>Keisti ladacoin konfigūracijos galimybes</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -311,8 +311,8 @@
         <translation>&amp;Tikrinti žinutę...</translation>
     </message>
     <message>
-        <source>Lamacoin</source>
-        <translation>Lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>Ladacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -327,8 +327,8 @@
         <translation>&amp;Gauti</translation>
     </message>
     <message>
-        <source>Show information about Lamacoin Core</source>
-        <translation>Rodyti informaciją apie Lamacoin Core</translation>
+        <source>Show information about Ladacoin Core</source>
+        <translation>Rodyti informaciją apie Ladacoin Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -359,16 +359,16 @@
         <translation>Kortelių įrankinė</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin branduolys</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin branduolys</translation>
     </message>
     <message>
-        <source>&amp;About Lamacoin Core</source>
-        <translation>&amp;Apie Lamacoin Core</translation>
+        <source>&amp;About Ladacoin Core</source>
+        <translation>&amp;Apie Ladacoin Core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Lamacoin network</source>
-        <translation><numerusform>%n Lamacoin tinklo aktyvus ryšys</numerusform><numerusform>%n Lamacoin tinklo aktyvūs ryšiai</numerusform><numerusform>%n Lamacoin tinklo aktyvūs ryšiai</numerusform></translation>
+        <source>%n active connection(s) to Ladacoin network</source>
+        <translation><numerusform>%n Ladacoin tinklo aktyvus ryšys</numerusform><numerusform>%n Ladacoin tinklo aktyvūs ryšiai</numerusform><numerusform>%n Ladacoin tinklo aktyvūs ryšiai</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>%n hour(s)</source>
@@ -627,8 +627,8 @@ Adresas: %4</translation>
         <translation>Įvestas adresas „%1“ jau yra adresų knygelėje.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Lamacoin address.</source>
-        <translation>Įvestas adresas „%1“ nėra galiojantis Lamacoin adresas.</translation>
+        <source>The entered address "%1" is not a valid Ladacoin address.</source>
+        <translation>Įvestas adresas „%1“ nėra galiojantis Ladacoin adresas.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -649,16 +649,16 @@ Adresas: %4</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin branduolys</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin branduolys</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versija</translation>
     </message>
     <message>
-        <source>About Lamacoin Core</source>
-        <translation>Apie Lamacoin Core</translation>
+        <source>About Ladacoin Core</source>
+        <translation>Apie Ladacoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -692,12 +692,12 @@ Adresas: %4</translation>
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to Lamacoin Core.</source>
-        <translation>Sveiki atvykę į Lamacoin Core.</translation>
+        <source>Welcome to Ladacoin Core.</source>
+        <translation>Sveiki atvykę į Ladacoin Core.</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin branduolys</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin branduolys</translation>
     </message>
     <message>
         <source>Error</source>
@@ -718,20 +718,20 @@ Adresas: %4</translation>
         <translation>&amp;Pagrindinės</translation>
     </message>
     <message>
-        <source>Automatically start Lamacoin after logging in to the system.</source>
+        <source>Automatically start Ladacoin after logging in to the system.</source>
         <translation>Automatiškai paleisti Bitkoin programą įjungus sistemą.</translation>
     </message>
     <message>
-        <source>&amp;Start Lamacoin on system login</source>
-        <translation>&amp;Paleisti Lamacoin programą su window sistemos paleidimu</translation>
+        <source>&amp;Start Ladacoin on system login</source>
+        <translation>&amp;Paleisti Ladacoin programą su window sistemos paleidimu</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Tinklas</translation>
     </message>
     <message>
-        <source>Automatically open the Lamacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatiškai atidaryti Lamacoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
+        <source>Automatically open the Ladacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatiškai atidaryti Ladacoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -778,8 +778,8 @@ Adresas: %4</translation>
         <translation>Naudotojo sąsajos &amp;kalba:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Lamacoin.</source>
-        <translation>Čia gali būti nustatyta naudotojo sąsajos kalba. Šis nustatymas įsigalios iš naujo paleidus Lamacoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ladacoin.</source>
+        <translation>Čia gali būti nustatyta naudotojo sąsajos kalba. Šis nustatymas įsigalios iš naujo paleidus Ladacoin.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -980,8 +980,8 @@ Adresas: %4</translation>
         <translation>Išvalyti konsolę</translation>
     </message>
     <message>
-        <source>Welcome to the Lamacoin RPC console.</source>
-        <translation>Sveiki atvykę į Lamacoin RPC konsolę.</translation>
+        <source>Welcome to the Ladacoin RPC console.</source>
+        <translation>Sveiki atvykę į Ladacoin RPC konsolę.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -1249,7 +1249,7 @@ Adresas: %4</translation>
         <translation>Įveskite pranešimą, kurį norite pasirašyti čia</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lamacoin address</source>
+        <source>Sign the message to prove you own this Ladacoin address</source>
         <translation>Registruotis žinute įrodymuii, kad turite šį adresą</translation>
     </message>
     <message>
@@ -1265,8 +1265,8 @@ Adresas: %4</translation>
         <translation>&amp;Patikrinti žinutę</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Lamacoin address</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Lamacoin adresas</translation>
+        <source>Verify the message to ensure it was signed with the specified Ladacoin address</source>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Ladacoin adresas</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
@@ -1316,8 +1316,8 @@ Adresas: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin branduolys</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin branduolys</translation>
     </message>
     <message>
         <source>[testnet]</source>

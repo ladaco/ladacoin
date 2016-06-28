@@ -108,8 +108,8 @@
         <translation>Новчаник је шифрован</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
-        <translation>Lamacoin će se sad zatvoriti da bi završio  proces enkripcije. Zapamti da enkripcija tvog novčanika ne može u potpunosti da zaštiti tvoje lamacoine da ne budu ukradeni od malawarea koji bi inficirao tvoj kompjuter.</translation>
+        <source>Ladacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ladacoins from being stolen by malware infecting your computer.</source>
+        <translation>Ladacoin će se sad zatvoriti da bi završio  proces enkripcije. Zapamti da enkripcija tvog novčanika ne može u potpunosti da zaštiti tvoje ladacoine da ne budu ukradeni od malawarea koji bi inficirao tvoj kompjuter.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -195,12 +195,12 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Lamacoin address</source>
-        <translation>Пошаљите новац на lamacoin адресу</translation>
+        <source>Send coins to a Ladacoin address</source>
+        <translation>Пошаљите новац на ladacoin адресу</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lamacoin</source>
-        <translation>Изаберите могућности lamacoin-а</translation>
+        <source>Modify configuration options for Ladacoin</source>
+        <translation>Изаберите могућности ladacoin-а</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -334,8 +334,8 @@ Address: %4
         <translation>верзија</translation>
     </message>
     <message>
-        <source>About Lamacoin Core</source>
-        <translation>O Lamacoin Coru</translation>
+        <source>About Ladacoin Core</source>
+        <translation>O Ladacoin Coru</translation>
     </message>
     <message>
         <source>Usage:</source>

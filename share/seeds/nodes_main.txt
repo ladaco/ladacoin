@@ -1,4 +1,4 @@
-# List of Lamacoin IPv4 nodes sorted by 30 day availability, block height and version.
+# List of Ladacoin IPv4 nodes sorted by 30 day availability, block height and version.
 
 192.168.1.103:9333
 192.168.1.107:9333

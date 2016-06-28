@@ -66,12 +66,12 @@
         <translation>Адреси за получаване</translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Ladacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Това са адресите на получателите на плащания. Винаги проверявайте размера на сумата и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your Lamacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са Вашите Lamacoin адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your Ladacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са Вашите Ladacoin адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -184,8 +184,8 @@
         <translation>Портфейлът е криптиран</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
-        <translation>Lamacoin ще се затоври сега за да завърши процеса на криптиране. Запомнете, че криптирането на вашия портефейл не може напълно да предпази вашите lamacoins от кражба чрез зловреден софтуер, инфектирал вашия компютър</translation>
+        <source>Ladacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ladacoins from being stolen by malware infecting your computer.</source>
+        <translation>Ladacoin ще се затоври сега за да завърши процеса на криптиране. Запомнете, че криптирането на вашия портефейл не може напълно да предпази вашите ladacoins от кражба чрез зловреден софтуер, инфектирал вашия компютър</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -291,16 +291,16 @@
         <translation>Отвори &amp;URI...</translation>
     </message>
     <message>
-        <source>Lamacoin Core client</source>
-        <translation>Lamacoin Core клиент</translation>
+        <source>Ladacoin Core client</source>
+        <translation>Ladacoin Core клиент</translation>
     </message>
     <message>
-        <source>Send coins to a Lamacoin address</source>
-        <translation>Изпращане към Lamacoin адрес</translation>
+        <source>Send coins to a Ladacoin address</source>
+        <translation>Изпращане към Ladacoin адрес</translation>
     </message>
     <message>
-        <source>Modify configuration options for Lamacoin</source>
-        <translation>Променете настройките на Lamacoin</translation>
+        <source>Modify configuration options for Ladacoin</source>
+        <translation>Променете настройките на Ladacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -323,8 +323,8 @@
         <translation>&amp;Проверка на съобщение...</translation>
     </message>
     <message>
-        <source>Lamacoin</source>
-        <translation>Lamacoin</translation>
+        <source>Ladacoin</source>
+        <translation>Ladacoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -339,8 +339,8 @@
         <translation>&amp;Получаване</translation>
     </message>
     <message>
-        <source>Show information about Lamacoin Core</source>
-        <translation>Покажете информация за Lamacoin ядрото</translation>
+        <source>Show information about Ladacoin Core</source>
+        <translation>Покажете информация за Ladacoin ядрото</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -355,12 +355,12 @@
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     </message>
     <message>
-        <source>Sign messages with your Lamacoin addresses to prove you own them</source>
-        <translation>Пишете съобщения със своя Lamacoin адрес за да докажете,че е ваш.</translation>
+        <source>Sign messages with your Ladacoin addresses to prove you own them</source>
+        <translation>Пишете съобщения със своя Ladacoin адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Lamacoin addresses</source>
-        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Lamacoin адреси.</translation>
+        <source>Verify messages to ensure they were signed with specified Ladacoin addresses</source>
+        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Ladacoin адреси.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -379,16 +379,16 @@
         <translation>Раздели</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin ядро</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin ядро</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and lamacoin: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и lamacoin: URIs)</translation>
+        <source>Request payments (generates QR codes and ladacoin: URIs)</source>
+        <translation>Изискване на плащания(генерира QR кодове и ladacoin: URIs)</translation>
     </message>
     <message>
-        <source>&amp;About Lamacoin Core</source>
-        <translation>&amp;Относно Lamacoin Core</translation>
+        <source>&amp;About Ladacoin Core</source>
+        <translation>&amp;Относно Ladacoin Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -399,20 +399,20 @@
         <translation>Покажи списък с използваните адреси и имена.</translation>
     </message>
     <message>
-        <source>Open a lamacoin: URI or payment request</source>
-        <translation>Отворете lamacoin: URI  или заявка за плащане</translation>
+        <source>Open a ladacoin: URI or payment request</source>
+        <translation>Отворете ladacoin: URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Налични команди</translation>
     </message>
     <message>
-        <source>Show the Lamacoin Core help message to get a list with possible Lamacoin command-line options</source>
-        <translation>Покажи помощните съобщения на Lamacoin за да видиш наличните и валидни команди</translation>
+        <source>Show the Ladacoin Core help message to get a list with possible Ladacoin command-line options</source>
+        <translation>Покажи помощните съобщения на Ladacoin за да видиш наличните и валидни команди</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Lamacoin network</source>
-        <translation><numerusform>%n връзка към Lamacoin мрежата</numerusform><numerusform>%n връзки към Lamacoin мрежата</numerusform></translation>
+        <source>%n active connection(s) to Ladacoin network</source>
+        <translation><numerusform>%n връзка към Ladacoin мрежата</numerusform><numerusform>%n връзки към Ladacoin мрежата</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -748,8 +748,8 @@ Address: %4
         <translation>Вече има адрес "%1" в списъка с адреси.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Lamacoin address.</source>
-        <translation>"%1" не е валиден Lamacoin адрес.</translation>
+        <source>The entered address "%1" is not a valid Ladacoin address.</source>
+        <translation>"%1" не е валиден Ladacoin адрес.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -786,8 +786,8 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin ядро</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin ядро</translation>
     </message>
     <message>
         <source>version</source>
@@ -798,8 +798,8 @@ Address: %4
         <translation>(%1-битов)</translation>
     </message>
     <message>
-        <source>About Lamacoin Core</source>
-        <translation>За Lamacoin Core</translation>
+        <source>About Ladacoin Core</source>
+        <translation>За Ladacoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -837,12 +837,12 @@ Address: %4
         <translation>Добре дошли</translation>
     </message>
     <message>
-        <source>Welcome to Lamacoin Core.</source>
-        <translation>Добре дошли в Lamacoin ядрото.</translation>
+        <source>Welcome to Ladacoin Core.</source>
+        <translation>Добре дошли в Ladacoin ядрото.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Lamacoin Core will store its data.</source>
-        <translation>Тъй като това е първото стартиране на програмата можете да изберете къде Lamacoin ядрото да запази данните си.</translation>
+        <source>As this is the first time the program is launched, you can choose where Ladacoin Core will store its data.</source>
+        <translation>Тъй като това е първото стартиране на програмата можете да изберете къде Ladacoin ядрото да запази данните си.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -853,8 +853,8 @@ Address: %4
         <translation>Използване на директория ръчно</translation>
     </message>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin ядро</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin ядро</translation>
     </message>
     <message>
         <source>Error</source>
@@ -879,12 +879,12 @@ Address: %4
         <translation>&amp;Основни</translation>
     </message>
     <message>
-        <source>Automatically start Lamacoin after logging in to the system.</source>
-        <translation>Автоматично включване на Lamacoin след влизане в системата.</translation>
+        <source>Automatically start Ladacoin after logging in to the system.</source>
+        <translation>Автоматично включване на Ladacoin след влизане в системата.</translation>
     </message>
     <message>
-        <source>&amp;Start Lamacoin on system login</source>
-        <translation>&amp;Пускане на Lamacoin при вход в системата</translation>
+        <source>&amp;Start Ladacoin on system login</source>
+        <translation>&amp;Пускане на Ladacoin при вход в системата</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -935,16 +935,16 @@ Address: %4
         <translation>&amp;Похарчете непотвърденото ресто</translation>
     </message>
     <message>
-        <source>Automatically open the Lamacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия Lamacoin порт. Работи само с рутери поддържащи UPnP.</translation>
+        <source>Automatically open the Ladacoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отваряне на входящия Ladacoin порт. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Lamacoin network through a SOCKS5 proxy.</source>
-        <translation>Свързване с Lamacoin мрежата чрез SOCKS5  прокси.</translation>
+        <source>Connect to the Ladacoin network through a SOCKS5 proxy.</source>
+        <translation>Свързване с Ladacoin мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -991,8 +991,8 @@ Address: %4
         <translation>Език:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Lamacoin.</source>
-        <translation>Промяната на езика ще влезе в сила след рестартиране на Lamacoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Ladacoin.</source>
+        <translation>Промяната на езика ще влезе в сила след рестартиране на Ladacoin.</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
@@ -1050,8 +1050,8 @@ Address: %4
         <translation>Форма</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Lamacoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Lamacoin, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ladacoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Ladacoin, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1133,8 +1133,8 @@ Address: %4
         <translation>Възникна грешка по време назаявката за плащане</translation>
     </message>
     <message>
-        <source>Cannot start lamacoin: click-to-pay handler</source>
-        <translation>Lamacoin не можe да се стартира: click-to-pay handler</translation>
+        <source>Cannot start ladacoin: click-to-pay handler</source>
+        <translation>Ladacoin не можe да се стартира: click-to-pay handler</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1187,8 +1187,8 @@ Address: %4
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Lamacoin address (e.g. %1)</source>
-        <translation>Въведете Lamacoin адрес (например: %1)</translation>
+        <source>Enter a Ladacoin address (e.g. %1)</source>
+        <translation>Въведете Ladacoin адрес (например: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1401,16 +1401,16 @@ Address: %4
         <translation>Лог файл,съдържащ грешките</translation>
     </message>
     <message>
-        <source>Open the Lamacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отворете Lamacoin дебъг лог файла от настоящата Data папка. Може да отнеме няколко секунди при по - големи лог файлове.</translation>
+        <source>Open the Ladacoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Отворете Ladacoin дебъг лог файла от настоящата Data папка. Може да отнеме няколко секунди при по - големи лог файлове.</translation>
     </message>
     <message>
         <source>Clear console</source>
         <translation>Изчисти конзолата</translation>
     </message>
     <message>
-        <source>Welcome to the Lamacoin RPC console.</source>
-        <translation>Добре дошли в Lamacoin RPC конзолата.</translation>
+        <source>Welcome to the Ladacoin RPC console.</source>
+        <translation>Добре дошли в Ladacoin RPC конзолата.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1785,8 +1785,8 @@ Address: %4
         <translation>Платете минималната такса от %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Lamacoin address</source>
-        <translation>Внимание: Невалиден Lamacoin адрес</translation>
+        <source>Warning: Invalid Ladacoin address</source>
+        <translation>Внимание: Невалиден Ladacoin адрес</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1875,8 +1875,8 @@ Address: %4
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Lamacoin Core is shutting down...</source>
-        <translation>Lamacoin ядрото се изключва...</translation>
+        <source>Ladacoin Core is shutting down...</source>
+        <translation>Ladacoin ядрото се изключва...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1926,7 +1926,7 @@ Address: %4
         <translation>Копиране на текущия подпис</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Lamacoin address</source>
+        <source>Sign the message to prove you own this Ladacoin address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -1942,8 +1942,8 @@ Address: %4
         <translation>&amp;Провери</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Lamacoin address</source>
-        <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Lamacoin адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified Ladacoin address</source>
+        <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Ladacoin адрес</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2005,8 +2005,8 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Lamacoin Core</source>
-        <translation>Lamacoin ядро</translation>
+        <source>Ladacoin Core</source>
+        <translation>Ladacoin ядро</translation>
     </message>
     <message>
         <source>The Bitcoin Core developers</source>
