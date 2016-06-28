@@ -3062,12 +3062,12 @@ Address: %4
         <translation>当收到相关提醒或者我们看到一个长分叉时执行命令（%s 将替换为消息）</translation>
     </message>
     <message>
-        <source>Fees (in LMC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>交易费(LMC/kb)比这更小的交易在转发时将被视为零费交易 (默认: %s) </translation>
+        <source>Fees (in LDC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>交易费(LDC/kb)比这更小的交易在转发时将被视为零费交易 (默认: %s) </translation>
     </message>
     <message>
-        <source>Fees (in LMC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>交易费(LMC/kb)比这更小的交易在生成交易时将被视为零费交易 (默认: %s) </translation>
+        <source>Fees (in LDC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>交易费(LDC/kb)比这更小的交易在生成交易时将被视为零费交易 (默认: %s) </translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -3178,8 +3178,8 @@ rpcpassword=%s
         <translation>错误：发现了不支持的参数 -tor，请使用 -onion。</translation>
     </message>
     <message>
-        <source>Fee (in LMC/kB) to add to transactions you send (default: %s)</source>
-        <translation>为付款交易添加交易费 (LMC/kb) (默认: %s) </translation>
+        <source>Fee (in LDC/kB) to add to transactions you send (default: %s)</source>
+        <translation>为付款交易添加交易费 (LDC/kb) (默认: %s) </translation>
     </message>
     <message>
         <source>Information</source>

@@ -3001,8 +3001,8 @@
         <translation>Выполнить команду, когда приходит соответствующее сообщение о тревоге или наблюдается очень длинное расщепление цепи (%s в команде заменяется на сообщение)</translation>
     </message>
     <message>
-        <source>Fees (in LMC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Комиссии (в LMC/Кб) меньшие этого значения считаются нулевыми для трансляции (по умолчанию: %s)</translation>
+        <source>Fees (in LDC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Комиссии (в LDC/Кб) меньшие этого значения считаются нулевыми для трансляции (по умолчанию: %s)</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -3141,8 +3141,8 @@ rpcpassword=%s
         <translation>Ошибка: обнаружен неподдерживаемый параметр -tor, используйте -onion.</translation>
     </message>
     <message>
-        <source>Fee (in LMC/kB) to add to transactions you send (default: %s)</source>
-        <translation>Комиссия (в LMC/Кб) для добавления к вашим транзакциям (по умолчанию: %s)</translation>
+        <source>Fee (in LDC/kB) to add to transactions you send (default: %s)</source>
+        <translation>Комиссия (в LDC/Кб) для добавления к вашим транзакциям (по умолчанию: %s)</translation>
     </message>
     <message>
         <source>Information</source>

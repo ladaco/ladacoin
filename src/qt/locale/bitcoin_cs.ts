@@ -3039,12 +3039,12 @@ Adresa: %4
         <translation>Spustit příkaz, když přijde relevantní upozornění nebo když dojde k opravdu dlouhému rozštěpení řetezce bloků (%s se v příkazu nahradí zprávou)</translation>
     </message>
     <message>
-        <source>Fees (in LMC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Poplatky (v LMC/Kb) menší než tato hodnota jsou považovány za nulové pro účely přeposílání transakcí (výchozí: %s)</translation>
+        <source>Fees (in LDC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Poplatky (v LDC/Kb) menší než tato hodnota jsou považovány za nulové pro účely přeposílání transakcí (výchozí: %s)</translation>
     </message>
     <message>
-        <source>Fees (in LMC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Poplatky (v LMC/Kb) menší než tato hodnota jsou považovány za nulové pro účely vytváření transakcí (výchozí: %s)</translation>
+        <source>Fees (in LDC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Poplatky (v LDC/Kb) menší než tato hodnota jsou považovány za nulové pro účely vytváření transakcí (výchozí: %s)</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -3151,8 +3151,8 @@ například: alertnotify=echo %%s | mail -s "Ladacoin Alert" admin@foo.com
         <translation>Chyba: Argument -tor již není podporovaný, použij -onion.</translation>
     </message>
     <message>
-        <source>Fee (in LMC/kB) to add to transactions you send (default: %s)</source>
-        <translation>Poplatek (v LMC/kB), který se přidá ke každé odeslané transakci (výchozí: %s)</translation>
+        <source>Fee (in LDC/kB) to add to transactions you send (default: %s)</source>
+        <translation>Poplatek (v LDC/kB), který se přidá ke každé odeslané transakci (výchozí: %s)</translation>
     </message>
     <message>
         <source>Information</source>

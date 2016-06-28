@@ -3920,12 +3920,12 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Fees (in LMC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in LDC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in LMC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in LDC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4055,7 +4055,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Ladacoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+2"/>
-        <source>Fee (in LMC/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in LDC/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

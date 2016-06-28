@@ -3051,12 +3051,12 @@ Adres: %4
         <translation>İlgili bir uyarı alındığında ya da gerçekten uzun bir çatallama gördüğümüzde komutu çalıştır (komuttaki %s mesaj ile değiştirilir)</translation>
     </message>
     <message>
-        <source>Fees (in LMC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Kb başına LMC olarak bundan düşük ücretler aktarım için sıfır değerinde ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in LDC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Kb başına LDC olarak bundan düşük ücretler aktarım için sıfır değerinde ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in LMC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Kb başına LMC olarak bundan düşük ücretler muamele oluşturulması için sıfır değerinde ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in LDC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Kb başına LDC olarak bundan düşük ücretler muamele oluşturulması için sıfır değerinde ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -3163,8 +3163,8 @@ mesela: alertnotify=echo %%s | mail -s "Ladacoin Alert" admin@foo.com
         <translation>Hata: Deskteklenmeyen -tor argümanı bulundu, -onion kullanınız.</translation>
     </message>
     <message>
-        <source>Fee (in LMC/kB) to add to transactions you send (default: %s)</source>
-        <translation>Yolladığınız muamelelere kB başına LMC olarak eklenecek ücret (varsayılan: %s)</translation>
+        <source>Fee (in LDC/kB) to add to transactions you send (default: %s)</source>
+        <translation>Yolladığınız muamelelere kB başına LDC olarak eklenecek ücret (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Information</source>
