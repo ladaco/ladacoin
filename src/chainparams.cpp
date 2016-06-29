@@ -63,11 +63,14 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
         ( 256, uint256("0xa83edd96dff905aab89680cf376d990f442bdc132df9b7d46f07046544f277c5"))
         ( 512, uint256("0x01886cc19b158c46472c83829058c6e35f965f18aa5c1df66810f883e6aeb45f"))
         ( 1024, uint256("0xff3c7e6ef394ae25873417dded36a98bc9078b5ea8a4136bb6cdbe6030a62d17"))
+        ( 2048, uint256("0x4a162aadd8ecc9d38d827a39d8200c3c29f2e57701e7fa3e71b365ed6c150dfd"))
+        ( 3072, uint256("0x853568d83d85a66b74c548c8c999ffc1d2a7a056f334dcb1259e5869becab020"))
+        ( 4096, uint256("0xe9ea2f86dc06bab486beafba65e956c24298d01eca2eec7bfc295ba4ccf443d9"))		
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
-        1466291073, // * UNIX timestamp of last checkpoint block b2dcbf8e530ed8934b2cdd21c95f801ea473e70225463940b4634e5c8232fd35
-        1025,   // * total number of transactions between genesis and last checkpoint
+        1466933989, // * UNIX timestamp of last checkpoint block b2dcbf8e530ed8934b2cdd21c95f801ea473e70225463940b4634e5c8232fd35
+        4144,   // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         5500.0     // * estimated number of transactions per day after checkpoint
     };
@@ -149,7 +152,9 @@ public:
         assert(hashGenesisBlock == uint256("0xd77cb63a40042d73a83142383c7872c123cda7253db1d9c0effc8a029ca857b2"));
         assert(genesis.hashMerkleRoot == uint256("0x7a756f67df28090833de8df9c15f36f9637306809443b3065dec5db903210566"));
 		
+		vSeeds.push_back(CDNSSeedData("king.odj.ru", "node.exip.net"));
 		vSeeds.push_back(CDNSSeedData("192.168.1.103", "192.168.1.107"));
+		vSeeds.push_back(CDNSSeedData("192.168.1.100", "192.168.1.112"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(0);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
@@ -197,16 +202,20 @@ public:
         pchMessageStart[1] = 0xc0;
         pchMessageStart[2] = 0xb6;
         pchMessageStart[3] = 0xdb;
-		vAlertPubKey = ParseHex("04c012eb4585bffc0c400b4dc498d18cfddd814eb5185b807883f63b74172e2e743473923b667108daf5d3d1e2e7f1cdc49fdba36a60d87a202e42aa04780c5a8e");
+        vAlertPubKey = ParseHex("043014c67b78f95c8964ba4f10bc83ce6dbee8d6afeb0570552e2f7562f83a5ae6cc937900545ab5c30a84565315d55107d5269e816c50e4080ca89dc2cc64e9c2");
+		//vAlertPubKey = ParseHex("04c012eb4585bffc0c400b4dc498d18cfddd814eb5185b807883f63b74172e2e743473923b667108daf5d3d1e2e7f1cdc49fdba36a60d87a202e42aa04780c5a8e");
         //vAlertPubKey = ParseHex("045413a69945feab5cd832b1a499202d17baabd4792df7da55251f022103054691bb6b9fa59599f47578c6889203196d15e2d522d5c6ac7a17563e1a504e8a1a29");
         nDefaultPort = 9333;
-        nEnforceBlockUpgradeMajority = 51;
-        nRejectBlockOutdatedMajority = 75;
-        nToCheckBlockUpgradeMajority = 100;
+        bnProofOfWorkLimit = ~uint256(0) >> 20; //empty
+        nSubsidyHalvingInterval = 210000; //empty
+        nEnforceBlockUpgradeMajority = 750; //51
+        nRejectBlockOutdatedMajority = 950; //75
+        nToCheckBlockUpgradeMajority = 1000; //100
         nMinerThreads = 0;
         nTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
         nTargetSpacing = 2.5 * 60; // 2.5 minutes
-        nMaxTipAge = 0x7fffffff;
+		nMaxTipAge = 24 * 60 * 60;
+        //nMaxTipAge = 0x7fffffff;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1466035200;
@@ -216,8 +225,10 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
+		vSeeds.push_back(CDNSSeedData("king.odj.ru", "node.exip.net"));
 		vSeeds.push_back(CDNSSeedData("192.168.1.103", "192.168.1.107"));
-
+		vSeeds.push_back(CDNSSeedData("192.168.1.100", "192.168.1.112"));
+		
         base58Prefixes[PUBKEY_ADDRESS] = list_of(48);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
         base58Prefixes[SECRET_KEY] =     list_of(176);
@@ -234,14 +245,15 @@ public:
 
         fRequireRPCPassword = true;
         fMiningRequiresPeers = true;
-        fAllowMinDifficultyBlocks = true;
+        fAllowMinDifficultyBlocks = false; //true
         fDefaultConsistencyChecks = false;
-        fRequireStandard = false;
+        fRequireStandard = true; //false
         fMineBlocksOnDemand = false;
-        fTestnetToBeDeprecatedFieldRPC = true;
+        fSkipProofOfWorkCheck = false;
+        fTestnetToBeDeprecatedFieldRPC = false; //true
 
         // Ladacoin: Testnet v2 enforced as of block 400k
-        nEnforceV2AfterHeight = 400000;
+        nEnforceV2AfterHeight = 710000;
     }
     const Checkpoints::CCheckpointData& Checkpoints() const 
     {
