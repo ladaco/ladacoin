@@ -20,7 +20,7 @@ packages:
 - "zip"
 reference_datetime: "2016-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/genavarov/ladacoind.git"
+- "url": "https://github.com/ladaco/ladacoin.git"
   "dir": "ladacoin"
 files: []
 script: |
