@@ -450,8 +450,8 @@ void static BitcoinMiner(CWallet *pwallet)
 						MilliSleep(600000);
                         }
 						//GetAdjustedTime and chainActive.Height()+1
-						unsigned int nHeightMax = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
-					    if (chainActive.Height()+1 > nHeightMax) {
+						unsigned int nHeightMaxNext = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
+					    if (chainActive.Height()+1 > nHeightMaxNext) {
                         
                         // Mark block as in flight already
                         LogPrintf("Error in LamacoinMiner : Invalid over hight limit next block, unable to create new block!\n");
@@ -459,7 +459,7 @@ void static BitcoinMiner(CWallet *pwallet)
 						MilliSleep(600000);
                         }
 						//GetAdjustedTime
-						unsigned int nHeightMaxnTime = ((GetAdjustedTime - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
+						unsigned int nHeightMaxnTime = ((GetAdjustedTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
 					    if (chainActive.Height()+1 > nHeightMaxnTime) {
                         
                         // Mark block as in flight already
