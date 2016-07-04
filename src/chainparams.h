@@ -99,6 +99,7 @@ protected:
     int nToCheckBlockUpgradeMajority;
     int64_t nTargetTimespan;
     int64_t nTargetSpacing;
+	int64_t nGenesisnTime;
     int nMinerThreads;
     long nMaxTipAge;
     std::vector<CDNSSeedData> vSeeds;
