@@ -439,7 +439,34 @@ void static BitcoinMiner(CWallet *pwallet)
             //
             unsigned int nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
             CBlockIndex* pindexPrev = chainActive.Tip();
-
+			
+						//chainActive.Height()
+						unsigned int nHeightMax = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime())/Params().TargetSpacing());
+					    if (chainActive.Height() > nHeightMax) {
+                        
+                        // Mark block as in flight already
+                        LogPrintf("Error in LamacoinMiner : Invalid over hight limit active block, unable to create new block!\n");
+						return;
+						MilliSleep(600000);
+                        }
+						//GetAdjustedTime and chainActive.Height()+1
+						unsigned int nHeightMax = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
+					    if (chainActive.Height()+1 > nHeightMax) {
+                        
+                        // Mark block as in flight already
+                        LogPrintf("Error in LamacoinMiner : Invalid over hight limit next block, unable to create new block!\n");
+						return;
+						MilliSleep(600000);
+                        }
+						//GetAdjustedTime
+						unsigned int nHeightMaxnTime = ((GetAdjustedTime - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
+					    if (chainActive.Height()+1 > nHeightMaxnTime) {
+                        
+                        // Mark block as in flight already
+                        LogPrintf("Error in LamacoinMiner : Invalid over hight limit in now Time, unable to create new block!\n");
+						return;
+						MilliSleep(600000);
+                        }
             auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey));
             if (!pblocktemplate.get())
             {
