@@ -1302,7 +1302,8 @@ bool IsInitialBlockDownload()
     static bool lockIBDState = false;
     if (lockIBDState)
         return false;
-    bool state = (chainActive.Height() < pindexBestHeader->nHeight - 24 * 6 ||
+	unsigned int nHeightMax =((chainActive.Tip()->GetBlockTime() - genesis.nTime())/Params().TargetSpacing());
+    bool state = ((chainActive.Height() < nHeightMax && chainActive.Height() < pindexBestHeader->nHeight - 24 * 6) ||
             pindexBestHeader->GetBlockTime() < GetTime() - chainParams.MaxTipAge());
     if (!state)
         lockIBDState = true;
@@ -3945,7 +3946,8 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                     // not a direct successor.
                     pfrom->PushMessage("getheaders", chainActive.GetLocator(pindexBestHeader), inv.hash);
                     CNodeState *nodestate = State(pfrom->GetId());
-                    if (chainActive.Tip()->GetBlockTime() > GetAdjustedTime() - Params().TargetSpacing() * 20 &&
+					unsigned int nHeightMax = ((chainActive.Tip()->GetBlockTime() - genesis.nTime())/Params().TargetSpacing());
+                    if ((chainActive.Height() > nHeightMax && chainActive.Tip()->GetBlockTime() > GetAdjustedTime() - Params().TargetSpacing() * 20) &&
                         nodestate->nBlocksInFlight < MAX_BLOCKS_IN_TRANSIT_PER_PEER) {
                         vToFetch.push_back(inv);
                         // Mark block as in flight already, even though the actual "getdata" message only goes out
