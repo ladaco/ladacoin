@@ -1302,8 +1302,7 @@ bool IsInitialBlockDownload()
     static bool lockIBDState = false;
     if (lockIBDState)
         return false;
-	unsigned int nHeightMax =((chainActive.Tip()->GetBlockTime() - GenesisnTime())/Params().TargetSpacing());
-    bool state = ((chainActive.Height() < nHeightMax && chainActive.Height() < pindexBestHeader->nHeight - 24 * 6) ||
+    bool state = ((chainActive.Height() <= nHeightMax && chainActive.Height() < pindexBestHeader->nHeight - 24 * 6) ||
             pindexBestHeader->GetBlockTime() < GetTime() - chainParams.MaxTipAge());
     if (!state)
         lockIBDState = true;
@@ -3946,7 +3945,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                     // not a direct successor.
                     pfrom->PushMessage("getheaders", chainActive.GetLocator(pindexBestHeader), inv.hash);
                     CNodeState *nodestate = State(pfrom->GetId());
-					unsigned int nHeightMax = ((chainActive.Tip()->GetBlockTime() - GenesisnTime())/Params().TargetSpacing());
                     if ((chainActive.Height() > nHeightMax && chainActive.Tip()->GetBlockTime() > GetAdjustedTime() - Params().TargetSpacing() * 20) &&
                         nodestate->nBlocksInFlight < MAX_BLOCKS_IN_TRANSIT_PER_PEER) {
                         vToFetch.push_back(inv);
