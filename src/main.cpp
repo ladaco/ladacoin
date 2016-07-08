@@ -2590,6 +2590,14 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     CBlockIndex* pcheckpoint = Checkpoints::GetLastCheckpoint();
     if (pcheckpoint && nHeight < pcheckpoint->nHeight)
         return state.DoS(100, error("%s : forked chain older than last checkpoint (height %d)", __func__, nHeight));
+	//int nHeight = pindexPrev->nHeight+1; chainActive.Height()+1
+	unsigned int nHeightMaxNextBl = ((block.GetBlockTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
+	if (nHeight > nHeightMaxNextBl) {
+    // Mark block as in flight already
+    //LogPrintf("Error in LamacoinMiner : Invalid over hight limit next block, unable to create new block!\n");
+	return state.DoS(100, error("%s : forked chain newest than over hight limit (height %d)", __func__, nHeight));
+	//return;
+    }	
 
     // Ladacoin: Reject block.nVersion=1 blocks (mainnet >= 710000, testnet >= 400000, regtest uses supermajority)
     bool enforceV2 = false;

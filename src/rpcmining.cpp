@@ -504,7 +504,29 @@ Value getblocktemplate(const Array& params, bool fHelp)
         nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
         CBlockIndex* pindexPrevNew = chainActive.Tip();
         nStart = GetTime();
-
+		
+		//chainActive.Height()
+		unsigned int nHeightMax = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime())/Params().TargetSpacing());
+		if (chainActive.Height() > nHeightMax) {
+        throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid over hight limit active block, unable to create new block!");
+		//return;
+		MilliSleep(600000);
+        }
+		//GetAdjustedTime and chainActive.Height()+1
+		unsigned int nHeightMaxNext = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
+		if (chainActive.Height()+1 > nHeightMaxNext) {
+        throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid over hight limit next block, unable to create new block!");
+		//return;
+		MilliSleep(600000);
+        }
+		//GetAdjustedTime
+		unsigned int nHeightMaxnTime = ((GetAdjustedTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
+		if (chainActive.Height()+1 > nHeightMaxnTime) {
+        throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid over hight limit in now Time, unable to create new block!");
+		//return;
+		MilliSleep(600000);
+        }
+		
         // Create new block
         if(pblocktemplate)
         {
