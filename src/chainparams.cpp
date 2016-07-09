@@ -67,13 +67,14 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
         ( 3072, uint256("0x853568d83d85a66b74c548c8c999ffc1d2a7a056f334dcb1259e5869becab020"))
         ( 4096, uint256("0xe9ea2f86dc06bab486beafba65e956c24298d01eca2eec7bfc295ba4ccf443d9"))		
         ( 6300, uint256("0x24b0e25b37e33cdcd797c04bb002a51781d0b588ee770f7ec7444202a4cafe6b"))
-		( 7200, uint256("0x197bc599f1b0935852cd247863c731deb90ab65f6d71b51ce64daf7a8e075e2b"))
-        ( 8400, uint256("0x702528b55f744f690d896095c4ca8642ccf5f6b420a37b5c6db303013b982d24"))	
+        ( 7200, uint256("0x197bc599f1b0935852cd247863c731deb90ab65f6d71b51ce64daf7a8e075e2b"))
+        ( 8400, uint256("0x702528b55f744f690d896095c4ca8642ccf5f6b420a37b5c6db303013b982d24"))
+        ( 12700, uint256("0xb4840c996402136af7e71c19bbad1431b88e0bce56716aa3d9a6eb9f09f73ac2"))	
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
-        1467617845, // * UNIX timestamp of last checkpoint block b2dcbf8e530ed8934b2cdd21c95f801ea473e70225463940b4634e5c8232fd35
-        8491,   // * total number of transactions between genesis and last checkpoint
+        1468020274, // * UNIX timestamp of last checkpoint block d77cb63a40042d73a83142383c7872c123cda7253db1d9c0effc8a029ca857b2
+        12882,   // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         1152.0     // * estimated number of transactions per day after checkpoint
     };
@@ -89,12 +90,13 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
         ( 3072, uint256("0x853568d83d85a66b74c548c8c999ffc1d2a7a056f334dcb1259e5869becab020"))
         ( 4096, uint256("0xe9ea2f86dc06bab486beafba65e956c24298d01eca2eec7bfc295ba4ccf443d9"))
         ( 6300, uint256("0x24b0e25b37e33cdcd797c04bb002a51781d0b588ee770f7ec7444202a4cafe6b"))		
-        ( 7200, uint256("0x197bc599f1b0935852cd247863c731deb90ab65f6d71b51ce64daf7a8e075e2b"))		
+        ( 7200, uint256("0x197bc599f1b0935852cd247863c731deb90ab65f6d71b51ce64daf7a8e075e2b"))
+        ( 8400, uint256("0x702528b55f744f690d896095c4ca8642ccf5f6b420a37b5c6db303013b982d24"))		
         ;
 static const Checkpoints::CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
-        1467461098,
-        7286,
+        1467617845,
+        8491,
         630
     };
 
@@ -165,6 +167,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x7a756f67df28090833de8df9c15f36f9637306809443b3065dec5db903210566"));
 		
 		vSeeds.push_back(CDNSSeedData("king.odj.ru", "node.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node1.exip.net", "node2.exip.net"));
 		vSeeds.push_back(CDNSSeedData("192.168.1.103", "192.168.1.107"));
 		vSeeds.push_back(CDNSSeedData("192.168.1.100", "192.168.1.112"));
 
@@ -236,6 +239,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 		vSeeds.push_back(CDNSSeedData("king.odj.ru", "node.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node1.exip.net", "node2.exip.net"));
 		vSeeds.push_back(CDNSSeedData("192.168.1.103", "192.168.1.107"));
 		vSeeds.push_back(CDNSSeedData("192.168.1.100", "192.168.1.112"));
 		
