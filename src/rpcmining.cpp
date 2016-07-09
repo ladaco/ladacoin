@@ -11,6 +11,7 @@
 #include "main.h"
 #include "miner.h"
 #include "pow.h"
+#include "timedata.h"
 #include "rpcserver.h"
 #include "util.h"
 #ifdef ENABLE_WALLET
@@ -519,7 +520,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
 		//return;
 		MilliSleep(600000);
         }
-		//GetAdjustedTime
+		//GetAdjustedTime  int64_t nNow = GetAdjustedTime();
 		unsigned int nHeightMaxnTime = ((GetAdjustedTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
 		if (chainActive.Height()+1 > nHeightMaxnTime) {
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid over hight limit in now Time, unable to create new block!");
