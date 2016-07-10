@@ -506,12 +506,21 @@ Value getblocktemplate(const Array& params, bool fHelp)
         CBlockIndex* pindexPrevNew = chainActive.Tip();
         nStart = GetTime();
 		
+		if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
+            //not time for new Block
+           throw JSONRPCError(RPC_INVALID_PARAMETER, "Error in LamacoinMiner : Invalid Time for over hight limit active block, unable to create new block!\n");
+			//return;
+			MilliSleep(150000);
+			}
 		//chainActive.Height()
 		unsigned int nHeightMax = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime())/Params().TargetSpacing());
 		if (chainActive.Height() > nHeightMax) {
+			MilliSleep(150000);
+			if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid over hight limit active block, unable to create new block!");
 		//return;
 		MilliSleep(600000);
+		    }
         }
 		//GetAdjustedTime and chainActive.Height()+1
 		unsigned int nHeightMaxNext = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());

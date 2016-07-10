@@ -168,6 +168,7 @@ public:
 		
 		vSeeds.push_back(CDNSSeedData("king.odj.ru", "node.exip.net"));
 		vSeeds.push_back(CDNSSeedData("node1.exip.net", "node2.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node3.exip.net", "node4.exip.net"));
 		vSeeds.push_back(CDNSSeedData("192.168.1.103", "192.168.1.107"));
 		vSeeds.push_back(CDNSSeedData("192.168.1.100", "192.168.1.112"));
 
@@ -240,6 +241,7 @@ public:
         vSeeds.clear();
 		vSeeds.push_back(CDNSSeedData("king.odj.ru", "node.exip.net"));
 		vSeeds.push_back(CDNSSeedData("node1.exip.net", "node2.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node3.exip.net", "node4.exip.net"));
 		vSeeds.push_back(CDNSSeedData("192.168.1.103", "192.168.1.107"));
 		vSeeds.push_back(CDNSSeedData("192.168.1.100", "192.168.1.112"));
 		
