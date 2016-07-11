@@ -508,7 +508,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
 		
 		if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
             //not time for new Block
-           throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid Time for over hight limit active block, unable to create new block! wait 2.5 min...\n");
+           //throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid Time for over hight limit active block, unable to create new block! wait 2.5 min...\n");
 			//return;
 			MilliSleep(150000);
 			}
@@ -525,9 +525,9 @@ Value getblocktemplate(const Array& params, bool fHelp)
 		//GetAdjustedTime and chainActive.Height()+1
 		unsigned int nHeightMaxNext = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
 		if (chainActive.Height()+1 > nHeightMaxNext) {
-        //throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid over hight limit next block, unable to create new block! wait 5 min...");
+        throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid over hight limit next block, unable to create new block! wait 5 min...");
 		//return;
-		MilliSleep(150000);
+		MilliSleep(300000);
         }
 		//GetAdjustedTime  int64_t nNow = GetAdjustedTime();
 		unsigned int nHeightMaxnTime = ((GetAdjustedTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
