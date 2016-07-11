@@ -442,7 +442,7 @@ void static BitcoinMiner(CWallet *pwallet)
 			            
 						if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
                          //not time for new Block
-                        LogPrintf("Error in LamacoinMiner : Invalid Time for over hight limit active block, unable to create new block!\n");
+                        LogPrintf("Error in LamacoinMiner : Invalid Time for over hight limit active block, unable to create new block! wait 2.5 min...\n");
 						return;
 						MilliSleep(150000);
 						}
@@ -452,9 +452,9 @@ void static BitcoinMiner(CWallet *pwallet)
                         MilliSleep(150000);
 						  if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
                         // Mark block as in flight already
-                        LogPrintf("Error in LamacoinMiner : Invalid over hight limit active block, unable to create new block!\n");
+                        LogPrintf("Error in LamacoinMiner : Invalid over hight limit active block, unable to create new block! wait 5 min...\n");
 						return;
-						MilliSleep(600000);
+						MilliSleep(300000);
 						  }
                         }
 						//GetAdjustedTime and chainActive.Height()+1
@@ -462,9 +462,9 @@ void static BitcoinMiner(CWallet *pwallet)
 					    if (chainActive.Height()+1 > nHeightMaxNext) {
                         
                         // Mark block as in flight already
-                        LogPrintf("Error in LamacoinMiner : Invalid over hight limit next block, unable to create new block!\n");
-						return;
-						MilliSleep(600000);
+                        //LogPrintf("Error in LamacoinMiner : Invalid over hight limit next block, unable to create new block! wait 2.5 min...\n");
+						//return;
+						MilliSleep(150000);
                         }
 						//GetAdjustedTime
 						unsigned int nHeightMaxnTime = ((GetAdjustedTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
