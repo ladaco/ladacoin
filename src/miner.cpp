@@ -468,18 +468,12 @@ void static BitcoinMiner(CWallet *pwallet)
 						MilliSleep(300000);
 						  }
                         }
-						if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
-                         //not time for new Block
-                        LogPrintf("LamacoinMiner Timeout 2: Time: %s is not now for over hight limit active block (%s)! wait 2.5 min...\n", GetAdjustedTime(), chainActive.Height());
-						//return;
-						MilliSleep(150000);
-						}
 						//GetAdjustedTime
 						unsigned int nHeightMaxnTime = ((GetAdjustedTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
 					    if (chainActive.Height()+1 > nHeightMaxnTime) {
                         
                         // Mark block as in flight already
-                        LogPrintf("Timeout in LamacoinMiner : Invalid time: %s over hight limit in now Time for block (%s), unable to create new block ! wait 5 min...\n", GetAdjustedTime(), chainActive.Height());
+                        LogPrintf("Timeout in LamacoinMiner : Invalid over hight limit in now Time, unable to create new block! wait 5 min...\n");
 						//return;
 						MilliSleep(300000);
                         }
