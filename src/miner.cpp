@@ -440,42 +440,43 @@ void static BitcoinMiner(CWallet *pwallet)
             unsigned int nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
             CBlockIndex* pindexPrev = chainActive.Tip();
 			            
-						//chainActive.Height()
-						unsigned int nHeightMax = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime())/Params().TargetSpacing());
-					    if (chainActive.Height() > nHeightMax) {
-							LogPrintf("Timeout in LamacoinMiner : Time: %s is not now for over hight limit active block (%s)! wait 2.5 min...\n", GetAdjustedTime(), chainActive.Height());
-                        MilliSleep(150000);
-						  if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
-                        // Mark block as in flight already
-                        LogPrintf("Timeout in LamacoinMiner : Invalid time: %s over hight limit active block (%s), unable to create new block ! wait 5 min...\n", GetAdjustedTime(), chainActive.Height());
-						//return;
-						MilliSleep(300000);
-						  }
-                        }
-						if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
-                        // Mark block as in flight already
-                        LogPrintf("Timeout in LamacoinMiner : Invalid time: %s over hight limit active block (%s), unable to create new block ! wait 2.5 min...\n", GetAdjustedTime(), chainActive.Height());
-						//return;
-						MilliSleep(150000);
-						  }
-						//GetAdjustedTime and chainActive.Height()+1
-						unsigned int nHeightMaxNext = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
-					    if (chainActive.Height()+1 > nHeightMaxNext) {
-                        // Mark block as in flight already
-                        LogPrintf("Timeout in LamacoinMiner : Invalid time: %s over hight limit next block (%s), unable to create new block ! wait 5 min...\n", GetAdjustedTime(), chainActive.Height()+1);
-						return;
-						MilliSleep(300000);
+			//chainActive.Height()
+			unsigned int nHeightMax = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime())/Params().TargetSpacing());
+			if (chainActive.Height() > nHeightMax) {
+				LogPrintf("Timeout in LamacoinMiner : Time: %s is not now for over hight limit active block (%s)! wait 2.5 min...\n", GetAdjustedTime(), chainActive.Height());
+                MilliSleep(150000);
+				if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
+                    // Mark block as in flight already
+                    LogPrintf("Timeout in LamacoinMiner : Invalid time: %s over hight limit active block (%s), unable to create new block ! wait 5 min...\n", GetAdjustedTime(), chainActive.Height());
+					//return;
+				MilliSleep(300000);
+				}
+            }
+			if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
+                // Mark block as in flight already
+                LogPrintf("Timeout in LamacoinMiner : Invalid time: %s over hight limit active block (%s), unable to create new block ! wait 2.5 min...\n", GetAdjustedTime(), chainActive.Height());
+				//return;
+				MilliSleep(150000);
+			}
+			//GetAdjustedTime and chainActive.Height()+1
+			unsigned int nHeightMaxNext = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
+			if (chainActive.Height()+1 > nHeightMaxNext) {
+                // Mark block as in flight already
+                LogPrintf("Timeout in LamacoinMiner : Invalid time: %s over hight limit next block (%s), unable to create new block ! wait 5 min...\n", GetAdjustedTime(), chainActive.Height()+1);
+				return;
+				MilliSleep(300000);
 						 
-                        }
-						//GetAdjustedTime
-						unsigned int nHeightMaxnTime = ((GetAdjustedTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
-					    if (chainActive.Height()+1 > nHeightMaxnTime) {
+            }
+			//GetAdjustedTime
+			unsigned int nHeightMaxnTime = ((GetAdjustedTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
+			if (chainActive.Height()+1 > nHeightMaxnTime) {
                         
-                        // Mark block as in flight already
-                        LogPrintf("Timeout in LamacoinMiner : Invalid time: %s over hight limit in now Time for block (%s), unable to create new block ! wait 5 min...\n", GetAdjustedTime(), chainActive.Height());
-						//return;
-						MilliSleep(300000);
-                        }
+                // Mark block as in flight already
+                LogPrintf("Timeout in LamacoinMiner : Invalid time: %s over hight limit in now Time for block (%s), unable to create new block ! wait 5 min...\n", GetAdjustedTime(), chainActive.Height());
+				return;
+				MilliSleep(300000);
+            }
+			
             auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey));
             if (!pblocktemplate.get())
             {
