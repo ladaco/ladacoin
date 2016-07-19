@@ -516,24 +516,70 @@ Value getblocktemplate(const Array& params, bool fHelp)
 		MilliSleep(300000);
 		    }
         }
-			//chainActive.Height()
-		    if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
+		//chainActive.Height()
+		if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
+            //Timeout again after new block - speed up if late
+				//rpcmining
+				if (nHeightMax - chainActive.Height() > 4608) {
+				// Timeout after ~ 960 blocks
+                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 1:50 min...\n", GetAdjustedTime(), chainActive.Height());
+				//return;
+				MilliSleep(110000); //90
+				}
+				else if ((nHeightMax - chainActive.Height() > 2304) && (nHeightMax - chainActive.Height() <= 4608)) {
+				// Timeout after ~ 822 blocks
+                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:00 min...\n", GetAdjustedTime(), chainActive.Height());
+				//return;
+				MilliSleep(120000); //105
+				}
+				else if ((nHeightMax - chainActive.Height() > 1152) && (nHeightMax - chainActive.Height() <= 2304)) {
+				// Timeout after ~ 720 blocks
+                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:10 min...\n", GetAdjustedTime(), chainActive.Height());
+				//return;
+				MilliSleep(130000); //120
+				}
+				else if ((nHeightMax - chainActive.Height() > 576) && (nHeightMax - chainActive.Height() <= 1152)) {
+				// Timeout after ~ 664 blocks
+                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:20 min...\n", GetAdjustedTime(), chainActive.Height());
+				//return;
+				MilliSleep(140000); //130
+				}
+				else if ((nHeightMax - chainActive.Height() > 288) && (nHeightMax - chainActive.Height() <= 576)) {
+				// Timeout after ~ 617 blocks
+                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:25 min...\n", GetAdjustedTime(), chainActive.Height());
+				//return;
+				MilliSleep(145000); //140
+				}
+				else if ((nHeightMax - chainActive.Height() > 148) && (nHeightMax - chainActive.Height() <= 288)) {
+				// Timeout after ~ 595 blocks
+                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:28 min...\n", GetAdjustedTime(), chainActive.Height());
+				//return;
+				MilliSleep(148000); //145
+				}
+				else
+				{
+				// Timeout already before
+                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2.5 min...\n", GetAdjustedTime(), chainActive.Height());
+				//return;
+				MilliSleep(150000);					
+				}
+		//throw JSONRPCError(RPC_INVALID_PARAMETER, "Timeout: Invalid over hight limit active block, unable to create new block! wait 5 min...");
+		//return;
+		//MilliSleep(150000);
+		MilliSleep(40000); //again min timeout 150000 - 110000
+		}
+			//chainActive.Height()+1
+		if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
         //throw JSONRPCError(RPC_INVALID_PARAMETER, "Timeout: Invalid over hight limit active block, unable to create new block! wait 5 min...");
 		//return;
 		MilliSleep(150000);
-		    }
-			//chainActive.Height()+1
-		    if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
+		}
+		//chainActive.Height()+1 + 150 sec
+		//if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() + Params().TargetSpacing() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
         //throw JSONRPCError(RPC_INVALID_PARAMETER, "Timeout: Invalid over hight limit active block, unable to create new block! wait 5 min...");
 		//return;
-		MilliSleep(300000);
-		    }
-			//chainActive.Height()+1 + 150 sec
-			if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() + Params().TargetSpacing() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
-        //throw JSONRPCError(RPC_INVALID_PARAMETER, "Timeout: Invalid over hight limit active block, unable to create new block! wait 5 min...");
-		//return;
-		MilliSleep(450000);
-		    }
+		//MilliSleep(450000);
+		//}
 		//GetAdjustedTime and chainActive.Height()+1
 		unsigned int nHeightMaxNext = ((chainActive.Tip()->GetBlockTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
 		if (chainActive.Height()+1 > nHeightMaxNext) {
