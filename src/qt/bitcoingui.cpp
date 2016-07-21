@@ -27,6 +27,7 @@
 
 #include "init.h"
 #include "ui_interface.h"
+#include "blockbrowser.h"
 #include "util.h"
 
 #include <iostream>

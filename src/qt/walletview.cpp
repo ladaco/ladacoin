@@ -19,6 +19,7 @@
 #include "walletmodel.h"
 
 #include "ui_interface.h"
+#include "blockbrowser.h"
 
 #include <QAction>
 #include <QActionGroup>
@@ -35,6 +36,7 @@ WalletView::WalletView(QWidget *parent):
 {
     // Create tabs
     overviewPage = new OverviewPage();
+	blockBrowser = new BlockBrowser(this);
 
     transactionsPage = new QWidget(this);
     QVBoxLayout *vbox = new QVBoxLayout();
@@ -58,6 +60,7 @@ WalletView::WalletView(QWidget *parent):
     addWidget(transactionsPage);
     addWidget(receiveCoinsPage);
     addWidget(sendCoinsPage);
+	addWidget(blockBrowser);
 
     // Clicking on a transaction on the overview pre-selects the transaction on the transaction history page
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), transactionView, SLOT(focusTransaction(QModelIndex)));
@@ -198,6 +201,12 @@ void WalletView::gotoVerifyMessageTab(QString addr)
 
     if (!addr.isEmpty())
         signVerifyMessageDialog->setAddress_VM(addr);
+}
+
+void WalletView::gotoBlockBrowser()
+{
+    gui->getBlockAction()->setChecked(true);
+    setCurrentWidget(blockBrowser);
 }
 
 bool WalletView::handlePaymentRequest(const SendCoinsRecipient& recipient)
