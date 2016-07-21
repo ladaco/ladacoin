@@ -2590,6 +2590,21 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     CBlockIndex* pcheckpoint = Checkpoints::GetLastCheckpoint();
     if (pcheckpoint && nHeight < pcheckpoint->nHeight)
         return state.DoS(100, error("%s : forked chain older than last checkpoint (height %d)", __func__, nHeight));
+	
+	// Check timestamp against spam or dos after 16800 block
+	if (nHeight > 16800) {
+	//int nHeight = pindexPrev->nHeight+1;  chainActive.Tip()->GetMedianTimePast()+1
+	if ((block.GetBlockTime() - pindexPrev->GetMedianTimePast()) < 30)
+        return state.DoS(20, error("%s : forked chain new block after last height (height %d)", __func__, nHeight));
+	
+	}
+	
+	if (nHeight > 16800) {
+    if ((block.GetBlockTime() - pindexPrev->GetMedianTimePast()) < (Params().TargetSpacing() - 60 + 1))
+        return state.Invalid(error("%s : block's timestamp is too speedy or from future (height %d)", __func__, nHeight),
+                             REJECT_INVALID, "time-too-new");
+							 
+	}
 	//int nHeight = pindexPrev->nHeight+1; chainActive.Height()+1
 	unsigned int nHeightMaxNextBl = ((block.GetBlockTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
 	if (nHeight > nHeightMaxNextBl) {

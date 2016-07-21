@@ -4023,11 +4023,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Ladacoin Alert&quot; admin@foo
         <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
-	<message>
-        <location line="+3"/>
-        <source>Copyright (C) 2016-%i The Ladacoin Core Developers</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <location line="+2"/>
         <source>Could not parse -rpcbind value %s as network address</source>
