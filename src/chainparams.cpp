@@ -70,12 +70,13 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
         ( 7200, uint256("0x197bc599f1b0935852cd247863c731deb90ab65f6d71b51ce64daf7a8e075e2b"))
         ( 8400, uint256("0x702528b55f744f690d896095c4ca8642ccf5f6b420a37b5c6db303013b982d24"))
         ( 12700, uint256("0xb4840c996402136af7e71c19bbad1431b88e0bce56716aa3d9a6eb9f09f73ac2"))
-        ( 16800, uint256("0x3229d32141164b7a1d3d82a606fccf096bdf046f4612b9b57d4096f2dfebce98"))	
+        ( 16800, uint256("0x3229d32141164b7a1d3d82a606fccf096bdf046f4612b9b57d4096f2dfebce98"))
+        ( 17300, uint256("0x51d6766e909baff8809fa85f7be393b31c91ce0724af93de8d3539662c80078b"))
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
-        1468996961, // * UNIX timestamp of last checkpoint block d77cb63a40042d73a83142383c7872c123cda7253db1d9c0effc8a029ca857b2
-        17017,   // * total number of transactions between genesis and last checkpoint
+        1469220831, // * UNIX timestamp of last checkpoint block d77cb63a40042d73a83142383c7872c123cda7253db1d9c0effc8a029ca857b2
+        17529,   // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         1152.0     // * estimated number of transactions per day after checkpoint
     };
@@ -97,7 +98,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
         ;
 static const Checkpoints::CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
-        1468020274,
+        1468020274, // 16800 1468996961 17017
         12882,
         630
     };
