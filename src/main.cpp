@@ -1274,6 +1274,53 @@ CAmount GetProofOfWorkReward(unsigned int nHeight)
     	return nSubsidy;
 }
 
+// for miner's coin base reward min limit on alowed Balance
+CAmount GetProofOfWorkRewardBalance(unsigned int nHeight)
+{
+        CAmount nSubsidyMin = 2100 * COIN; //Is not need
+		//40*5.76*365 = 2102.4 and + nHeight * 0.02
+		if (nHeight < 2101)
+			nSubsidyMin = 0 * COIN; //  10,500000 coins
+		else if (nHeight < 4201)
+			nSubsidyMin = (nHeight * 0.10 + 33600) * COIN; // 640*5.76*365  1,344000 coins
+		else if (nHeight < 6301)
+			nSubsidyMin = (nHeight * 0.10 + 16800) * COIN; // 320*5.76*365  0,672000 coins
+		else if (nHeight < 8401)
+			nSubsidyMin = (nHeight * 0.10 + 8400) * COIN; // 160*5.76*365  0,336000 coins
+		else if (nHeight < 10501)
+			nSubsidyMin = (nHeight * 0.10 + 4200) * COIN; // 80*5.76*365  0,168000 coins
+		else if (nHeight < 21001)
+			nSubsidyMin = (nHeight * 0.10 + 2100) * COIN; // 40*5.76*365  0,420000 coins
+		else if (nHeight < 42001)
+			nSubsidyMin = (nHeight * 0.10 + 4200) * COIN; // 0,840000 coins
+		else if (nHeight < 63001)
+			nSubsidyMin = (nHeight * 0.10 + 6300) * COIN; // 0,840000 coins
+		else if (nHeight < 84001)
+			nSubsidyMin = (nHeight * 0.10 + 8400) * COIN; // 0,840000 coins
+		else if (nHeight < 105001)
+			nSubsidyMin = (nHeight * 0.10 + 10500) * COIN; // 0,840000 coins
+		else if (nHeight < 126001)
+			nSubsidyMin = (nHeight * 0.10 + 12600) * COIN; // 0,840000 coins
+		else if (nHeight < 147001)
+			nSubsidyMin = (nHeight * 0.10 + 14700) * COIN; // 0,840000 coins
+		else if (nHeight < 168001)
+			nSubsidyMin = (nHeight * 0.10 + 16800) * COIN; // 0,840000 coins
+		else if (nHeight < 189001)
+			nSubsidyMin = (nHeight * 0.10 + 18900) * COIN; // 0,840000 coins
+		else if (nHeight < 210001)
+			nSubsidyMin = (nHeight * 0.10 + 21000) * COIN; // 0,840000 coins
+		else if (nHeight < 420001)
+			nSubsidyMin = (nHeight * 0.08 + 42000) * COIN; // 40/2 = 20 coins
+		else if (nHeight < 630001)
+			nSubsidyMin = (nHeight * 0.06 + 63000) * COIN; // 40/4 = 10 coins
+		else if (nHeight < 840001)
+			nSubsidyMin = (nHeight * 0.04 + 84000) * COIN; // 40/8 = 5 coins
+		else if (nHeight > 840000)
+			nSubsidyMin = (nHeight * 0.02 + 84000) * COIN; // 2.50 coins per block
+
+    	return nSubsidyMin;
+}
+
 CAmount GetBlockValue(int nHeight, const CAmount& nFees)
 {
     //CAmount nSubsidy = 5000 * COIN; //const
@@ -2598,13 +2645,33 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
         return state.DoS(20, error("%s : forked chain new block after last height (height %d)", __func__, nHeight));
 	
 	}
+	// Check timestamp against spam or dos after 24200 block
+	if (nHeight > 24200) {
+	//chainActive.Tip()->GetBlockTime()	
+	if ((block.GetBlockTime() - chainActive.Tip()->GetBlockTime()) < 60)
+        return state.DoS(40, error("%s : forked chain new block after last height or is too speedy (height %d)", __func__, nHeight));
 	
+	}
+	// Check timestamp many blocks against spam or dos after 16800 block
 	if (nHeight > 16800) {
+		
     if ((block.GetBlockTime() - pindexPrev->GetMedianTimePast()) < (Params().TargetSpacing() - 60 + 1))
         return state.Invalid(error("%s : block's timestamp is too speedy or from future (height %d)", __func__, nHeight),
                              REJECT_INVALID, "time-too-new");
-							 
+	
 	}
+	// Check timestamp many blocks against spam or dos after 24200 block
+	if (nHeight > 24200) {
+	//chainActive.Tip()->GetBlockTime()	
+	if ((nHeight - chainActive.Height()) > 1){
+	//Is many block's spamed	
+	if (((block.GetBlockTime() - chainActive.Tip()->GetBlockTime())/(Params().TargetSpacing() - 60 + 1)) < (nHeight - chainActive.Height()))
+        return state.Invalid(error("%s : Is many block's timestamp is too speedy or from future or spamed (height %d)", __func__, nHeight),
+                             REJECT_INVALID, "time-too-new");
+	}
+	
+	}
+	
 	//int nHeight = pindexPrev->nHeight+1; chainActive.Height()+1
 	unsigned int nHeightMaxNextBl = ((block.GetBlockTime() - Params().GenesisBlock().GetBlockTime() + Params().TargetSpacing())/Params().TargetSpacing());
 	if (nHeight > nHeightMaxNextBl) {

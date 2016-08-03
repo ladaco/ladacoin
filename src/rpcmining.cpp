@@ -522,51 +522,282 @@ Value getblocktemplate(const Array& params, bool fHelp)
 				//rpcmining
 				if (nHeightMax - chainActive.Height() > 4608) {
 				// Timeout after ~ 960 blocks
-                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 1:50 min...\n", GetAdjustedTime(), chainActive.Height());
+                	// Check amount
+					CAmount nValue = pwalletMain->GetBalance();
+                    if (nValue <= 0)
+					{
+						LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:35 min...\n", GetAdjustedTime(), chainActive.Height());
+				        //return;
+						LogPrintf("Warn in LamacoinMiner : Invalid zero amount on balance - unable for fast mining!\n");						
+						//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid zero amount on balance - unable for fast mining!");
+						//return;
+						MilliSleep(120000);
+				    }
+					else
+					{   
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						if (nValue <= nSubsidyMin)
+						{
+							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:00 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("Warn in LamacoinMiner : Not minimum alowed amount on your balance - unable fast mining!\n");						
+							LogPrintf("Warn in LamacoinMiner : Alowed balance: %s Your balance : %s It is unable fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							//throw JSONRPCError(RPC_INVALID_PARAMETER, "Not minimum alowed amount on your balance - unable for fast mining!");
+							//return;
+							MilliSleep(120000);
+						}
+						else
+						{	
+					        LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:00 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("LamacoinMiner : Alowed balance: %s Your balance : %s It is alowed fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							MilliSleep(115000);
+						}
+						
+					}//End Check amount
+				//LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 1:55 min...\n", GetAdjustedTime(), chainActive.Height());
 				//return;
-				MilliSleep(110000); //90
+				//MilliSleep(115000); //90
 				}
 				else if ((nHeightMax - chainActive.Height() > 2304) && (nHeightMax - chainActive.Height() <= 4608)) {
 				// Timeout after ~ 822 blocks
-                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:00 min...\n", GetAdjustedTime(), chainActive.Height());
+                	// Check amount
+					CAmount nValue = pwalletMain->GetBalance();
+                    if (nValue <= 0)
+					{
+						LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:05 min...\n", GetAdjustedTime(), chainActive.Height());
+				        //return;
+						LogPrintf("Warn in LamacoinMiner : Invalid zero amount on balance - unable for fast mining!\n");						
+						//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid zero amount on balance - unable for fast mining!");
+						//return;
+						MilliSleep(125000);
+				    }
+					else
+					{   
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						if (nValue <= nSubsidyMin)
+						{
+							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:05 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("Warn in LamacoinMiner : Not minimum alowed amount on your balance - unable fast mining!\n");						
+							LogPrintf("Warn in LamacoinMiner : Alowed balance: %s Your balance : %s It is unable fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							//throw JSONRPCError(RPC_INVALID_PARAMETER, "Not minimum alowed amount on your balance - unable for fast mining!");
+							//return;
+							MilliSleep(125000);
+						}
+						else
+						{	
+					        LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:00 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("LamacoinMiner : Alowed balance: %s Your balance : %s It is alowed fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							MilliSleep(120000);
+						}
+						
+					}//End Check amount
+				//LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:00 min...\n", GetAdjustedTime(), chainActive.Height());
 				//return;
-				MilliSleep(120000); //105
+				//MilliSleep(120000); //105
 				}
 				else if ((nHeightMax - chainActive.Height() > 1152) && (nHeightMax - chainActive.Height() <= 2304)) {
 				// Timeout after ~ 720 blocks
-                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:10 min...\n", GetAdjustedTime(), chainActive.Height());
+                	// Check amount
+					CAmount nValue = pwalletMain->GetBalance();
+                    if (nValue <= 0)
+					{
+						LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:15 min...\n", GetAdjustedTime(), chainActive.Height());
+				        //return;
+						LogPrintf("Warn in LamacoinMiner : Invalid zero amount on balance - unable for fast mining!\n");						
+						//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid zero amount on balance - unable for fast mining!");
+						//return;
+						MilliSleep(135000);
+				    }
+					else
+					{   
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						if (nValue <= nSubsidyMin)
+						{
+							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:15 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("Warn in LamacoinMiner : Not minimum alowed amount on your balance - unable fast mining!\n");						
+							LogPrintf("Warn in LamacoinMiner : Alowed balance: %s Your balance : %s It is unable fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							//throw JSONRPCError(RPC_INVALID_PARAMETER, "Not minimum alowed amount on your balance - unable for fast mining!");
+							//return;
+							MilliSleep(135000);
+						}
+						else
+						{	
+					        LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:10 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("LamacoinMiner : Alowed balance: %s Your balance : %s It is alowed fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							MilliSleep(130000);
+						}
+						
+					}//End Check amount
+				//LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:10 min...\n", GetAdjustedTime(), chainActive.Height());
 				//return;
-				MilliSleep(130000); //120
+				//MilliSleep(130000); //120
 				}
 				else if ((nHeightMax - chainActive.Height() > 576) && (nHeightMax - chainActive.Height() <= 1152)) {
 				// Timeout after ~ 664 blocks
-                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:20 min...\n", GetAdjustedTime(), chainActive.Height());
+                	// Check amount
+					CAmount nValue = pwalletMain->GetBalance();
+                    if (nValue <= 0)
+					{
+						LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:25 min...\n", GetAdjustedTime(), chainActive.Height());
+				        //return;
+						LogPrintf("Warn in LamacoinMiner : Invalid zero amount on balance - unable for fast mining!\n");						
+						//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid zero amount on balance - unable for fast mining!");
+						//return;
+						MilliSleep(145000);
+				    }
+					else
+					{   
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						if (nValue <= nSubsidyMin)
+						{
+							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:25 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("Warn in LamacoinMiner : Not minimum alowed amount on your balance - unable fast mining!\n");						
+							LogPrintf("Warn in LamacoinMiner : Alowed balance: %s Your balance : %s It is unable fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							//throw JSONRPCError(RPC_INVALID_PARAMETER, "Not minimum alowed amount on your balance - unable for fast mining!");
+							//return;
+							MilliSleep(145000);
+						}
+						else
+						{	
+					        LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:20 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("LamacoinMiner : Alowed balance: %s Your balance : %s It is alowed fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							MilliSleep(140000);
+						}
+						
+					}//End Check amount
+				//LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:20 min...\n", GetAdjustedTime(), chainActive.Height());
 				//return;
-				MilliSleep(140000); //130
+				//MilliSleep(140000); //130
 				}
 				else if ((nHeightMax - chainActive.Height() > 288) && (nHeightMax - chainActive.Height() <= 576)) {
 				// Timeout after ~ 617 blocks
-                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:25 min...\n", GetAdjustedTime(), chainActive.Height());
+                	// Check amount
+					CAmount nValue = pwalletMain->GetBalance();
+                    if (nValue <= 0)
+					{
+						LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:30 min...\n", GetAdjustedTime(), chainActive.Height());
+				        //return;
+						LogPrintf("Warn in LamacoinMiner : Invalid zero amount on balance - unable for fast mining!\n");						
+						//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid zero amount on balance - unable for fast mining!");
+						//return;
+						MilliSleep(150000);
+				    }
+					else
+					{   
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						if (nValue <= nSubsidyMin)
+						{
+							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:30 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("Warn in LamacoinMiner : Not minimum alowed amount on your balance - unable fast mining!\n");						
+							LogPrintf("Warn in LamacoinMiner : Alowed balance: %s Your balance : %s It is unable fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							//throw JSONRPCError(RPC_INVALID_PARAMETER, "Not minimum alowed amount on your balance - unable for fast mining!");
+							//return;
+							MilliSleep(150000);
+						}
+						else
+						{	
+					        LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:25 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("LamacoinMiner : Alowed balance: %s Your balance : %s It is alowed fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							MilliSleep(145000);
+						}
+						
+					}//End Check amount
+				//LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:25 min...\n", GetAdjustedTime(), chainActive.Height());
 				//return;
-				MilliSleep(145000); //140
+				//MilliSleep(145000); //140
 				}
 				else if ((nHeightMax - chainActive.Height() > 148) && (nHeightMax - chainActive.Height() <= 288)) {
 				// Timeout after ~ 595 blocks
-                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:28 min...\n", GetAdjustedTime(), chainActive.Height());
+                	// Check amount
+					CAmount nValue = pwalletMain->GetBalance();
+                    if (nValue <= 0)
+					{
+						LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:33 min...\n", GetAdjustedTime(), chainActive.Height());
+				        //return;
+						LogPrintf("Warn in LamacoinMiner : Invalid zero amount on balance - unable for fast mining!\n");						
+						//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid zero amount on balance - unable for fast mining!");
+						//return;
+						MilliSleep(153000);
+				    }
+					else
+					{   
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						if (nValue <= nSubsidyMin)
+						{
+							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:33 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("Warn in LamacoinMiner : Not minimum alowed amount on your balance - unable fast mining!\n");						
+							LogPrintf("Warn in LamacoinMiner : Alowed balance: %s Your balance : %s It is unable fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							//throw JSONRPCError(RPC_INVALID_PARAMETER, "Not minimum alowed amount on your balance - unable for fast mining!");
+							//return;
+							MilliSleep(153000);
+						}
+						else
+						{	
+					        LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:28 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("LamacoinMiner : Alowed balance: %s Your balance : %s It is alowed fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							MilliSleep(148000);
+						}
+						
+					}//End Check amount
+				//LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:28 min...\n", GetAdjustedTime(), chainActive.Height());
 				//return;
-				MilliSleep(148000); //145
+				//MilliSleep(148000); //145
 				}
 				else
 				{
 				// Timeout already before
-                //LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2.5 min...\n", GetAdjustedTime(), chainActive.Height());
+                	// Check amount
+					CAmount nValue = pwalletMain->GetBalance();
+                    if (nValue <= 0)
+					{
+						LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:35 min...\n", GetAdjustedTime(), chainActive.Height());
+				        //return;
+						LogPrintf("Warn in LamacoinMiner : Invalid zero amount on balance - unable for fast mining!\n");						
+						//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid zero amount on balance - unable for fast mining!");
+						//return;
+						MilliSleep(155000);
+				    }
+					else
+					{   
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						if (nValue <= nSubsidyMin)
+						{
+							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:35 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("Warn in LamacoinMiner : Not minimum alowed amount on your balance - unable fast mining!\n");						
+							LogPrintf("Warn in LamacoinMiner : Alowed balance: %s Your balance : %s It is unable fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							//throw JSONRPCError(RPC_INVALID_PARAMETER, "Not minimum alowed amount on your balance - unable for fast mining!");
+							//return;
+							MilliSleep(155000);
+						}
+						else
+						{	
+					        LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:30 min...\n", GetAdjustedTime(), chainActive.Height());
+				            //return;
+							LogPrintf("LamacoinMiner : Alowed balance: %s Your balance : %s It is alowed fast mining!\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
+							MilliSleep(150000);
+						}
+						
+					}//End Check amount
+				//LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2.5 min...\n", GetAdjustedTime(), chainActive.Height());
 				//return;
-				MilliSleep(150000);					
+				//MilliSleep(150000);					
 				}
 		//throw JSONRPCError(RPC_INVALID_PARAMETER, "Timeout: Invalid over hight limit active block, unable to create new block! wait 5 min...");
 		//return;
 		//MilliSleep(150000);
-		MilliSleep(40000); //again min timeout 150000 - 110000
+		MilliSleep(10000); //again min timeout 150000 - 110000 = 40000 
 		}
 			//chainActive.Height()+1
 		if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
