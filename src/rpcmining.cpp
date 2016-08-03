@@ -535,7 +535,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in RPC LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:00 min...\n", GetAdjustedTime(), chainActive.Height());
@@ -574,7 +574,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in RPC LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:05 min...\n", GetAdjustedTime(), chainActive.Height());
@@ -613,7 +613,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in RPC LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:15 min...\n", GetAdjustedTime(), chainActive.Height());
@@ -652,7 +652,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in RPC LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:25 min...\n", GetAdjustedTime(), chainActive.Height());
@@ -691,7 +691,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in RPC LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:30 min...\n", GetAdjustedTime(), chainActive.Height());
@@ -730,7 +730,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in RPC LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:33 min...\n", GetAdjustedTime(), chainActive.Height());
@@ -770,7 +770,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in RPC LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:35 min...\n", GetAdjustedTime(), chainActive.Height());

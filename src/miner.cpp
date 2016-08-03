@@ -452,6 +452,8 @@ void static BitcoinMiner(CWallet *pwallet)
 				MilliSleep(300000);
 				}
             }
+			//
+			//unsigned int nHeightNext = pindexPrev->nHeight+1; //chainActive.Height()+1;
 			if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
                 //Timeout again after new block - speed up if late
 				if (nHeightMax - chainActive.Height() > 4608) {
@@ -470,7 +472,7 @@ void static BitcoinMiner(CWallet *pwallet)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 1:45 min...\n", GetAdjustedTime(), chainActive.Height());
@@ -509,7 +511,7 @@ void static BitcoinMiner(CWallet *pwallet)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 1:45 min...\n", GetAdjustedTime(), chainActive.Height());
@@ -548,7 +550,7 @@ void static BitcoinMiner(CWallet *pwallet)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:00 min...\n", GetAdjustedTime(), chainActive.Height());
@@ -587,7 +589,7 @@ void static BitcoinMiner(CWallet *pwallet)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:10 min...\n", GetAdjustedTime(), chainActive.Height());
@@ -626,7 +628,7 @@ void static BitcoinMiner(CWallet *pwallet)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:20 min...\n", GetAdjustedTime(), chainActive.Height());
@@ -665,7 +667,7 @@ void static BitcoinMiner(CWallet *pwallet)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:25 min...\n", GetAdjustedTime(), chainActive.Height());
@@ -685,9 +687,9 @@ void static BitcoinMiner(CWallet *pwallet)
 						}
 						
 					}//End Check amount
-				LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:25 min...\n", GetAdjustedTime(), chainActive.Height());
+				//LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:25 min...\n", GetAdjustedTime(), chainActive.Height());
 				//return;
-				MilliSleep(145000);
+				//MilliSleep(145000);
 				}
 				else
 				{
@@ -705,7 +707,7 @@ void static BitcoinMiner(CWallet *pwallet)
 				    }
 					else
 					{   
-						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // Allowed balance or not ?
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(chainActive.Height()+1); // Allowed balance or not ?
 						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Timeout in LamacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 2:35 min...\n", GetAdjustedTime(), chainActive.Height());
