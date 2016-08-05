@@ -2645,13 +2645,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
         return state.DoS(20, error("%s : forked chain new block after last height (height %d)", __func__, nHeight));
 	
 	}
-	// Check timestamp against spam or dos after 24200 block
-	if (nHeight > 24200) {
-	//chainActive.Tip()->GetBlockTime()	
-	if ((nHeight > chainActive.Height()) && ((nHeight - chainActive.Height()) >= 1) && (block.GetBlockTime() - chainActive.Tip()->GetBlockTime()) < 60)
-        return state.DoS(20, error("%s : forked chain new block after last height or is too speedy (height %d)", __func__, nHeight));
 	
-	}
 	// Check timestamp many blocks against spam or dos after 16800 block
 	if (nHeight > 16800) {
 		
@@ -2662,6 +2656,10 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
 	}
 	// Check timestamp many blocks against spam or dos after 24200 block
 	if (nHeight > 24200) {
+		
+	//if ((nHeight > chainActive.Height()) && ((nHeight - chainActive.Height()) >= 1) && (block.GetBlockTime() - chainActive.Tip()->GetBlockTime()) < 30)
+    //    return state.DoS(20, error("%s : forked chain new block after last height or is too speedy (height %d)", __func__, nHeight));
+	
 	//chainActive.Tip()->GetBlockTime()	
 	if ((nHeight - chainActive.Height()) > 1){
 	//Is many block's spamed	
