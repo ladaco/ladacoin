@@ -548,19 +548,19 @@ Value getblocktemplate(const Array& params, bool fHelp)
 		
 		
 	bool fGenerate = true;
-    //if (params.size() > 0)
-    //    fGenerate = GetBoolArg("-gen", false);
+    if (params.size() > 0)
+        fGenerate = GetBoolArg("-gen", false);
 
     int nGenProcLimit = -1;
-    //if (params.size() > 1)
-    //{
+    if (params.size() > 1)
+    {
         nGenProcLimit = GetArg("-genproclimit", 0);
         if (nGenProcLimit == 0)
             fGenerate = false;
-    //}
+    }
 
     // -rpc mode change on internal mining: don't set nGenProcLimit blocks are generated
-	mapArgs["-wearepeople"] = (fGenerate ? "1" : "0");
+	//mapArgs["-wearepeople"] = (fGenerate ? "1" : "0");
     if (fGenerate)
     {
 		//mapArgs["-wearepeople"] = (fGenerate ? "1" : "0");
