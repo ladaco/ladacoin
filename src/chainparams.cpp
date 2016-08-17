@@ -71,13 +71,14 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
         ( 8400, uint256("0x702528b55f744f690d896095c4ca8642ccf5f6b420a37b5c6db303013b982d24"))
         ( 12700, uint256("0xb4840c996402136af7e71c19bbad1431b88e0bce56716aa3d9a6eb9f09f73ac2"))
         ( 16800, uint256("0x3229d32141164b7a1d3d82a606fccf096bdf046f4612b9b57d4096f2dfebce98"))
-		( 17300, uint256("0x51d6766e909baff8809fa85f7be393b31c91ce0724af93de8d3539662c80078b"))
+        ( 17300, uint256("0x51d6766e909baff8809fa85f7be393b31c91ce0724af93de8d3539662c80078b"))
         ( 24200, uint256("0x14d1fd1500db0485569c1b0957e19dc4d2fedf7d3dab43795a8974ca049c876b"))
+        ( 32000, uint256("0xb5ebffdaad009c33b33f5b06d7f95e9b26f055ff0fc2f21b5a8c496934577037"))
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
-        1470181124, // * UNIX timestamp of last checkpoint block d77cb63a40042d73a83142383c7872c123cda7253db1d9c0effc8a029ca857b2
-        24473,   // * total number of transactions between genesis and last checkpoint
+        1471288615, // * UNIX timestamp of last checkpoint block d77cb63a40042d73a83142383c7872c123cda7253db1d9c0effc8a029ca857b2
+        32297,   // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         1152.0     // * estimated number of transactions per day after checkpoint
     };
@@ -97,12 +98,13 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
         ( 8400, uint256("0x702528b55f744f690d896095c4ca8642ccf5f6b420a37b5c6db303013b982d24"))
         ( 12700, uint256("0xb4840c996402136af7e71c19bbad1431b88e0bce56716aa3d9a6eb9f09f73ac2"))
         ( 16800, uint256("0x3229d32141164b7a1d3d82a606fccf096bdf046f4612b9b57d4096f2dfebce98"))
-		( 17300, uint256("0x51d6766e909baff8809fa85f7be393b31c91ce0724af93de8d3539662c80078b"))		
+        ( 17300, uint256("0x51d6766e909baff8809fa85f7be393b31c91ce0724af93de8d3539662c80078b"))
+        ( 24200, uint256("0x14d1fd1500db0485569c1b0957e19dc4d2fedf7d3dab43795a8974ca049c876b"))		
         ;
 static const Checkpoints::CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
-        1469220831, // 16800 1468996961 17017
-        17529,
+        1470181124, // 16800 1468996961 17017
+        24473,
         630
     };
 
@@ -173,10 +175,22 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x7a756f67df28090833de8df9c15f36f9637306809443b3065dec5db903210566"));
 		
 		vSeeds.push_back(CDNSSeedData("king.odj.ru", "node.exip.net"));
-		vSeeds.push_back(CDNSSeedData("node1.exip.net", "node2.exip.net"));
-		vSeeds.push_back(CDNSSeedData("node3.exip.net", "node4.exip.net"));
-		vSeeds.push_back(CDNSSeedData("192.168.1.103", "192.168.1.107"));
-		vSeeds.push_back(CDNSSeedData("192.168.1.100", "192.168.1.112"));
+		vSeeds.push_back(CDNSSeedData("king.odj.ru", "king.odj.ru"));
+		vSeeds.push_back(CDNSSeedData("king1.odj.ru", "king1.odj.ru"));
+		vSeeds.push_back(CDNSSeedData("king2.odj.ru", "king2.odj.ru"));
+		vSeeds.push_back(CDNSSeedData("king3.odj.ru", "king3.odj.ru"));
+		vSeeds.push_back(CDNSSeedData("nodea.exip.net", "nodea.exip.net"));
+		vSeeds.push_back(CDNSSeedData("nodeb.exip.net", "nodeb.exip.net"));
+		vSeeds.push_back(CDNSSeedData("nodec.exip.net", "nodec.exip.net"));
+		vSeeds.push_back(CDNSSeedData("nodes.exip.net", "nodes.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node1.exip.net", "node1.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node2.exip.net", "node2.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node3.exip.net", "node3.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node4.exip.net", "node4.exip.net"));
+		vSeeds.push_back(CDNSSeedData("192.168.1.103", "192.168.1.103"));
+		vSeeds.push_back(CDNSSeedData("192.168.1.107", "192.168.1.107"));
+		vSeeds.push_back(CDNSSeedData("192.168.1.100", "192.168.1.100"));
+		vSeeds.push_back(CDNSSeedData("192.168.1.112", "192.168.1.112"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(0);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
@@ -246,10 +260,18 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 		vSeeds.push_back(CDNSSeedData("king.odj.ru", "node.exip.net"));
-		vSeeds.push_back(CDNSSeedData("node1.exip.net", "node2.exip.net"));
-		vSeeds.push_back(CDNSSeedData("node3.exip.net", "node4.exip.net"));
-		vSeeds.push_back(CDNSSeedData("192.168.1.103", "192.168.1.107"));
-		vSeeds.push_back(CDNSSeedData("192.168.1.100", "192.168.1.112"));
+		vSeeds.push_back(CDNSSeedData("king.odj.ru", "king.odj.ru"));
+		vSeeds.push_back(CDNSSeedData("nodea.exip.net", "nodea.exip.net"));
+		vSeeds.push_back(CDNSSeedData("nodeb.exip.net", "nodeb.exip.net"));
+		vSeeds.push_back(CDNSSeedData("nodec.exip.net", "nodec.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node1.exip.net", "node1.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node2.exip.net", "node2.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node3.exip.net", "node3.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node4.exip.net", "node4.exip.net"));
+		vSeeds.push_back(CDNSSeedData("192.168.1.103", "192.168.1.103"));
+		vSeeds.push_back(CDNSSeedData("192.168.1.107", "192.168.1.107"));
+		vSeeds.push_back(CDNSSeedData("192.168.1.100", "192.168.1.100"));
+		vSeeds.push_back(CDNSSeedData("192.168.1.112", "192.168.1.112"));
 		
         base58Prefixes[PUBKEY_ADDRESS] = list_of(48);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
