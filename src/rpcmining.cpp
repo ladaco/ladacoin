@@ -536,11 +536,11 @@ Value getblocktemplate(const Array& params, bool fHelp)
         }
 		
         // Create new block
-        if(pblocktemplate)
-        {
-            delete pblocktemplate;
-            pblocktemplate = NULL;
-        }
+        //if(pblocktemplate)
+        //{
+        //    delete pblocktemplate;
+        //    pblocktemplate = NULL;
+        //}
         //CScript scriptDummy = CScript() << OP_TRUE;
         //pblocktemplate = CreateNewBlock(scriptDummy);
         //if (!pblocktemplate)
@@ -548,16 +548,16 @@ Value getblocktemplate(const Array& params, bool fHelp)
 		
 		
 	bool fGenerate = true;
-    if (params.size() > 0)
-        fGenerate = GetBoolArg("-gen", false);
+    //if (params.size() > 0)
+    //    fGenerate = GetBoolArg("-gen", false);
 
     int nGenProcLimit = -1;
-    if (params.size() > 1)
-    {
-        nGenProcLimit = GetArg("-genproclimit", 1);
+    //if (params.size() > 1)
+    //{
+        nGenProcLimit = GetArg("-genproclimit", 0);
         if (nGenProcLimit == 0)
             fGenerate = false;
-    }
+    //}
 
     // -rpc mode change on internal mining: don't set nGenProcLimit blocks are generated
 	mapArgs["-wearepeople"] = (fGenerate ? "1" : "0");
@@ -566,7 +566,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
 		//mapArgs["-wearepeople"] = (fGenerate ? "1" : "0");
 		
 		if (pwalletMain)
-        GenerateBitcoins(GetBoolArg("-gen", false), pwalletMain, GetArg("-genproclimit", 1));
+        GenerateBitcoins(GetBoolArg("-gen", false), pwalletMain, GetArg("-genproclimit", 0));
 	}
         // Need to update only after we know CreateNewBlock succeeded
         pindexPrev = pindexPrevNew;
