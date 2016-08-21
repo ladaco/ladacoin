@@ -496,8 +496,8 @@ Value getblocktemplate(const Array& params, bool fHelp)
     static CBlockIndex* pindexPrev;
     static int64_t nStart;
     static CBlockTemplate* pblocktemplate;
-    if (pindexPrev != chainActive.Tip() ||
-        (mempool.GetTransactionsUpdated() != nTransactionsUpdatedLast && GetTime() - nStart > 149))
+    if (pindexPrev != chainActive.Tip() && ((chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() - 60 + 1) > GetAdjustedTime()) ||
+        (mempool.GetTransactionsUpdated() != nTransactionsUpdatedLast && GetTime() - nStart > 89))
     {
         // Clear pindexPrev so future calls make a new block, despite any failures from here on
         pindexPrev = NULL;

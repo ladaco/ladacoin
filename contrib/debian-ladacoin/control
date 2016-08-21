@@ -24,8 +24,8 @@ Build-Depends: debhelper,
  python
 Standards-Version: 3.9.2
 Homepage: https://www.ladacoin.org/
-Vcs-Git: git://github.com/ladaco/ladacoin.git
-Vcs-Browser: https://github.com/ladaco/ladacoin
+Vcs-Git: git://github.com/genavarov/ladacoin.git
+Vcs-Browser: https://github.com/genavarov/ladacoin
 
 Package: ladacoind
 Architecture: any
