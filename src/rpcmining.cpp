@@ -798,7 +798,7 @@ Value getblocktemplate(const Array& params, bool fHelp)
 		//throw JSONRPCError(RPC_INVALID_PARAMETER, "Timeout: Invalid over hight limit active block, unable to create new block! wait 5 min...");
 		//return;
 		//MilliSleep(150000);
-		MilliSleep(10000); //again min timeout 150000 - 110000 = 40000 
+		MilliSleep(45000); //again min timeout 150000 - 110000 = 40000 
 		}
 			//chainActive.Height()+1
 		if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
