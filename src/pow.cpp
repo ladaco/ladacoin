@@ -14,7 +14,7 @@
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
     // Standard retargeting for the first blocks
-    if (pindexLast->nHeight+1 < 38304) // Ladacoin: block < 36000
+    if (pindexLast->nHeight+1 < 40320) // Ladacoin: block < 36000
     {
         //int64_t nParamsTargetTimespan = Params().TargetTimespan();
 		//int64_t nParamsInterval = Params().Interval();
