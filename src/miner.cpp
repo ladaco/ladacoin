@@ -82,8 +82,19 @@ public:
 
 void UpdateTime(CBlockHeader* pblock, const CBlockIndex* pindexPrev)
 {
-    pblock->nTime = std::max(pindexPrev->GetMedianTimePast()+1, GetAdjustedTime());
-
+        //if (nBlockTime == 0)
+        //nBlockTime = GetAdjustedTime();
+	int64_t nNow = GetAdjustedTime();
+	if ((pindexPrev->GetMedianTimePast()+ 1 + Params().TargetSpacing() + Params().TargetSpacing()) > GetAdjustedTime()) {
+	pblock->nTime = std::max(pindexPrev->GetMedianTimePast()+1 + Params().TargetSpacing(), GetAdjustedTime());	
+	}else{
+	if ((pindexPrev->GetMedianTimePast()+ 1 + Params().TargetSpacing()) > GetAdjustedTime()) {
+	pblock->nTime = std::max(pindexPrev->GetMedianTimePast()+1, GetAdjustedTime());	
+	}else{
+	//pblock->nTime = std::max(pindexPrev->GetMedianTimePast()+1, pindexPrev->GetMedianTimePast()+ 1 + Params().TargetSpacing());
+	pblock->nTime = std::min(pindexPrev->GetMedianTimePast()+1 + Params().TargetSpacing(), GetAdjustedTime());
+	}
+	}
     // Updating time can change work required on testnet:
     if (Params().AllowMinDifficultyBlocks())
         pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
@@ -454,7 +465,7 @@ void static BitcoinMiner(CWallet *pwallet)
             }
 			//
 			//unsigned int nHeightNext = pindexPrev->nHeight+1; //chainActive.Height()+1;
-			if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
+			if ((chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) && (chainActive.Tip()->GetMedianTimePast() + Params().TargetSpacing() + 1 > GetAdjustedTime())) { //not time for generate
                 //Timeout again after new block - speed up if late
 				if (nHeightMax - chainActive.Height() > 4608) {
 				// Timeout after ~ 960 blocks
