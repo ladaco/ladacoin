@@ -84,6 +84,7 @@ void UpdateTime(CBlockHeader* pblock, const CBlockIndex* pindexPrev)
 {
         //if (nBlockTime == 0)
         //nBlockTime = GetAdjustedTime();
+	int64_t nNowCent = ((pindexPrev->GetBlockTime() + 1 + pindexPrev->GetMedianTimePast() + 1 )/2);
 	int64_t nNow = GetAdjustedTime();
 	if ((pindexPrev->GetMedianTimePast()+ 1 + Params().TargetSpacing() + Params().TargetSpacing()) > GetAdjustedTime()) {
 	pblock->nTime = std::max(pindexPrev->GetMedianTimePast()+1 + Params().TargetSpacing(), GetAdjustedTime());	
@@ -91,8 +92,23 @@ void UpdateTime(CBlockHeader* pblock, const CBlockIndex* pindexPrev)
 	if ((pindexPrev->GetMedianTimePast()+ 1 + Params().TargetSpacing()) > GetAdjustedTime()) {
 	pblock->nTime = std::max(pindexPrev->GetMedianTimePast()+1, GetAdjustedTime());	
 	}else{
-	//pblock->nTime = std::max(pindexPrev->GetMedianTimePast()+1, pindexPrev->GetMedianTimePast()+ 1 + Params().TargetSpacing());
-	pblock->nTime = std::min(pindexPrev->GetMedianTimePast()+1 + Params().TargetSpacing(), GetAdjustedTime());
+		int64_t nNowBack = GetAdjustedTime() - nNowCent; 
+		LogPrintf("Testing 0 in LadacoinMiner : Nowback: %s NowCent: %s\n", nNowBack, nNowCent);
+			
+		if((pindexPrev->GetBlockTime() + 1 + Params().TargetSpacing()) < (GetAdjustedTime() - Params().TargetSpacing() - nNowBack)){
+		//pblock->nTime = std::max(pindexPrev->GetMedianTimePast()+1, pindexPrev->GetMedianTimePast()+ 1 + Params().TargetSpacing());
+			pblock->nTime = std::min(pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 30 , GetAdjustedTime() - Params().TargetSpacing() - nNowBack);
+		    LogPrintf("Testing 1 in LadacoinMiner : Central time: %s over limit: (%s), time create new block ! wait 5 min...\n", GetAdjustedTime() - Params().TargetSpacing() - nNowBack, pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 30);
+		}else if((pindexPrev->GetBlockTime() + 1 + Params().TargetSpacing()) < (GetAdjustedTime() - nNowBack)){
+			pblock->nTime = std::min(pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 10 , GetAdjustedTime() - nNowBack);
+		    LogPrintf("Testing 2 in LadacoinMiner : Central time: %s over limit: (%s), time create new block ! wait 5 min...\n", GetAdjustedTime() - nNowBack, pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 10);
+		}else if((pindexPrev->GetBlockTime() + 1 + Params().TargetSpacing()) < GetAdjustedTime()){
+			pblock->nTime = std::min(pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 5 , GetAdjustedTime());
+		    LogPrintf("Testing 3 in LadacoinMiner : Central time: %s over limit: (%s), time create new block ! wait 5 min...\n", GetAdjustedTime(), pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 5);
+		}else{
+			pblock->nTime = std::max(pindexPrev->GetMedianTimePast()+1, GetAdjustedTime());	
+		    LogPrintf("Testing 4 in LadacoinMiner : Central time: %s over limit: (%s), Mediantime create new block ! wait 5 min...\n", GetAdjustedTime(), pindexPrev->GetMedianTimePast()+1);
+		}
 	}
 	}
     // Updating time can change work required on testnet:
@@ -465,7 +481,7 @@ void static BitcoinMiner(CWallet *pwallet)
             }
 			//
 			//unsigned int nHeightNext = pindexPrev->nHeight+1; //chainActive.Height()+1;
-			if ((chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) && (chainActive.Tip()->GetMedianTimePast() + Params().TargetSpacing() + 1 > GetAdjustedTime())) { //not time for generate
+			if ((chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) && (chainActive.Tip()->GetBlockTime() + 1 < GetAdjustedTime())) { //not time for generate
                 //Timeout again after new block - speed up if late
 				if (nHeightMax - chainActive.Height() > 4608) {
 				// Timeout after ~ 960 blocks
