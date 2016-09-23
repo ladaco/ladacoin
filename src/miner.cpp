@@ -497,16 +497,16 @@ void static BitcoinMiner(CWallet *pwallet)
 		    LogPrintf("Testing 4 in LadacoinMiner : Max Central time: %s over limit: (%s), Mediantime create new block ! wait 5 min...\n", GetAdjustedTime(), pindexPrev->GetMedianTimePast()+1);
 		}
 			
-			if ((chainActive.Tip()->GetBlockTime() + 1 + Params().TargetSpacing() - nNowBack) < GetAdjustedTime()) { //not need time for generate
+			if ((chainActive.Tip()->GetBlockTime() + 1 + Params().TargetSpacing() + Params().TargetSpacing() - nNowBack) < GetAdjustedTime()) { //not need time for generate
                 //Timeout again after new block - speed up if late
-				LogPrintf("Testing 6 in LadacoinMiner : Res Central time: %s over limit: (%s), Last -NowBack time create new block.\n", GetAdjustedTime(), pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() - nNowBack);
-				int64_t nNowSleep = GetAdjustedTime() - (chainActive.Tip()->GetBlockTime() + 1 + Params().TargetSpacing() - nNowBack);
-				LogPrintf("Timeout in LadacoinMiner (Test) : Now time: %s over hight limit active block (%s), unable to create new block ! wait 1:30 min...\n", GetAdjustedTime(), chainActive.Height());
-				LogPrintf("Timeout in LadacoinMiner (Test) : Now time: %s ! wait %s sec...\n", GetAdjustedTime(), nNowSleep);
-				//MilliSleep(90000);
+				LogPrintf("Testing 6 in LadacoinMiner : Res Central time: %s over limit: (%s), Last -NowBack time create new block.\n", GetAdjustedTime(), pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + Params().TargetSpacing() - nNowBack);
+				int64_t nNowSleep = GetAdjustedTime() - (chainActive.Tip()->GetBlockTime() + 1 + Params().TargetSpacing() + Params().TargetSpacing() - nNowBack);
+				LogPrintf("Timeout in LadacoinMiner (Test) : Now time: %s over hight limit active block (%s), unable to create new block ! wait...\n", GetAdjustedTime(), chainActive.Height());
+				LogPrintf("Timeout in LadacoinMiner (Test) : Now time: %s ! Invalid time. Sync and set the current time! wait %s sec...\n", GetAdjustedTime(), nNowSleep);
+				//MilliSleep(nNowSleep*1000);
 			}
 			//unsigned int nHeightNext = pindexPrev->nHeight+1; //chainActive.Height()+1;
-			if ((chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) && ((chainActive.Tip()->GetBlockTime() + 1 + Params().TargetSpacing() - nNowBack) < GetAdjustedTime())) { //not time for generate
+			if (((chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) && ((chainActive.Tip()->GetBlockTime() + 1 + Params().TargetSpacing() - nNowBack) < GetAdjustedTime())) || ((chainActive.Tip()->GetBlockTime() + 1 + Params().TargetSpacing() - nNowBack) < GetAdjustedTime())) { //not time for generate
                 //Timeout again after new block - speed up if late
 				LogPrintf("Testing 7 in LadacoinMiner : Res Central time: %s over limit: (%s), Last -NowBack time create new block.\n", GetAdjustedTime(), pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() - nNowBack);
 				if (nHeightMax - chainActive.Height() > 4608) {
