@@ -521,13 +521,13 @@ Value getblocktemplate(const Array& params, bool fHelp)
 				int64_t nNowBack = GetAdjustedTime() - nNowCent; 
 		        //LogPrintf("Testing 0 in LadacoinMiner : Nowback: %s NowCent: %s\n", nNowBack, nNowCent);
 						
-			if ((chainActive.Tip()->GetBlockTime() + 1 + Params().TargetSpacing() + Params().TargetSpacing() - nNowBack) < GetAdjustedTime()) { //not need time for generate
+			//if ((chainActive.Tip()->GetBlockTime() + 1 + Params().TargetSpacing() + Params().TargetSpacing() - nNowBack) < GetAdjustedTime()) { //not need time for generate
                 //Timeout again after new block - speed up if late
-				int64_t nNowSleep = GetAdjustedTime() - (chainActive.Tip()->GetBlockTime() + 1 + Params().TargetSpacing() + Params().TargetSpacing() - nNowBack);
+				//int64_t nNowSleep = GetAdjustedTime() - (chainActive.Tip()->GetBlockTime() + 1 + Params().TargetSpacing() + Params().TargetSpacing() - nNowBack);
 				//LogPrintf("Timeout in LadacoinMiner (Test) : Now time: %s over hight limit active block (%s), unable to create new block ! wait...\n", GetAdjustedTime(), chainActive.Height());
 				//LogPrintf("Timeout in LadacoinMiner (Test) : Now time: %s ! Invalid time. Sync and set the current time! wait %s sec...\n", GetAdjustedTime(), nNowSleep);
 				//MilliSleep(nNowSleep*1000);
-			}
+			//}
 			//unsigned int nHeightNext = pindexPrev->nHeight+1; 
 		//chainActive.Height()
 		//if (chainActive.Tip()->GetBlockTime() + Params().TargetSpacing() > GetAdjustedTime()) { //not time for generate
