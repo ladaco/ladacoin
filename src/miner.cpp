@@ -91,10 +91,10 @@ void UpdateTime(CBlockHeader* pblock, const CBlockIndex* pindexPrev)
 		//LogPrintf("Testing 0 in LadacoinMiner : Nowback: %s NowCent: %s\n", nNowBack, nNowCent);
 			
 		if((pindexPrev->GetBlockTime() + 1 + Params().TargetSpacing() + Params().TargetSpacing() - nNowBack) < GetAdjustedTime()){
-			pblock->nTime = std::max(pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 300 , GetAdjustedTime());
+			pblock->nTime = std::min(pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 600 , GetAdjustedTime());
 		    //LogPrintf("Testing 1 in LadacoinMiner : Min Central time: %s over limit: (%s), Real -Back time create new block ! wait...\n", GetAdjustedTime(), pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 30);
 		}else if((pindexPrev->GetBlockTime() + 1 + Params().TargetSpacing() - nNowBack) < GetAdjustedTime()){
-			pblock->nTime = std::max(pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 120 , GetAdjustedTime());
+			pblock->nTime = std::min(pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 150 , GetAdjustedTime());
 		    //LogPrintf("Testing 2 in LadacoinMiner : Min Central time: %s over limit: (%s), Real -Back time create new block ! wait...\n", GetAdjustedTime(), pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 10);
 		}else if((pindexPrev->GetBlockTime() + 1 + Params().TargetSpacing()) < GetAdjustedTime()){
 			pblock->nTime = std::min(pindexPrev->GetBlockTime()+ 1 + Params().TargetSpacing() + 5 , GetAdjustedTime());
