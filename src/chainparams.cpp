@@ -75,11 +75,12 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
         ( 24200, uint256("0x14d1fd1500db0485569c1b0957e19dc4d2fedf7d3dab43795a8974ca049c876b"))
         ( 32000, uint256("0xb5ebffdaad009c33b33f5b06d7f95e9b26f055ff0fc2f21b5a8c496934577037"))
         ( 63000, uint256("0xf3c85888ca38fe2f417de0bc4e47e58f168bd79ae9da3a03fc7364125ef1ffac"))
+		( 126000, uint256("0x3e8c86ecd66cf4d9e75878a5cbfd0d4a1edd2c2333de19995ef2d71ff2738067"))
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
-        1476202154, // * UNIX timestamp of last checkpoint block d77cb63a40042d73a83142383c7872c123cda7253db1d9c0effc8a029ca857b2
-        63662,   // * total number of transactions between genesis and last checkpoint
+        1485963737, // * UNIX timestamp of last checkpoint block d77cb63a40042d73a83142383c7872c123cda7253db1d9c0effc8a029ca857b2
+        127326,   // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         1152.0     // * estimated number of transactions per day after checkpoint
     };
@@ -101,12 +102,13 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
         ( 16800, uint256("0x3229d32141164b7a1d3d82a606fccf096bdf046f4612b9b57d4096f2dfebce98"))
         ( 17300, uint256("0x51d6766e909baff8809fa85f7be393b31c91ce0724af93de8d3539662c80078b"))
         ( 24200, uint256("0x14d1fd1500db0485569c1b0957e19dc4d2fedf7d3dab43795a8974ca049c876b"))
-        ( 32000, uint256("0xb5ebffdaad009c33b33f5b06d7f95e9b26f055ff0fc2f21b5a8c496934577037"))		
+        ( 32000, uint256("0xb5ebffdaad009c33b33f5b06d7f95e9b26f055ff0fc2f21b5a8c496934577037"))
+        ( 63000, uint256("0xf3c85888ca38fe2f417de0bc4e47e58f168bd79ae9da3a03fc7364125ef1ffac"))		
         ;
 static const Checkpoints::CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
-        1471288615, // 16800 1468996961 17017
-        32297,
+        1476202154, // 16800 1468996961 17017
+        63662,
         630
     };
 
