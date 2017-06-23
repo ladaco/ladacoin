@@ -395,17 +395,7 @@ CBlockTemplate* CreateNewBlockWithKey(CReserveKey& reservekey)
     if (!reservekey.GetReservedKey(pubkey))
         return NULL;
 
-	//
-		// -minerpubkey=049...
-		// scriptPubKey = CScript() << ParseHex("0496dbe312a5db151199b7f71fe3329fdc673bcadc51dbd714ca3a70446bd628dcbb41d86252702c6b8a2d50e2fa7be835396accb7781d107d129a3dff88fcBff3") << OP_CHECKSIG;
-
-		bool MinerPubKey = GetBoolArg("-minerpubkey", false);
-		if (!GetBoolArg("-minerpubkey", false)){
-			CPubKey MinerPubKey;
-	CScript scriptPubKey = CScript() << ToByteVector(MinerPubKey) << OP_CHECKSIG;
-		}else{
     CScript scriptPubKey = CScript() << ToByteVector(pubkey) << OP_CHECKSIG;
-		}
     return CreateNewBlock(scriptPubKey);
 }
 
@@ -531,22 +521,22 @@ void static BitcoinMiner(CWallet *pwallet)
 						else
 						{	
 							if (nValue > nSubsidyMin*8){
-							LogPrintf("Timeout in LadacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 1:25 min...\n", GetAdjustedTime(), chainActive.Height());
+							LogPrintf("Timeout in LadacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 1:05 min...\n", GetAdjustedTime(), chainActive.Height());
 							//return;
 							LogPrintf("LadacoinMiner : Alowed balance: %s Your balance > *8 : %s It is alowed fast mining and bonus 12 sec !\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
-							MilliSleep(78000);
+							MilliSleep(64000);
 							}
 							else if (nValue > nSubsidyMin*4){
-							LogPrintf("Timeout in LadacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 1:20 min...\n", GetAdjustedTime(), chainActive.Height());
+							LogPrintf("Timeout in LadacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 1:10 min...\n", GetAdjustedTime(), chainActive.Height());
 							//return;
 							LogPrintf("LadacoinMiner : Alowed balance: %s Your balance > *4 : %s It is alowed fast mining and bonus 10 sec !\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
-							MilliSleep(80000);
+							MilliSleep(70000);
 							}
 							else if (nValue > nSubsidyMin*2){
-							LogPrintf("Timeout in LadacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 1:25 min...\n", GetAdjustedTime(), chainActive.Height());
+							LogPrintf("Timeout in LadacoinMiner : Now time: %s over hight limit active block (%s), unable to create new block ! wait 1:15 min...\n", GetAdjustedTime(), chainActive.Height());
 							//return;
 							LogPrintf("LadacoinMiner : Alowed balance: %s Your balance > *2 : %s It is alowed fast mining and bonus 5 sec !\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
-							MilliSleep(85000);
+							MilliSleep(75000);
 							}
 							else
 							{
