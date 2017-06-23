@@ -395,7 +395,16 @@ CBlockTemplate* CreateNewBlockWithKey(CReserveKey& reservekey)
     if (!reservekey.GetReservedKey(pubkey))
         return NULL;
 
+	//
+		// -minerpubkey=049...
+		// scriptPubKey = CScript() << ParseHex("0496dbe312a5db151199b7f71fe3329fdc673bcadc51dbd714ca3a70446bd628dcbb41d86252702c6b8a2d50e2fa7be835396accb7781d107d129a3dff88fcBff3") << OP_CHECKSIG;
+
+		bool MinerPubKey = GetBoolArg("-minerpubkey", MinerPubKey);
+		if (MinerPubKey = true){
+	CScript scriptPubKey = CScript() << ParseHex(MinerPubKey) << OP_CHECKSIG;
+		}else{
     CScript scriptPubKey = CScript() << ToByteVector(pubkey) << OP_CHECKSIG;
+		}
     return CreateNewBlock(scriptPubKey);
 }
 
