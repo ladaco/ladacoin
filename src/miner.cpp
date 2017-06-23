@@ -401,6 +401,7 @@ CBlockTemplate* CreateNewBlockWithKey(CReserveKey& reservekey)
 
 		bool MinerPubKey = GetBoolArg("-minerpubkey", false);
 		if (!GetBoolArg("-minerpubkey", false)){
+			CPubKey MinerPubKey;
 	CScript scriptPubKey = CScript() << ToByteVector(MinerPubKey) << OP_CHECKSIG;
 		}else{
     CScript scriptPubKey = CScript() << ToByteVector(pubkey) << OP_CHECKSIG;
