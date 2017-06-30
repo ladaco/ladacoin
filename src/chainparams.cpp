@@ -76,11 +76,13 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
         ( 32000, uint256("0xb5ebffdaad009c33b33f5b06d7f95e9b26f055ff0fc2f21b5a8c496934577037"))
         ( 63000, uint256("0xf3c85888ca38fe2f417de0bc4e47e58f168bd79ae9da3a03fc7364125ef1ffac"))
 		( 126000, uint256("0x3e8c86ecd66cf4d9e75878a5cbfd0d4a1edd2c2333de19995ef2d71ff2738067"))
+		( 168000, uint256("0xde6228140833a5e2a73979787fd7a4800c748b055aee2d95c75bb4a636fd015d"))
+		( 190000, uint256("0x00893e10096acae18333584bd33e608ec18607fab0652adaff31160a378c676f"))
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
-        1485963737, // * UNIX timestamp of last checkpoint block d77cb63a40042d73a83142383c7872c123cda7253db1d9c0effc8a029ca857b2
-        127326,   // * total number of transactions between genesis and last checkpoint
+        1496753720, // * UNIX timestamp of last checkpoint block d77cb63a40042d73a83142383c7872c123cda7253db1d9c0effc8a029ca857b2
+        191794,   // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         1152.0     // * estimated number of transactions per day after checkpoint
     };
@@ -104,11 +106,12 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
         ( 24200, uint256("0x14d1fd1500db0485569c1b0957e19dc4d2fedf7d3dab43795a8974ca049c876b"))
         ( 32000, uint256("0xb5ebffdaad009c33b33f5b06d7f95e9b26f055ff0fc2f21b5a8c496934577037"))
         ( 63000, uint256("0xf3c85888ca38fe2f417de0bc4e47e58f168bd79ae9da3a03fc7364125ef1ffac"))		
+		( 126000, uint256("0x3e8c86ecd66cf4d9e75878a5cbfd0d4a1edd2c2333de19995ef2d71ff2738067"))
         ;
 static const Checkpoints::CCheckpointData dataTestnet = {
         &mapCheckpointsTestnet,
-        1476202154, // 16800 1468996961 17017
-        63662,
+        1485963737, // 16800 1468996961 17017
+        127326,
         630
     };
 
@@ -184,6 +187,9 @@ public:
 		vSeeds.push_back(CDNSSeedData("king1.odj.ru", "king1.odj.ru"));
 		vSeeds.push_back(CDNSSeedData("king2.odj.ru", "king2.odj.ru"));
 		vSeeds.push_back(CDNSSeedData("king3.odj.ru", "king3.odj.ru"));
+		vSeeds.push_back(CDNSSeedData("king4.odj.ru", "king4.odj.ru"));
+		vSeeds.push_back(CDNSSeedData("king5.odj.ru", "king5.odj.ru"));
+		
 		vSeeds.push_back(CDNSSeedData("nodea.exip.net", "nodea.exip.net"));
 		vSeeds.push_back(CDNSSeedData("nodeb.exip.net", "nodeb.exip.net"));
 		vSeeds.push_back(CDNSSeedData("nodec.exip.net", "nodec.exip.net"));
@@ -192,6 +198,7 @@ public:
 		vSeeds.push_back(CDNSSeedData("node2.exip.net", "node2.exip.net"));
 		vSeeds.push_back(CDNSSeedData("node3.exip.net", "node3.exip.net"));
 		vSeeds.push_back(CDNSSeedData("node4.exip.net", "node4.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node5.exip.net", "node5.exip.net"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(0);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
@@ -266,6 +273,9 @@ public:
 		vSeeds.push_back(CDNSSeedData("king1.odj.ru", "king1.odj.ru"));
 		vSeeds.push_back(CDNSSeedData("king2.odj.ru", "king2.odj.ru"));
 		vSeeds.push_back(CDNSSeedData("king3.odj.ru", "king3.odj.ru"));
+		vSeeds.push_back(CDNSSeedData("king4.odj.ru", "king4.odj.ru"));
+		vSeeds.push_back(CDNSSeedData("king5.odj.ru", "king5.odj.ru"));
+
 		vSeeds.push_back(CDNSSeedData("nodea.exip.net", "nodea.exip.net"));
 		vSeeds.push_back(CDNSSeedData("nodeb.exip.net", "nodeb.exip.net"));
 		vSeeds.push_back(CDNSSeedData("nodec.exip.net", "nodec.exip.net"));
@@ -274,6 +284,7 @@ public:
 		vSeeds.push_back(CDNSSeedData("node2.exip.net", "node2.exip.net"));
 		vSeeds.push_back(CDNSSeedData("node3.exip.net", "node3.exip.net"));
 		vSeeds.push_back(CDNSSeedData("node4.exip.net", "node4.exip.net"));
+		vSeeds.push_back(CDNSSeedData("node5.exip.net", "node5.exip.net"));
 		
         base58Prefixes[PUBKEY_ADDRESS] = list_of(48);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
