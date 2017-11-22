@@ -67,8 +67,12 @@ public:
     /** Make standard checks */
     bool RequireStandard() const { return fRequireStandard; }
     int64_t TargetTimespan() const { return nTargetTimespan; }
+	int64_t TargetTimespanx() const { return nTargetTimespanx; }
+	int64_t TargetTimespans() const { return nTargetTimespans; }
     int64_t TargetSpacing() const { return nTargetSpacing; }
     int64_t Interval() const { return nTargetTimespan / nTargetSpacing; }
+    int64_t Intervalx() const { return nTargetTimespanx / nTargetSpacing; }
+    int64_t Intervals() const { return nTargetTimespans / nTargetSpacing; }
     int64_t MaxTipAge() const { return nMaxTipAge; }
     /** Make miner stop after a block is found. In RPC, don't return until nGenProcLimit blocks are generated */
     bool MineBlocksOnDemand() const { return fMineBlocksOnDemand; }
@@ -81,7 +85,7 @@ public:
     const std::vector<CAddress>& FixedSeeds() const { return vFixedSeeds; }
     virtual const Checkpoints::CCheckpointData& Checkpoints() const = 0;
 
-    // Litecoin: Height to enforce v2 block
+    // Ladacoin: Height to enforce v2 block
     int EnforceV2AfterHeight() const { return nEnforceV2AfterHeight; }
 protected:
     CChainParams() {}
@@ -97,6 +101,8 @@ protected:
     int nRejectBlockOutdatedMajority;
     int nToCheckBlockUpgradeMajority;
     int64_t nTargetTimespan;
+    int64_t nTargetTimespanx;
+    int64_t nTargetTimespans;
     int64_t nTargetSpacing;
     int nMinerThreads;
     long nMaxTipAge;
@@ -115,7 +121,7 @@ protected:
     bool fSkipProofOfWorkCheck;
     bool fTestnetToBeDeprecatedFieldRPC;
 
-    // Litecoin: Height to enforce v2 blocks
+    // Ladacoin: Height to enforce v2 blocks
     int nEnforceV2AfterHeight;
 };
 
