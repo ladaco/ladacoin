@@ -31,7 +31,7 @@ using namespace boost;
 using namespace std;
 
 #if defined(NDEBUG)
-# error "Litecoin cannot be compiled without assertions."
+# error "Ladacoin cannot be compiled without assertions."
 #endif
 
 /**
@@ -73,7 +73,7 @@ static void CheckBlockIndex();
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Litecoin Signed Message:\n";
+const string strMessageMagic = "Ladacoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -913,7 +913,7 @@ CAmount GetMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowF
             return 0;
     }
 
-    // Litecoin
+    // Ladacoin
     // To limit dust spam, add 1000 byte penalty for each output smaller than DUST_THRESHOLD
     BOOST_FOREACH(const CTxOut& txout, tx.vout)
         if (txout.nValue < DUST_THRESHOLD)
@@ -1240,9 +1240,47 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex)
     return true;
 }
 
+
+// miner's coin base reward based on nBits
+CAmount GetProofOfWorkReward(unsigned int nHeight)
+{
+        CAmount nSubsidy = 5000 * COIN;
+
+		if (nHeight < 2101)
+			nSubsidy = 5000 * COIN; // 10,500000 coins
+		else if (nHeight < 4201)
+			nSubsidy = 640 * COIN; // 1,344000 coins
+		else if (nHeight < 6301)
+			nSubsidy = 320 * COIN; // 0,672000 coins
+		else if (nHeight < 8401)
+			nSubsidy = 160 * COIN; // 0,336000 coins
+		else if (nHeight < 10501)
+			nSubsidy = 80 * COIN; // 0,168000 coins
+		else if (nHeight < 21001)
+			nSubsidy = 40 * COIN; // 0,420000 coins
+		else if (nHeight < 42001)
+			nSubsidy = 40 * COIN; // 0,840000 coins
+		else if (nHeight < 84001)
+			nSubsidy = 40 * COIN; // 1,680000 coins
+		else if (nHeight < 210001)
+			nSubsidy = 40 * COIN; // 5,040000 coins
+		else if (nHeight < 420001)
+			nSubsidy = 40 * COIN; // 40/2 = 20 coins
+		else if (nHeight < 840001)
+			nSubsidy = 40 * COIN; // 40/8 = 5 coins
+		else if (nHeight > 840000)
+			nSubsidy = 40 * COIN; // 2.50 coins per block
+
+    	return nSubsidy;
+}
+
 CAmount GetBlockValue(int nHeight, const CAmount& nFees)
 {
-    CAmount nSubsidy = 50 * COIN;
+    //CAmount nSubsidy = 5000 * COIN; //const
+	//const int nHeight = pindexPrev->nHeight + 1;
+	//GetProofOfWorkReward(pindexPrev->nHeight+1);
+	CAmount nSubsidy = GetProofOfWorkReward(nHeight);
+	
     int halvings = nHeight / Params().SubsidyHalvingInterval();
 
     // Force block reward to zero when right shift is undefined.
@@ -1646,7 +1684,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("litecoin-scriptch");
+    RenameThread("ladacoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -2552,7 +2590,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     if (pcheckpoint && nHeight < pcheckpoint->nHeight)
         return state.DoS(100, error("%s : forked chain older than last checkpoint (height %d)", __func__, nHeight));
 
-    // Litecoin: Reject block.nVersion=1 blocks (mainnet >= 710000, testnet >= 400000, regtest uses supermajority)
+    // Ladacoin: Reject block.nVersion=1 blocks (mainnet >= 710000, testnet >= 400000, regtest uses supermajority)
     bool enforceV2 = false;
     if (block.nVersion < 2)
     {
@@ -2601,7 +2639,7 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
             return state.DoS(10, error("%s : contains a non-final transaction", __func__), REJECT_INVALID, "bad-txns-nonfinal");
         }
 
-    // Litecoin: (mainnet >= 710000, testnet >= 400000, regtest uses supermajority)
+    // Ladacoin: (mainnet >= 710000, testnet >= 400000, regtest uses supermajority)
     // Enforce block.nVersion=2 rule that the coinbase starts with serialized block height
     // if 750 of the last 1,000 blocks are version 2 or greater (51/100 if testnet):
     bool checkHeightMismatch = false;
